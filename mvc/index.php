@@ -18,8 +18,10 @@ $prot=substr($server["SERVER_PROTOCOL"],0,strrpos($server["SERVER_PROTOCOL"],"/"
 $path=substr($server["SCRIPT_NAME"],0,strrpos($server["SCRIPT_NAME"],"/"));//服务器路径
 define("URL_PATH",$prot."://".$server["HTTP_HOST"].$path);
 define("CSS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/css");
-define("IMG_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/img");
+define("IMG_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/image");
 define("JS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/js");
+define("FONTS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/fonts");
+define("ICONFONT_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/iconfont");
 define("SELF_PATH",$prot."://".$server["HTTP_HOST"].$server["SCRIPT_NAME"]);
 require_once LIBS_PATH."/functions.php";
 require_once LIBS_PATH."/route.class.php";
