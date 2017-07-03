@@ -1,0 +1,529 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 0.36rem;
+    background: #f0f0f0;
+}
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #ec362d;
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    color:#fff;
+}
+.header-main{
+    width: 7.02rem;
+    height: 100%;
+    margin:0 auto;
+    position: relative;
+}
+.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.medal{
+    float: left;
+    width: 80%;
+    padding-left: 0.1rem;
+}
+.add{
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    line-height: 0.38rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #ec362d;
+    font-size: 0.4rem;
+}
+.back.iconfont{
+    font-size: 0.48rem;
+    color: #fff;
+}
+.header-p{
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    float: left;
+    margin-top: 0.16rem;
+}
+.header-p span{
+    display: block;
+    line-height: 0.33rem;
+}
+.header-p .he-span{
+    font-size: 0.18rem;
+}
+section{
+    width: 100%;
+    float: left;
+    margin-top: 0.5rem;
+}
+section ul{
+    width: 7.02rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+section ul li{
+    width: 7.02rem;
+    height: 1.18rem;
+    float: left;
+    background: #fff;
+    border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
+    border-top-right-radius:0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+}
+section ul li .self{
+    width: 0.95rem;
+    height: 100%;
+    float: left;
+    box-shadow: 0rem 0.1rem 2rem 0.1rem rgba(0,0,0,0.1);
+}
+section ul li .self-tou{
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.1rem;
+    margin-top: 0.25rem;
+}
+section ul li .self-tou img{
+    width: 0.7rem;
+    height: 0.7rem;
+    float:left;
+}
+section ul li .seri{
+    width: 6rem;
+    height: 100%;
+    float: right;
+    font-size: 0.24rem;
+    padding-left: 0.3rem;
+    color: #7c7c7d;
+    position: relative;
+    padding-top: 0.1rem;
+}
+section ul li .seri-tou{
+    width: 6rem;
+    height: 100%;
+    float: left;
+}
+section ul li .mintitle{
+    width: 100%;
+    float: left;
+}
+section ul li .seri .title{
+    font-weight: 600;
+    color: #464647;
+    float: left;
+}
+section ul li .seri .detail{
+    font-weight: 600;
+    float: left;
+}
+section li .seri .num{
+    width: 0.7rem;
+    height: 0.4rem;
+    background: #ec1919;
+    border-radius: 0.3rem;
+    position: absolute;
+    right: 0.2rem;
+    top:0;
+    bottom: 0;
+    margin:auto;
+    text-align: center;
+    line-height: 0.4rem;
+    color: #fff;
+}
+.friends{
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin-top: 0.2rem;
+}
+.friends .main{
+    width: 7.02rem;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 0.1rem;
+    position: relative;
+}
+.friends .main .header{
+    width: 100%;
+    color: #969797;
+    font-size: 0.2rem;
+}
+.friends .main .header p{
+    text-align: left;
+}
+.friends .main .line{
+    width: 100%;
+    height: 1px;
+    background: #cacaca;
+    margin-top: 0.2rem;
+    float: left;
+}
+.friends .main .search{
+    width: 100%;
+    height: 1.3rem;
+    float: left;
+    font-size: 0.28rem;
+    color: #535354;
+    margin-top: 0.2rem;
+}
+.friends .main .search .sear-left{
+    width: 5.44rem;
+    height: 100%;
+    float: left;
+}
+.friends .main .search .sear-left span{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+}
+.friends .main .search .sear-left input{
+    width:90%;
+    height: 0.62rem;
+    float: left;
+    border-radius: 0.3rem;
+    border: none;
+    margin-top: 0.1rem;
+}
+.friends .main .search .btn{
+    width:1rem;
+    height: 100%;
+    float: left;
+}
+.friends .main .search  .btnsp{
+    display: block;
+    width: 100%;
+    text-align:center;
+    font-size: 0.36rem;
+    font-weight: 700;
+    color: #ec1010 ;
+}
+.friends .main .search input[type="submit"]{
+    width: 1.08rem;
+    height: 0.58rem;
+    float: right;
+    border-radius: 0.3rem;
+    border: none;
+    background: #ec1010;
+    text-align: center;
+    line-height: 0.58rem;
+    font-size: 0.3rem;
+    font-weight: 700;
+    color: #FFF ;
+}
+.main h5{
+    color: #acacac;
+    font-weight: 700;
+    font-size: 0.26rem;
+    float: left;
+}
+.main .frili{
+    width:6.5rem;
+    overflow: hidden;
+    float: left;
+    margin-top: 0.1rem;
+
+}
+.main .frili .li{
+    width: 98%;
+    height: 0.92rem;
+    float: left;
+    margin-bottom: 0.2rem;
+    border-radius:0.15rem;
+    background: #fff;
+}
+.main .frili .li .li-left{
+    width: 0.73rem;
+    height: 100%;
+    float: left;
+}
+.main .frili .li .li-tou{
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    float: right;
+    margin-top:0.15rem ;
+}
+.main .frili .li .li-right{
+    width:5.6rem;
+    height: 100%;
+    float: right;
+    font-size: 0.22rem;
+    position: relative;
+    padding-top: 0.1rem;
+}
+.main .frili .li .li-right .title{
+    font-size: 0.24rem;
+    color: #7f7f7f;
+    font-weight: 700;
+    float: left;
+}
+.main .frili .li .li-right .min-title{
+    font-weight: 500;
+}
+.main .frili .li .li-right .con{
+    line-height: 0.5rem;
+    color: #7f7f7f;
+    width: 100%;
+    float: left;
+}
+.main .frili .li .li-right .ll{
+    width: 1rem;
+    height: 1px;
+    background: #bebebe;
+    margin-top: 0.4rem;
+}
+.xing{
+    float: left;
+    width: 60%;
+    margin-left: 0.2rem;
+    font-size: 0.22rem;
+}
+.xing.iconfont{
+    color: #ff9829;
+}
+.video{
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    width: 1.56rem;
+    height: 0.36rem;
+    padding-right: 0.05rem;
+}
+.video a{
+    display: block;
+    width: 1.05rem;
+    height: 0.32rem;
+    float: left;
+}
+.video a img{
+    width: 1.05rem;
+    height: 0.32rem;
+    float: left;
+}
+.ipone{
+    float: right;
+    line-height: 0.32rem;
+}
+.ipone.iconfont{
+    font-size: 0.28rem;
+}
+.letter{
+    width: 0.34rem;
+    overflow: hidden;
+    float: right;
+}
+.letter .le{
+    width: 0.34rem;
+    height: 0.34rem;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 0.34rem;
+    font-size: 0.22rem;
+    color: #a0a0a0;
+    font-weight: 600;
+}
+.letter .le.active{
+    background: #f6ce29;
+    color: #fff;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background: rgba(255,255,255,0.6);
+    z-index: 1;
+    display: none;
+}
+.mask .mask-main{
+
+    width: 5.92rem;
+    height: 6.5rem;
+    background: #f8f5f5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.banner{
+    width: 100%;
+    height: 3.7rem;
+    position: relative;
+}
+.banner .ba-yh{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner .ba-yh img{
+    width: 100%;
+}
+.banner .tou{
+    width: 1.57rem;
+    height: 1.59rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+.banner .tou .img{
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    border-radius: 50%;
+    margin-top: 6%;
+    /* margin: 0 auto; */
+    margin-left: 5%;
+}
+.bedeck{
+    width: 1.92rem;
+    height: 0.72rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -0.5rem;
+}
+.bedeck img{
+    width: 1.92rem;
+    height: 0.72rem;
+    float: left;
+}
+.mask-title{
+    width: 5rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+.mask-title h5{
+    font-size: 0.3rem;
+    color: #524d4d;
+    font-weight: 600;
+}
+.mask-title .p1{
+    font-size: 0.24rem;
+    color: #524d4d;
+    font-weight: 600;
+}
+.mask-title .p1 .p1s{
+    font-weight: 500;
+}
+.mui{
+    width: 0.9rem;
+    height: 0.42rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0.5rem;
+    margin: auto;
+}
+.mui-switch {
+    width:0.9rem ;
+    height:0.45rem;
+    position: relative;
+    border: 0.02rem solid #dfdfdf;
+    /*background-color: #31333d;*/
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+    float: left;
+}
+.mui-switch:before {
+    content: '';
+    width: 0.08rem;
+    height: 0.08rem;
+    border: 0.1rem solid #45c6fc;
+    position: absolute;
+    top: 0.05rem;
+    left: 0;
+    border-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    background-color: #fced20;
+    box-shadow: 0 0.02rem 0.06rem rgba(0, 0, 0, 0.4);
+}
+.mui-switch:checked {
+    border-color: #006e3c;
+    /*box-shadow: #17bb1e 0 0 0 0.32rem inset;*/
+    /*background-color: #17bb1e;*/
+}
+.mui-switch:checked:before {
+    left: 0.52rem;
+}
+.smale{
+    width: 100%;
+    height: 0.6rem;
+    float: left;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 0.3rem;
+
+}
+.smale .lists{
+    width: 1.42rem;
+    height: 100%;
+}
+.smale .lists .img{
+    width: 0.53rem;
+    height: 0.53rem;
+    float: left;
+}
+.smale .lists .img img{
+    width: 0.53rem;
+    height: 0.53rem;
+    float: left;
+}
+.smale .lists .title{
+    width: 0.8rem;
+    height: 100%;
+    float: left;
+    padding-left: 0.2rem;
+}
+.smale .lists .title>p{
+    font-size: 0.2rem;
+    color: #353236;
+    font-weight: 600;
+}
+.smale .lists .title>.dash{
+    width: 100%;
+    border-bottom: 1px dashed #9b9b9b;
+}
+.smale .lists .title>span{
+    font-size: 0.2rem;
+    color: #353236;
+    float: left;
+}
