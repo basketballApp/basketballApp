@@ -1,0 +1,804 @@
+*{
+    margin:0;padding:0;list-style: none;box-sizing: border-box;
+}
+body{
+    background: #f0eeee;
+}
+header{
+    width:100%;height:4.97rem;
+    background: #ef3a31;
+    text-align: center;
+}
+header .top{
+    height: 1.39rem;
+    position: relative;
+    padding-top: 0.4rem;
+}
+header .top .left{
+    width: 1.39rem;height: 1.39rem;position: absolute;top:0;left:0.23rem;
+}
+header .top .right{
+    width: 1.39rem;height: 1.39rem;position: absolute;right:0.23rem;top:0;
+}
+header .top .left .ma,header .top .right .sou{
+     width: 0.69rem;height: 0.69rem;
+     position: absolute;top:0;bottom:0;margin:auto;
+ }
+header .top .left .ma{
+    left:0;
+}
+header .top .right .yuyin{
+    width: 1.27rem;height: 0.69rem;
+    position: absolute;left:0;right:0;top:0;bottom:0;margin:auto;
+}
+header h2{
+    font-size: 0.38rem;
+    line-height:0.5rem;
+    color: #fff;
+}
+header h5{
+    font-size: 0.18rem;
+    line-height:0.2rem;
+    color: #fff;
+    font-weight: normal;
+}
+header .middle{
+    height: 1.74rem;padding-left: 0.55rem;color: #fff;font-family: "San Francisco Display";
+    text-align: left;
+    padding-top: 0.28rem;
+}
+header .middle h5{
+    font-size: 0.23rem;line-height: 0.24rem;
+}
+header .middle h3{
+    font-size: 0.33rem;line-height: 0.35rem;
+}
+header .middle h2{
+    font-size: 0.36rem;line-height: 0.56rem;
+}
+header .fen{
+    width: 1.35rem;height: 0.01rem;background: #f47b75;margin-top: 0.05rem;
+}
+.method{
+    width: 6.25rem;height: 8.19rem;border-radius: 5px;position: absolute;
+    top:3.47rem;left:0;right:0;margin:0 auto;
+    padding-top: 0.45rem;
+    background: #fff;
+    background: url("../image/gxq/bg.png") center center no-repeat;
+    background-size: cover;
+    box-shadow: 0.01rem 0.02rem 0.28rem 0.2rem rgba(0,0,0,0.1);
+}
+.method .titlebox{
+    height: 0.35rem;font-size: 0.34rem;line-height:0.35rem;font-weight: bold;
+}
+.method .titlebox2{
+    font-size: 0.22rem;line-height: 0.28rem;font-weight: bold;
+}
+.method .zhifu{
+    padding-bottom: 0.27rem;
+}
+.zfb-wx{]
+    width:100%;height:0.84rem;
+    padding:0 0.6rem;
+    position: relative;
+}
+.zfb-wx .zfb,.zfb-wx .wx{
+    width: 2.44rem;height:100%;position: absolute;
+    top:0;
+}
+.zfb-wx .zfb img,.zfb-wx .wx img{
+    width: 100%;height:100%;position: absolute;
+}
+.zfb-wx .zfb{
+    left:0.6rem;
+}
+.zfb-wx .wx{
+    right:0.6rem;
+}
+ p.circle{
+     width: 90%;height: 0.09rem;margin:0 auto;
+     line-height: 0.09rem;
+    font-family: "San Francisco Display";
+    font-size: 0.16rem;
+    color: #d1d1d1;
+}
+ .zf-other{
+     height: 1.22rem;width: 100%;
+     padding:0.3rem 0;
+     text-align: center;
+ }
+ .huodaofukuan{
+     width: 4.97rem;height: 0.82rem;margin:0 auto;
+     background: url("../../static/image/gxq/gxqmethod_10.png") center center no-repeat;
+     background-size: cover;
+     box-shadow: 0 0.1rem 0.2rem 0.01rem rgba(0,0,0,0.1);
+     margin-bottom: 0.22rem;
+     position: relative;
+
+ }
+ .yinhangka{
+     width: 4.97rem;height: 0.82rem;margin:0 auto;
+     background: url("../../static/image/gxq/gxqmethod_12.png") center center no-repeat;
+     background-size: cover;
+     box-shadow: 0 0.1rem 0.2rem 0.01rem rgba(0,0,0,0.1);
+     margin-bottom: 0.22rem;
+     position: relative;
+ }
+ .huodaofukuan,.yinhangka{
+     padding:0.12rem 0.93rem;
+ }
+ .huodaofukuan .titlebox,.yinhangka .titlebox,.zhye .titlebox{
+     height: 0.27rem;
+     font-size: 0.27rem;
+     line-height: 0.27rem;
+     font-weight: bold;
+     color: #6d6d6d;
+ }
+.huodaofukuan .titlebox2,.yinhangka .titlebox2,.zhye .titlebox2{
+    height: 0.23rem;
+    font-size: 0.23rem;
+    line-height: 0.23rem;
+    font-weight: bold;
+    color: #6d6d6d;
+}
+.zhye{
+    width: 4.97rem;height: 0.82rem;margin:0 auto;
+    margin-bottom: 0.22rem;
+    background: url("../../static/image/gxq/yue_06.png") center center no-repeat;
+    background-size: cover;
+    padding: 0.12rem 0.93rem;color: #6d6d6d;
+}
+.huodaofukuan,.yinhangka, .zhye{
+    text-align: left;
+}
+.zhye{
+    width: 4.97rem;margin:0 auto;
+    margin-bottom: 0.22rem;
+    background: url("../../static/image/gxq/yue_06.png") center center no-repeat;
+    background-size: cover;
+    padding: 0.12rem 0.93rem;color: #6d6d6d;
+}
+.zhye .titlebox2{
+    height: 0.23rem;
+    font-size: 0.23rem;
+    line-height: 0.23rem;
+    font-weight: bold;
+    color: #6d6d6d;
+}
+.xiayibu{
+    width: 4.97rem;height: 0.74rem;margin: 0 auto;
+    background: url("../../static/image/gxq/gxqmethod_19.png") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 0.15rem;
+}
+.xiayibu .titlebox{
+    height: 0.23rem;
+    font-size: 0.23rem;
+    line-height: 0.23rem;
+    font-weight: bold;
+    color: #fff;
+}
+.xiayibu .titlebox2{
+    height: 0.23rem;
+    font-size: 0.23rem;
+    line-height: 0.23rem;
+    font-weight: bold;
+    color: #fff;
+}
+.zhifu-lvtiao{
+    background: #0ecf8a;
+    width: 0.06rem;height: 0.58rem;
+    position: absolute;
+    right:0.07rem;top:0.12rem;
+}
+.zhifu-yellow{
+    background: #ffc21c;
+    width: 0.27rem;height:0.27rem;
+    position: absolute;
+    right:0.07rem;top:0.3rem;
+    border-radius: 50%;
+}
+/*搜索结果*/
+.searchSearchResult{
+    background: #fff;position:relative;
+}
+.searchSearchResult .search{
+    width: 6.08rem;height: 0.8rem;margin:0 auto;background: #fff;
+    padding-left: 0.34rem;
+    position: relative;
+}
+.searchSearchResult .search .toptitle{
+    font-size: 0.22rem;text-align: left;color: #9d9d9c;line-height: 0.4rem;
+}
+.searchSearchResult .search .bottomtitle{
+    font-size: 0.15rem;text-align: left;color: #9d9d9c;line-height: 0.3rem;
+}
+.searchSearchResult .search .bottomtitle span{
+    font-weight: bold;
+}
+.searchSearchResult .search .bottomxian{
+    width: 5.42rem;border-bottom: 0.01rem solid #ccc;
+}
+.searchSearchResult .search .dian1,.searchSearchResult .search .dian2{
+    width: 0.05rem;height:0.05rem;border-radius: 50%;
+    position: absolute;top:0.2rem;
+}
+.searchSearchResult .search .dian1{
+    background: #11dcfc;left:0.13rem;
+}
+.searchSearchResult .search .dian2{
+    background: #13fd05;left:0.22rem;
+}
+.searchSearchResult .search .logo{
+    width:1.24rem;height:0.3rem;position: absolute;right:0;top:0.34rem;
+}
+.searchSearchResult .search .logo .leida{
+    width: 0.3rem;height: 0.3rem;
+    position: absolute;
+    top:0;left:0;
+}
+.searchSearchResult .search .logo .sousuo{
+    width: 0.28rem;height: 0.3rem;
+    position: absolute;
+    top:0;left:0.6rem;
+}
+.searchSearchResult .category{
+    height: 3.2rem;width: 100%;
+    padding:0.5rem 0.58rem;
+}
+.searchSearchResult .category .top{
+    width: 6.56rem;height:0.6rem;
+    padding:0 0.75rem;
+    font-size: 0.21rem;
+    margin-bottom: 0.24rem;
+}
+.searchSearchResult .category .top .cate{
+    width: 2.25rem;height: 0.6rem;background: url("../../static/image/gxq/gxqcg_14.png") center center no-repeat;
+    background-size: 100%;float: left;text-align: center;line-height: 0.6rem;font-weight: bold;
+}
+.searchSearchResult .cate2{
+    margin-left: 0.53rem;
+}
+.searchSearchResult .top .cate3{
+    width: 1.55rem;height: 0.57rem;
+    background: url("../../static/image/gxq/gxqcg_18.png") center center no-repeat;
+    background-size: 100%;float: left;text-align: center;line-height: 0.6rem;font-weight: bold;
+    margin-right: 0.4rem;
+}
+.searchSearchResult .top .cate4{
+    width:2.28rem;height: 0.57rem;
+    background: url("../../static/image/gxq/gxqcg_14.png") center center no-repeat;
+    background-size: 90%;float: left;text-align: center;line-height: 0.6rem;font-weight: bold;
+    margin-right: 0.4rem;
+}
+.searchSearchResult .lunbobox{
+    width: 7rem;height: 0.5rem;border-bottom: 0.01rem solid #ccc;margin:0 auto;
+}
+.searchSearchResult .lunbobox .top{
+    width: 0.73rem;height: 0.12rem;margin:0 auto;
+}
+.searchSearchResult .lunbobox .top li{
+    width: 0.11rem;height: 0.11rem;background: #ec352a;float: left;margin-right: 0.2rem;border-radius: 50%;
+}
+.searchSearchResult .lunbobox .top li:nth-child(3){
+    margin-right: 0;
+}
+.searchSearchResult .near{
+    width: 7.03rem;height:1.05rem;margin:0 auto;padding-top: 0.22rem;
+}
+.searchSearchResult .near .pic{
+    width: 0.64rem;height:0.64rem;border-radius: 50%;float: left;border: 0.01rem solid #e6f821;
+}
+.searchSearchResult .near .rightCon{
+    width: 6rem;height:0.64rem;float: left;
+    padding: 0.1rem;
+}
+.searchSearchResult .near .rightCon .p1{
+    font-size: 0.28rem;text-align: left;color:#825e56;line-height: 0.27rem;
+    width: 1.2rem;float: left;
+}
+.searchSearchResult .near .rightCon .huo{
+    width: 0.18rem;height: 0.26rem;float: left;margin-left:0.07rem ;
+}
+.searchSearchResult .near .rightCon .p2{
+    font-size: 0.28rem;text-align: left;color:#000;line-height: 0.27rem;clear: both;
+}
+.searchSearchResult .near .rightCon .p2 span{
+    font-weight: bold;margin-right: 0.2rem;
+}
+.searchSearchResult .nearCon{
+    width: 7.03rem;height:2.63rem;margin:0 auto;
+    padding:0.1rem 0;
+}
+.searchSearchResult .nearCon .left{
+    width: 2.65rem;height:100%;float: left;
+}
+.searchSearchResult .nearCon .left img{
+    width: 100%;height:100%;
+}
+.searchSearchResult .nearCon .right{
+    width:4.37rem;height:100%;float: left;padding-left: 0.1rem;
+}
+.searchSearchResult .nearCon .right .top{
+    width: 100%;height:1.14rem;
+}
+.searchSearchResult .nearCon .right .top .tuijian{
+    width: 1.62rem;height: 1.12rem;
+    float: left;margin-right: 0.1rem;
+}
+.searchSearchResult .nearCon .right .top .tuijian img,.searchSearchResult .nearCon .right .top .tuijian2 img{
+    width: 100%;height:100%;
+}
+.searchSearchResult .nearCon .right .top .tuijianpic2{
+    width: 2.55rem;height: 1.12rem;
+    float: left;
+}
+.searchSearchResult .nearCon .right .top .tuijianpic2 img{
+    width: 100%;height:100%;
+}
+.searchSearchResult .nearCon .right .bottom{
+    width: 100%;height:1.14rem;margin-top: 0.08rem;
+    display: flex;
+}
+.searchSearchResult .nearCon .right .bottom li{
+    justify-content: space-around;
+    width: 33.333%;height: 100%;
+    margin-right: 0.08rem;
+}
+.searchSearchResult .nearCon .right .bottom li:nth-child(3){
+    margin-right: 0;
+}
+.searchSearchResult .nearCon .right .bottom li a{
+    display: block;
+}
+.searchSearchResult .nearCon .right .bottom li a img{
+    width: 100%;height:100%;
+}
+.searchSearchResult .gxqchang {
+    width: 7.03rem;height: 3.60rem;
+    margin:0 auto;
+    border-radius: 0.05rem;background:#fcfdff;
+}
+.gxqchang .list{
+    width: 100%;height:1.98rem;box-shadow: 0.01rem 0.01rem 0.28rem 0.01rem rgba(0,0,0,0.1);
+    padding:0.16rem 0.08rem;
+    background: #fff;
+    border-radius: 0.08rem;
+    margin-bottom: 0.1rem;
+}
+.gxqchang .list .left{
+    width: 1.56rem;height: 100%;float: left;
+}
+.gxqchang .list .left img{
+    width: 100%;vertical-align: middle;
+}
+.gxqchang .list .right{
+    width: 5.27rem;height: 100%;float: left;padding-left: 0.2rem;
+}
+.gxqchang .list .right .p1{
+    font-size: 0.22rem;color: #000;text-align: left;font-weight: bold;
+}
+.gxqchang .list .right .p2{
+    font-size: 0.28rem;
+    text-align: left;
+    color: #000;
+    line-height: 0.27rem;
+}
+.gxqchang .list .right .p2 span{
+    font-weight: bold;
+}
+.gxqchang .list .right .p3{
+    font-size: 0.2rem;color: #ccc;letter-spacing: 0.03rem;line-height: 0.2rem;margin-bottom: 0.1rem;
+}
+.gxqchang .list .right .caozuo{
+    width: 100%;height: 0.25rem;display: flex;
+}
+.gxqchang .list .right .caozuo li{
+    justify-content: space-around;
+    width: 33.33%;height: 100%;margin-right: 0.72rem;
+}
+.gxqchang .list .right .caozuo li .like{
+    width: 0.25rem;
+    float: left;
+}
+.gxqchang .list .right .caozuo li .shu{
+    font-size: 0.16rem;float: left;
+    margin-left: 0.06rem;
+    color: #9e9e9e;line-height: 0.3rem;
+}
+.searchSearchResult .tan{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;left:0;
+}
+body{
+    overflow: hidden;
+}
+.searchSearchResult .tan .con{
+    height: 9.6rem;width: 6.5rem;
+    position: absolute;
+    top:0;left:0;bottom:0;right:0;margin:auto;
+}
+.searchSearchResult .tan .con .p1{
+    height: 0.6rem;line-height: 0.6rem;text-align: center;color:#fff;font-size: 0.32rem;
+}
+.searchSearchResult .tan .con .p2{
+    height: 0.28rem;line-height: 0.28rem;text-align: center;color:#fff;font-size: 0.15rem;
+}
+.searchSearchResult .tan .con .con1{
+    width: 100%;height: 5.05rem;padding-top: 0.16rem;border-radius: 0.2rem 0.2rem 0 0;
+}
+.searchSearchResult .tan .con .con1 .lunbotu{
+    width: 100%;height:100%;position: relative;border-radius: 0.2rem 0.2rem 0 0;overflow: hidden;
+}
+.searchSearchResult .tan .con .con1 .lunbotu img{
+    width: 100%;height:100%;
+    position: absolute;
+    top:0;left:0;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask{
+    width: 100%;height:1.24rem;
+    position: absolute;
+    left:0;bottom:0;
+    background: rgba(0,0,0,0.8);
+    padding:0.15rem 0.38rem;
+    color: #fff;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .title1{
+    font-size: 0.3rem;line-height: 0.35rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .title2{
+    font-size: 0.24rem;
+    text-align: left;
+    line-height: 0.24rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .title2 span {
+    font-weight: bold;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .title3{
+    font-size: 0.17rem;
+    line-height: 0.17rem;
+    margin-top: 0.2rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox{
+    width: 1.2rem;height: 0.37rem;
+    position: absolute;
+    bottom:0.09rem;right:0.2rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox li{
+    float: left;width: 0.37rem;height:0.37rem;border-radius: 50%;border:0.01rem solid #fdfd01;background: #fff;
+    position: absolute;top:0;overflow: hidden;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox li:nth-child(2){
+    left:0.19rem;z-index: 2;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox li:nth-child(3){
+    left:0.44rem;z-index: 3;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox li:nth-child(4){
+    left:0.68rem;z-index: 4;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox li:nth-child(5){
+    left:0.92rem;z-index: 5;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .mask .headBox li img{
+    width: 100%;height:100%;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .lunbobox{
+    width: 1.56rem;height:0.17rem;
+    position: absolute;
+    bottom:1.41rem;left:2.41rem;
+    padding:0 0.05rem;
+    border: 0;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .lunbobox li{
+    width: 0.16rem;height:0.16rem;background: #fed325;float: left;margin-right: 0.16rem;border-radius: 50%;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .lunbobox li.active{
+    width: 0.5rem;height: 0.16rem;background: #fff;border-radius: 0.2rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .lunbobox li:nth-child(4){
+    margin-right: 0;
+}
+.searchSearchResult .tan .con .con1 .details{
+    width: 100%;height: 1.52rem;background: #fff;
+    padding:0.24rem 0rem;
+    color: #000;
+    text-align: center;
+}
+.searchSearchResult .tan .con .con1 .details .addr{
+    font-size: 0.24rem;font-family: 苹方;line-height: 0.28rem;color: #000;
+}
+.bottomp2{
+    font-size: 0.24rem;font-family: 苹方;line-height: 0.24rem;color: #888;
+}
+.searchSearchResult .orderbox{
+    width: 100%;height:1.37rem;background: #fff;padding: 0.37rem 0;border-radius: 0 0 0.2rem 0.2rem;
+}
+.searchSearchResult .order{
+    width: 2.4rem;height: 0.6rem;margin: 0 auto;background: #f1271b;
+    text-align: center;line-height: 0.6rem;color: #fff;font-weight: bold;
+    font-size: 0.36rem;border-radius: 0.4rem;
+}
+.searchSearchResult .xiangmu{
+    width: 100%;height: 0.66rem;background: #372d23;
+}
+.searchSearchResult .xiangmu li{
+    width:33.33%;height: 0.66rem;float: left;position: relative;
+}
+.searchSearchResult .xiangmu li .logo{
+    width: 0.34rem;height: 0.34rem;float: left;position: absolute;top:-0.55rem;left:0.4rem;
+}
+.searchSearchResult .xiangmu li .logo img{
+   width: 100%;height:100%;
+}
+.searchSearchResult .xiangmu li .tingche{
+    font-size: 0.24rem;color: #fff;font-family: 苹方;font-weight: bold;line-height: 0.66rem;margin-left: 0.8rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .backbox{
+    width: 100%;height: 0.63rem;
+    position: absolute;
+    top:0.18rem;left:0;
+    padding:0 0.2rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .backbox .back{
+    width: 0.64rem;height: 0.64rem;float: left;margin-left: 0.2rem;
+}
+.searchSearchResult .tan .con .con1 .lunbotu .backbox .shoucang{
+    width: 0.64rem;height: 0.64rem;float: right;margin-left: 5.68rem;
+}
+body.order{
+    background: #f0eeee;
+}
+.order .con{
+    width: 100%;height:11.94rem;
+    padding:0.35rem 0.23rem;
+}
+.order .con .num{
+    width: 3.99rem;height: 0.4rem;border: 0.01rem solid #6c6c6c;border-radius: 0.2rem;color: #949393;
+    font-size: 0.24rem;font-family: 苹方;line-height: 0.4rem;
+    padding:0 0.2rem;
+}
+.order .con .num span{
+    color: #4e4d4d;
+}
+.order .list{
+    width: 7.05rem;height: 1.62rem;
+    margin:0 auto;background: #fff;
+    box-shadow: 0.01rem 0.01rem 0.28rem 0.01rem rgba(0,0,0,0.1);
+    border-radius: 0.08rem;
+    margin: 0.18rem 0;
+    padding:0.15rem 0.2rem;
+    position: relative;
+}
+.order .list .left{
+    width: 1.26rem;height: 100%;float: left;border-radius: 0.2rem;margin-right: 0.22rem;
+}
+.order .list .left img{
+   width: 100%;height: 100%;
+}
+.order .list .title1{
+    font-size:0.26rem ;font-family: 苹方;
+    line-height:0.28rem ;
+    font-weight: bold;
+}
+.order .list .title2{
+    font-size:0.24rem ;font-family:"San Francisco Display";
+    line-height:0.24rem ;
+    color: #a1a1a1;font-weight: bold;
+}
+.order .list .title2 span{
+    font-size:0.24rem ;font-family:"San Francisco Display";
+    line-height:0.24rem ;font-weight: normal;
+    margin-left: 0.1rem;
+}
+.order .list .title3{
+    font-size:0.12rem ;font-family:"San Francisco Display";
+    line-height:0.12rem ;
+    color: #a1a1a1;
+}
+.order .list .title4{
+    font-size:0.26rem ;font-family: 苹方;
+    line-height:0.26rem ;
+    margin-top: 0.1rem;
+}
+.order .list .title5{
+    font-size:0.26rem ;font-family: 苹方;
+    line-height:0.26rem ;
+    color: #444343;
+    margin-top: 0.1rem;
+    width: 100%;
+}
+.order .list .ok{
+    width: 0.26rem;height:0.26rem;
+    position: absolute;
+    top:0.15rem;right:0.2rem;
+}
+.order .listlast {
+    width: 7.05rem;
+    height: 1.37rem;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0.01rem 0.01rem 0.28rem 0.01rem rgba(0,0,0,0.1);
+    border-radius: 0.08rem;
+    margin: 0.18rem 0;
+    padding: 0.15rem 0.2rem;
+    position: relative;
+    color: #848282;font-weight: bold;
+}
+.order .listlast .title1{
+    font-size: 0.24rem;position: relative;
+}
+.order .listlast .title1 span.right{
+    position: absolute;right:0;top:0;
+}
+.order .heji{
+    width: 100%;height:1.14rem;text-align: right;
+    font-size: 0.36rem;font-weight: bold;
+    line-height: 1.14rem;
+}
+.order .heji span.shu{
+    color: #fe1530;
+}
+.order .heji span.rmb{
+    font-size: 0.2rem;
+    color: #fe1530;
+}
+.order  .zhifu{
+    width: 2.52rem;height:0.86rem;
+    background: url("../../static/image/gxq/gxqdetails_07.png") center center no-repeat;
+    background-size: 100%;margin-left:4.5rem;
+    margin-bottom: 0.3rem;
+}
+.order .history{
+    border-top:0.02rem solid #aaaaa9;
+    width: 100%;height:3.81rem;
+    padding:0.18rem 0.23rem;
+}
+.order .history .title1{
+    font-family: "San Francisco Display";
+    font-size: 0.24rem;
+    color: #8a8988;
+}
+.order .history .title2{
+    width: 1.2rem;
+    height:0.01rem;
+    border-top:0.01rem solid #8a8988;
+}
+.order .history .title3{
+    font-size: 0.3rem;
+    color: #555452;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0.15rem;
+}
+.order .history .title3 .dian1{
+    width: 0.04rem;height:0.04rem;border-radius: 50%;
+    background: #fe1530;
+    position: absolute;
+    top:0.17rem;left:1.23rem;
+}
+.order .history .title3 .dian2{
+    width: 0.04rem;height:0.04rem;border-radius: 50%;
+    background: #4ad2ff;
+    position: absolute;
+    top:0.17rem;left:1.33rem;
+}
+.order .list .zuire {
+    width: 0.8rem;
+    height: 0.7rem;
+    position: absolute;
+    top: -0.1rem;
+    right: 0.2rem;
+}
+.order .list .xiaofei{
+    width: 0.9rem;height: 0.9rem;border-radius: 50%;
+    position: absolute;
+    top:0.45rem;right:1.12rem;
+}
+.order .list .title5 span{
+    color: #fe1530;margin-left: 2.35rem;
+}
+.stadium{
+    position: relative;
+    width: 100%;height:100%;overflow: hidden;
+}
+.stadium .kuang{
+    width:6.68rem;height:5.49rem;
+    background: url("../../static/image/gxq/zhifusuccess_03.png") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:0.37rem;
+    padding-top:3.08rem;
+    z-index: 20;
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem;
+    display: none;
+}
+.stadium .kuang .title1{
+    font-size: 0.4rem;font-family: 苹方;
+    text-align: center;
+    letter-spacing: 0.01rem;
+    color: #535252;
+    line-height: 0.6rem;
+    font-weight: bold;
+}
+.stadium .kuang .title2{
+    font-size: 0.24rem;font-family: "San Francisco Display";
+    text-align: center;
+    letter-spacing: 0.01rem;
+    color: #535252;
+    line-height: 0.36rem;
+    font-weight: bold;
+}
+.stadium .kuang  .select{
+    height:0.95rem;width: 100%;
+}
+.stadium .kuang  .select .con{
+    width: 3.4rem;height: 0.95rem;margin:0 auto;
+    background: url("../../static/image/gxq/zfsuccess_06.png") center center no-repeat;
+    background-size: 100%;
+    margin-top: 0.3rem;
+    position: relative;
+}
+.stadium .kuang  .select .con .back{
+    width: 1.72rem;height: 0.68rem;
+    background: url("../../static/image/gxq/cg_06.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0.1rem;
+}
+.stadium .mask{
+    width: 100%;height:13.34rem;background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;left:0;
+    display: none;
+}
+.stadium .mask .lijibox{
+    width: 6.6rem;height:5.93rem;
+    background: url("../../static/image/gxq/allxiaifei_03.png") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left:0;right:0;top:0;bottom:0;margin:auto;
+}
+.stadium .mask .lijibox .money{
+    width: 100%;height: 0.57rem;
+    line-height: 0.57rem;
+    position: absolute;
+    top:2.27rem;left:0;
+    padding-left: 2.25rem;
+    color: #fff;
+    text-align: left;
+    font-family: "San Francisco Display";
+    font-size: 0.6rem;
+}
+.stadium .mask .lijibox .yinhang{
+    width: 6.28rem;height: 0.87rem;
+    background: url("../../static/image/gxq/gxqbg_06.png") center center no-repeat;
+    background-size: cover;
+    margin: 0.26rem auto;
+    margin-top: 3.77rem;
+    padding-left: 0.45rem;
+}
+.stadium .mask .lijibox .yinhang .logo{
+    width: 0.44rem;height:0.44rem;
+    float: left;
+    margin-top: 0.2rem;
+    margin-right: 0.17rem;
+}
+.stadium .mask .lijibox .yinhang .yh2{
+    float: left;
+}
+.stadium .mask .lijibox .yinhang .title1{
+    font-size: 0.24rem;font-family: 苹方;
+    font-weight: bold;
+    color: #777777;
+}
+.lijiBtn{
+    width: 4.2rem;height: 0.76rem;margin:0 auto;
+    background: url("../../static/image/gxq/gxqbg_10.png") center center no-repeat;
+    background-size: 100%;
+}
