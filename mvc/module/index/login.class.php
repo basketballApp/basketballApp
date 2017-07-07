@@ -1,67 +1,70 @@
 <?php
 class login extends indexMain{
+    function init(){
+        $this->smarty->display("xhyspAfter.html");
+    }
     function reg(){
-            $mname=$_POST["mname"];
-            if(empty($mname)){
+        $this->smarty->display("xhyreg.html");
+            $uname=$_POST["uname"];
+            if(empty($uname)){
                 echo "用户不能为空";
                 exit;
             }
-            $db=new db("member");
-            $result=$db->where("mname='{$mname}'")->select();
+            $db=new db("user");
+            $result=$db->where("uname='{$uname}'")->select();
             if(count($result)>0){
                 echo "用户名存在";
                 exit;
             }
-            $mpass=$_POST["mpass"];
-            if(empty($mpass)){
+            $upass=$_POST["upass"];
+            if(empty($upass)){
                 echo "密码不能为空";
                 exit;
             }
-            $mpass1=$_POST["mpass1"];
-            if(empty($mpass)){
+            $upass1=$_POST["upass1"];
+            if(empty($upass)){
                 echo "确认密码不能为空";
                 exit;
             }
-            if($mpass!=$mpass1){
+            if($upass!=$upass1){
                 echo "两次密码不一致";
                 exit;
             }
-            $mpass=md5($mpass);
+            $upass=md5($upass);
 
-            if($db->insert("mname='{$mname}',mpass='{$mpass}'")){
-                echo "ok";
+            if($db->insert("uname='{$uname}',upass='{$upass}'")){
+                echo "<script>location.href='index.php?m=index&f=login&a=willLogin'</script>";
                 exit;
             }
     }
     function willLogin(){
-        $mname=$_POST["mname"];
-        if(empty($mname)){
+        $this->smarty->display("xhylogin.html");
+        $uname=$_POST["uname"];
+        if(empty($uname)){
             echo "用户不能为空";
             exit;
         }
-        $mpass=$_POST["mpass"];
-        if(empty($mpass)){
+        $upass=$_POST["upass"];
+        if(empty($upass)){
             echo "密码不能为空";
             exit;
         }
-        $db=new db("member");
+        $db=new db("user");
         $result=$db->select();
         foreach ($result as $v){
-            if($v["mname"]==$mname){
-                if($v["mpass"]==md5($mpass)){$this->session->set("indexLogin","yes");
-                    $this->session->set("mname",$v["mname"]);
-                    $this->session->set("mid",$v["mid"]);
-                    echo "ok,即将跳转....";
+            if($v["uname"]==$uname){
+                if($v["upass"]==md5($upass)){$this->session->set("indexLogin","yes");
+                    $this->session->set("uname",$v["uname"]);
+                    $this->session->set("uid",$v["uid"]);
+                    echo "<script>location.href='index.php?m=index&f=index&a=qzzindex'</script>";
                     exit();
                 }
             }
         }
-
         echo "用户名或密码有误";
-
     }
     function logout(){
         $this->session->clear();
-        echo "ok";
+        echo "<script>location.href='index.php?m=index&f=login&a=willLogin'</script>";
     }
 }

@@ -2,8 +2,16 @@
 class index extends indexMain {
     function init(){
         $this->smarty->assign("login",$this->session->get("indexLogin"));
-        $this->smarty->assign("mname",$this->session->get("mname"));
-        $this->smarty->display("xhysplash.html");
+        $this->smarty->assign("uname",$this->session->get("uname"));
+        if($this->session->get("uname")){
+            $this->smarty->display("qzzindex.html");
+        }else{
+            $this->smarty->display("xhysplash.html");
+        }
+
+    }
+    function qzzindex(){
+        $this->smarty->display("qzzindex.html");
     }
 //    function code(){
 //        $obj=new code();

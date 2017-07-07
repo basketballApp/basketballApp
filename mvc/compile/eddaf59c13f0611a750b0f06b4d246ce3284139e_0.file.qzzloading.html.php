@@ -1,15 +1,50 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-07 12:18:03
+  from "E:\wamp\www\basketball\basketballApp\mvc\template\index\qzzloading.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_595f5fdb2ee3e1_95236726',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'eddaf59c13f0611a750b0f06b4d246ce3284139e' => 
+    array (
+      0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\qzzloading.html',
+      1 => 1499422669,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:bottom.html' => 1,
+  ),
+),false)) {
+function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <link rel="stylesheet" href="{CSS_PATH}/base.css">
-    <link rel="stylesheet" href="{CSS_PATH}/qzzloading.css">
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/mui.js"></script>
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <link rel="stylesheet" href="{CSS_PATH}/mui.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/qzzloading.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/mui.js"><?php echo '</script'; ?>
+>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/iconfont.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/mui.css">
 </head>
 <body>
 <!--头部开始-->
@@ -104,7 +139,8 @@
         <div class="place">
             <div class="title">
                 <div class="pics">
-                    <img src="{IMG_PATH}/qzzs-personal.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzs-personal.png" alt="">
                 </div>
                 <div class="intro">
                     <a href="#" class="user">附近球场</a>
@@ -113,29 +149,36 @@
             </div>
             <div class="content">
                 <a href="#" class="bigpic">
-                    <img src="{IMG_PATH}/qzzss1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzss1.png" alt="">
                 </a>
                 <a href="#" class="smallpic">
-                    <img src="{IMG_PATH}/qzzss2.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzss2.png" alt="">
                 </a>
                 <a href="#" class="bigpics" >
-                    <img src="{IMG_PATH}/qzzss3.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzss3.png" alt="">
                 </a>
                 <a href="#" class="smpics" >
-                    <img src="{IMG_PATH}/qzzss4.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzss4.png" alt="">
                 </a>
                 <a href="#" class="smpics" >
-                    <img src="{IMG_PATH}/qzzss5.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzss5.png" alt="">
                 </a>
                 <a href="#" class="smpics" style="margin: 0" >
-                    <img src="{IMG_PATH}/qzss6.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzss6.png" alt="">
                 </a>
             </div>
             <div class="lists">
                 <div class="list-main">
                     <div class="list">
                         <a href="" class="depics">
-                            <img src="{IMG_PATH}/qzzdetail1.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/qzzdetail1.png" alt="">
                         </a>
                         <div class="deintros">
                             <a href="" class="titlechi de">
@@ -150,15 +193,18 @@
                             </div>
                             <div class="comment de">
                                 <div class="zan com">
-                                    <img src="{IMG_PATH}/qzzzan.png" alt="">
+                                    <img src="<?php echo IMG_PATH;?>
+/qzzzan.png" alt="">
                                     <span>5602</span>
                                 </div>
                                 <div class="here com">
-                                    <img src="{IMG_PATH}/qzzgohere.png" alt="">
+                                    <img src="<?php echo IMG_PATH;?>
+/qzzgohere.png" alt="">
                                     <span>到这去</span>
                                 </div>
                                 <div class="xing com">
-                                    <img src="{IMG_PATH}/qzzcollect.png" alt="">
+                                    <img src="<?php echo IMG_PATH;?>
+/qzzcollect.png" alt="">
                                     <span>5602</span>
                                 </div>
                             </div>
@@ -166,7 +212,8 @@
                     </div>
                     <div class="list">
                         <a href="" class="depics">
-                            <img src="{IMG_PATH}/qzzdetail1.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/qzzdetail1.png" alt="">
                         </a>
                         <div class="deintros">
                             <a href="" class="titlechi de">
@@ -181,15 +228,18 @@
                             </div>
                             <div class="comment de">
                                 <div class="zan com">
-                                    <img src="{IMG_PATH}/qzzzan.png" alt="">
+                                    <img src="<?php echo IMG_PATH;?>
+/qzzzan.png" alt="">
                                     <span>5602</span>
                                 </div>
                                 <div class="here com">
-                                    <img src="{IMG_PATH}/qzzgohere.png" alt="">
+                                    <img src="<?php echo IMG_PATH;?>
+/qzzgohere.png" alt="">
                                     <span>到这去</span>
                                 </div>
                                 <div class="xing com">
-                                    <img src="{IMG_PATH}/qzzcollect.png" alt="">
+                                    <img src="<?php echo IMG_PATH;?>
+/qzzcollect.png" alt="">
                                     <span>5602</span>
                                 </div>
                             </div>
@@ -201,13 +251,16 @@
     </div>
 <!--附近球场结束-->
 <!--底部开始-->
-{include "bottom.html"}
+<?php $_smarty_tpl->_subTemplateRender("file:bottom.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
 <!--底部结束-->
 <!--loading开始-->
     <div class="mask" style="display: none">
         <div class="load">
             <div class="imgs">
-                <img src="{IMG_PATH}/qzzloading.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/qzzloading.png" alt="">
             </div>
             <div class="font"><i>LOADING···</i></div>
         </div>
@@ -218,16 +271,20 @@
     <div class="loads">
         <div class="error">
             <div class="imgs">
-                <img src="{IMG_PATH}/qzzlanqiu.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/qzzlanqiu.png" alt="">
             </div>
             <div class="line1 line">
-                <img src="{IMG_PATH}/qzz/qzzline1.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/qzz/qzzline1.png" alt="">
             </div>
             <div class="line2 line">
-                <img src="{IMG_PATH}/qzz/qzzline2.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/qzz/qzzline2.png" alt="">
             </div>
             <div class="line3 line">
-                <img src="{IMG_PATH}/qzz/qzzline3.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/qzz/qzzline3.png" alt="">
             </div>
             <div class="intros">
                 <div class="chi">对不起，网络出错了</div>
@@ -260,7 +317,8 @@
         <div class="alert">
             <div class="title">
                 <div class="pics">
-                    <img src="{IMG_PATH}/qzzs-personal.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzs-personal.png" alt="">
                 </div>
                 <div class="intro">
                     <a href="#" class="user">篮球大神</a>
@@ -269,7 +327,8 @@
             </div>
             <div class="title">
                 <div class="pics">
-                    <img src="{IMG_PATH}/qzzuser1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzuser1.png" alt="">
                 </div>
                 <div class="intro">
                     <a href="#" class="user">赤脚大仙</a>
@@ -278,7 +337,8 @@
             </div>
             <div class="title">
                 <div class="pics">
-                    <img src="{IMG_PATH}/qzzuser2.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/qzzuser2.png" alt="">
                 </div>
                 <div class="intro">
                     <a href="#" class="user">得分后卫</a>
@@ -289,4 +349,5 @@
     </div>
 <!--搜索弹出结束-->
 </body>
-</html>
+</html><?php }
+}

@@ -8,7 +8,6 @@ define("APP_PATH",ROOT_PATH."basketball/basketballApp/mvc");
 define("LIBS_PATH",APP_PATH."/libs");
 define("MODULE_PATH",APP_PATH."/module");
 define("TPL_PATH",APP_PATH."/template");
-
 //define("URL_ROOT",$server["SERVER_PROTOCOL"]);
 //截取路径
 //substr() 函数返回/截取字符串的一部分   substr(string,start,length)

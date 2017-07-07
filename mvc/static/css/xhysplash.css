@@ -28,5 +28,5 @@ a:hover{
     font-size: 0.3rem;
     font-weight: 600;
     box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #000 ;
-    display: none;
+    /*display: none;*/
 }

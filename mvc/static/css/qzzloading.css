@@ -480,49 +480,6 @@ header .header-main{
     margin-top: -0.1rem;
 }
 
-/*底部开始*/
-footer{
-    width: 100%;
-    height: 0.98rem;
-    background: #f2261c;
-    position: fixed;
-    bottom:0;left:0;
-    marign:auto;
-    padding: 0.06rem 0;
-}
-.footer-main{
-    width: 6.08rem;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-.footer-main .setting{
-    width: 0.7rem;
-    height: 100%;
-}
-.footer-main .setting .pics{
-    width: 0.62rem;
-    height: 0.62rem;
-    border-radius: 50%;
-    background: #fff;
-    font-size:0.4rem;
-    color: #5d5c57;
-    font-weight: 800;
-    text-align: center;
-    line-height: 0.62rem;
-    float: left;
-    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0,0,0,0.1);
-}
-.footer-main .setting .intros{
-    width: 0.62rem;
-    float: left;
-    margin-top: 0.04rem;
-    font-size: 0.18rem;
-    text-align: center;
-    line-height: 0.18rem;
-    color: #fff;
-}
 /*loading开始*/
 .mask{
     width: 100%;

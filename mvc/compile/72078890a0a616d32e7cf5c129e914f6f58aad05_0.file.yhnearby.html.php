@@ -1,13 +1,40 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-07 12:21:12
+  from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhnearby.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_595f6098f223a2_86037678',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '72078890a0a616d32e7cf5c129e914f6f58aad05' => 
+    array (
+      0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhnearby.html',
+      1 => 1499422776,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:bottom.html' => 1,
+  ),
+),false)) {
+function content_595f6098f223a2_86037678 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" >
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/base.css">
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <link rel="stylesheet" href="{CSS_PATH}/yhnearby.css">
-    <script src="{JS_PATH}/rem.js"></script>
+    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="../../static/css/iconfont.css">
+    <link rel="stylesheet" href="../../static/css/yhnearby.css">
+    <?php echo '<script'; ?>
+ src="../../static/js/rem.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--header start-->
@@ -164,7 +191,10 @@
 </section>
 <!--section end-->
 <!--底部开始-->
-{include "bottom.html"}
+<?php $_smarty_tpl->_subTemplateRender("file:bottom.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+
 <!--底部结束-->
 </body>
-</html>
+</html><?php }
+}

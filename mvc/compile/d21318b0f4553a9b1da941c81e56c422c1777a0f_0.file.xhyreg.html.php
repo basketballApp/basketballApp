@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-07 11:07:19
+  from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyreg.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_595f4f47485ec8_23722418',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd21318b0f4553a9b1da941c81e56c422c1777a0f' => 
+    array (
+      0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyreg.html',
+      1 => 1499418438,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_595f4f47485ec8_23722418 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,19 +29,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/base.css">
     <!--<link rel="stylesheet" href="../../static/css/mui.min.css">-->
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <link rel="stylesheet" href="{CSS_PATH}/xhyreg.css">
-    <link rel="stylesheet" href="{CSS_PATH}/animate.css">
-    <script src="{JS_PATH}/mui.min.js"></script>
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/jQuery.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/iconfont.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/xhyreg.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/animate.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/mui.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header>
     <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
-    <img src="{IMG_PATH}/xhyregbg.png" alt="">
+    <img src="<?php echo IMG_PATH;?>
+/xhyregbg.png" alt="">
 </header>
 <div class="box">
     <form method="post" action="index.php?m=index&f=login&a=reg">
@@ -53,10 +91,15 @@
     </form>
     <div class="photo">
         <div class="ph-rect">
-            <img src="{IMG_PATH}/xhyphoto.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/xhyphoto.png" alt="">
         </div>
     </div>
 </div>
 </body>
-<script src="{JS_PATH}/xhyreg.js"></script>
-</html>
+<?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/xhyreg.js"><?php echo '</script'; ?>
+>
+</html><?php }
+}

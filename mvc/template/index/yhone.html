@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../../static/css/base.css">
-    <link rel="stylesheet" href="../../static/css/iconfont.css">
-    <link rel="stylesheet" href="../../static/css/yhone.css">
-    <script src="../../static/js/rem.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}/base.css">
+    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
+    <link rel="stylesheet" href="{CSS_PATH}/yhone.css">
+    <script src="{JS_PATH}/rem.js"></script>
 </head>
 <body>
 <!--header start-->
@@ -24,13 +24,13 @@
 <!--banner start-->
 <div class="banner">
     <a href="#" class="ba-yh">
-        <img src="../../static/image/yhbanner.png" alt="">
+        <img src="{IMG_PATH}/yhbanner.png" alt="">
     </a>
-    <a href="#" class="tou" style="background-image: url('../../static/image/yhtou.png');background-position: center;background-size: contain;">
-        <div class="img" style="background-image: url('../../static/image/yhgeren2.png');background-position: center;background-size: contain; "></div>
+    <a href="#" class="tou" style="background-image: url('{IMG_PATH}/yhtou.png');background-position: center;background-size: contain;">
+        <div class="img" style="background-image: url({IMG_PATH}/yhgeren2.png');background-position: center;background-size: contain; "></div>
     </a>
     <div class="bedeck">
-        <img src="../../static/image/yhdian.png" alt="">
+        <img src="{IMG_PATH}/yhdian.png" alt="">
     </div>
 </div>
 <!--banner end-->
@@ -40,11 +40,11 @@
         <p class="top">LANQIUDASHENLUN</p>
         <span class="name">篮球大神周杰伦</span>
         <div class="medal">
-            <img src="../../static/image/yhxunzhang.png" alt="">
-            <img src="../../static/image/yhxunzhang.png" alt="">
-            <img src="../../static/image/yhxunzhang.png" alt="">
-            <img src="../../static/image/yhxunzhang.png" alt="">
-            <img src="../../static/image/yhxunzhang.png" alt="">
+            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
+            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
+            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
+            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
+            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
         </div>
         <p class="referral">喜欢篮球又喜欢周杰伦的男子</p>
     </div>
@@ -55,10 +55,10 @@
     <div class="section-main">
         <div class="main-one">
             <a href="">
-                <img src="../../static/image/yhone.png" alt="">
+                <img src="{IMG_PATH}/yhone.png" alt="">
             </a>
             <a href="">
-                <img src="../../static/image/yhown.png" alt="">
+                <img src="{IMG_PATH}/yhown.png" alt="">
             </a>
         </div>
         <ul class="list">
@@ -68,10 +68,10 @@
                         </div>
                     </div>
                     <div class="seri">
-                        <div class="seri-tou">
-                            <span class="title">个人中心</span>
+                        <a href="index.php?m=index&f=member&a=own" class="seri-tou">
+                            <span  class="title">个人中心</span>
                             <span class="mintitle">LIDAPENGQIUYOU</span>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
@@ -80,10 +80,10 @@
                         </div>
                     </div>
                     <div class="seri">
-                        <div class="seri-tou">
+                        <a href="index.php?m=index&f=order" class="seri-tou">
                             <span class="title">我的订单</span>
                             <span class="mintitle">LIDAPENGQIUYOU</span>
-                        </div>
+                        </a>
                     </div>
                 </li>
                 <li>
@@ -92,10 +92,10 @@
                         </div>
                     </div>
                     <div class="seri">
-                        <div class="seri-tou">
-                            <span class="title">意见反馈</span>
+                        <a href="index.php?m=index&f=friends" class="seri-tou">
+                            <span class="title">我的好友</span>
                             <span class="mintitle">LIDAPENGQIUYOU</span>
-                        </div>
+                        </a>
                     </div>
                 </li>
             <li>
@@ -104,10 +104,10 @@
                     </div>
                 </div>
                 <div class="seri">
-                    <div class="seri-tou">
-                        <span class="title">关于我们</span>
+                    <a href="index.php?m=index&f=setting" class="seri-tou">
+                        <span class="title">更多设置</span>
                         <span class="mintitle">LIDAPENGQIUYOU</span>
-                    </div>
+                    </a>
                 </div>
             </li>
         </ul>
@@ -118,7 +118,7 @@
 <footer>
     <div class="loginout">
         <span class="iconfont icon-shouji"></span>
-        <a href="">
+        <a href="index.php?m=index&f=login&a=logout">
             退出登录
             <span class="details">TUICHUDENGLU</span>
         </a>
