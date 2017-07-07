@@ -9,7 +9,7 @@ class db{
     private $pass;   //密码
     private $port;   // 端口号
     private $database;    //数据库
-    private $db;    //连接的泽源
+    public $db;    //连接的泽源
     function __construct($table){
         $config=require APP_PATH."/config.php";
         $this->host=$config["database"]["host"];

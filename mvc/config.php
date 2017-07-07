@@ -4,7 +4,7 @@ return array(
       "host"=>"localhost",
       "user"=>"root",
       "pass"=>"",
-      "database"=>"facebook",
+      "database"=>"item",
       "port"=>"3306"
   )
 );

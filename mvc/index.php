@@ -31,6 +31,7 @@ require_once LIBS_PATH."/smarty/Smarty.class.php";
 require_once LIBS_PATH."/main.class.php";
 require_once LIBS_PATH."/code.class.php";
 require_once LIBS_PATH."/session.class.php";
+include LIBS_PATH."/indexMain.class.php";
 $obj=new route();
 $obj->getInfo();
 

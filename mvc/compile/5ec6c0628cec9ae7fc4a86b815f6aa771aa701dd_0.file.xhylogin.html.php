@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-07 04:18:04
+  from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhylogin.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_595eef5c55fbe9_08116556',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5ec6c0628cec9ae7fc4a86b815f6aa771aa701dd' => 
+    array (
+      0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhylogin.html',
+      1 => 1499393883,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_595eef5c55fbe9_08116556 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,14 +29,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/base.css">
     <!--<link rel="stylesheet" href="../../static/css/mui.min.css">-->
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <link rel="stylesheet" href="{CSS_PATH}/xhylogin.css">
-    <link rel="stylesheet" href="{CSS_PATH}/animate.css">
-    <script src="{JS_PATH}/mui.min.js"></script>
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/jQuery.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/iconfont.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/xhylogin.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/animate.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/mui.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
     <style>
         body{
             font-family: '微软雅黑';
@@ -79,7 +116,8 @@
 <body>
 <header>
     <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
-    <img src="{IMG_PATH}/xhylogin.png" alt="">
+    <img src="<?php echo IMG_PATH;?>
+/xhylogin.png" alt="">
 </header>
 <div class="box">
     <form>
@@ -113,7 +151,8 @@
     </form>
     <div class="photo">
         <div class="ph-rect">
-            <img src="{IMG_PATH}/xhyphoto.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/xhyphoto.png" alt="">
         </div>
     </div>
 </div>
@@ -135,10 +174,15 @@
                     </div>
                     <p style="color:#000;">对不起！网络出错了！请重新登录</p>
             </div>
-            <img src="{IMG_PATH}/xhyloadBoy.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/xhyloadBoy.png" alt="">
         </div>
     </form>
 </div>
 </body>
-<script src="{JS_PATH}/xhylogin.js"></script>
-</html>
+<?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/xhylogin.js"><?php echo '</script'; ?>
+>
+</html><?php }
+}

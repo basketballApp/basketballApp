@@ -1,0 +1,32 @@
+a:hover{
+    text-decoration: none;
+    color:#000;
+}
+.btnbox{
+    height:0.40rem;
+    bottom:0.3rem;
+
+}
+.btnbox .btns{
+    width: 0.22rem;
+    height:0.22rem;
+}
+.start{
+    width: 2.5rem;
+    height:0.6rem;
+    background: #fff;
+    z-index: 999;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0.6rem;
+    margin: auto;
+    border-radius:0.5rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color:#360D48;
+    font-size: 0.3rem;
+    font-weight: 600;
+    box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #000 ;
+    display: none;
+}
