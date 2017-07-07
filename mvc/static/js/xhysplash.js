@@ -1,0 +1,1 @@
+$(".start").addClass('animated tada');
