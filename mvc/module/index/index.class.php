@@ -1,26 +1,17 @@
 <?php
-class index extends main{
+class index extends indexMain {
     function init(){
-        $obj=new db("category");
-        //1.查询数据
-        $result=$obj->setField("lists.title,message.con")->where("lists.id=message.lid")->join("lists,message");
-
-       /* $str="";
-        foreach($result as $v){
-            $str.="<dt>";
-            $str.="<dl>".$v['title']."</dl>";
-            $str.="<dd>".$v['con']."</dd>";
-            $str.="</dt>";
-        }*/
-
-        /*$smarty = new Smarty();
-        $smarty->setTemplateDir("template");
-        $smarty->setCompileDir("compile");*/
-        $this->smarty->assign('result',$result);
+        $this->smarty->assign("login",$this->session->get("indexLogin"));
+        $this->smarty->assign("mname",$this->session->get("mname"));
         $this->smarty->display("index.html");
+    }
 
-        //2.指定视图
-        //3.在相应的视图里面放入相应的数据
-        //include TPL_PATH."/index.html";
+    function code(){
+        $obj=new code();
+        $obj->codeUrl="demo.ttf";
+        $obj->width=120;
+        $obj->height=30;
+        $obj->output();
+        $this->session->set("code",$obj->current);
     }
 }
