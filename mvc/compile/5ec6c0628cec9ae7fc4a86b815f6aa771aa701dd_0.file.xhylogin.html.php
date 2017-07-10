@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 06:27:03
+/* Smarty version 3.1.30, created on 2017-07-10 03:26:26
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhylogin.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f0d9719cf29_76621228',
+  'unifunc' => 'content_5962d7c2b48546_76763267',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ec6c0628cec9ae7fc4a86b815f6aa771aa701dd' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhylogin.html',
-      1 => 1499401542,
+      1 => 1499649985,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f0d9719cf29_76621228 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962d7c2b48546_76763267 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -50,68 +50,6 @@ function content_595f0d9719cf29_76621228 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /jQuery.js"><?php echo '</script'; ?>
 >
-    <style>
-        body{
-            font-family: '微软雅黑';
-        }
-        header{
-            width: 7.5rem;
-            height:13.34rem;
-            position:absolute;
-            left:0;
-            top:0;
-        }
-        header img{
-            width: 100%;
-            height:100%;
-        }
-        .back{
-            display: block;
-            width:0.48rem;
-            height:0.48rem;
-            font-size: 0.48rem;
-            position: absolute;
-            left:0.25rem;
-            top:0.51rem;
-            z-index: 999;
-            color:#fff;
-        }
-        .box{
-            width: 100%;
-            height:5.03rem;
-            position: absolute;
-            left:0;
-            top: 3.78rem;
-            padding: 0 0.5rem;
-        }
-        form{
-            width: 6.52rem;
-            height:4rem;
-            position: absolute;
-            left:0;
-            right:0;
-            bottom:0;
-            margin: auto;
-            background: #fff;
-            border-radius: 0.7rem;
-        }
-        .kuang{
-            width: 5.61rem;
-            height:3.6rem;
-            margin: 0 auto;
-            margin-top: 0.4rem;
-        }
-        .kuang .user{
-            width: 100%;
-            height:0.93rem;
-            float: left;
-            border: 1px solid #bbbbbc;
-        }
-        .kuang input{
-            background: none;
-            border:none;
-        }
-    </style>
 </head>
 <body>
 <header>
