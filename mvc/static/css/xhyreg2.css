@@ -5,7 +5,7 @@ body {
     overflow: hidden;
 }
 
-input:focus {
+input:focus,textarea:focus {
     outline: none;
 }
 
@@ -107,7 +107,7 @@ form {
     color: #35c23e;
 }
 
-.kuang .user > input {
+.kuang .user > input,.kuang .user textarea {
     background: none;
     border: none;
     width: 100%;
@@ -118,7 +118,6 @@ form {
     font-size: 0.25rem;
     color: #ccc;
 }
-
 .kuang .false {
     position: absolute;
     width: 100%;
@@ -248,11 +247,57 @@ form {
     height:0.5rem;
     /*background: red;*/
     margin-top: 0.6em;
-    padding-left: 2.17rem;
+    padding-left: 1.9rem;
+    padding-top: 0.1rem;
+}
+.step .passroll{
+    width: 0.44rem;
+    height: 0.3rem;
+    float: left;
 }
 .step .s-roll{
-    width: 0.24rem;
-    height:0.24rem;
+    width: 0.3rem;
+    height:0.3rem;
     border-radius: 50%;
-    background:#d9dbdc;
+    background:#b2b4b5;
+    position: relative;
+    float: left;
+}
+.step .s-roll .sm-roll{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.2rem;
+    height:0.2rem;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background: #d9dbdc;
+    border-radius: 50%;
+    z-index: 5;
+}
+.step .s-roll .sm-roll .sx-roll{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.1rem;
+    height:0.1rem;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%;
+}
+.step .s-line{
+    width: 1.34rem;
+    height:0.02rem;
+    float: left;
+    background: #a8a8a8;
+    margin-top: 0.14rem;
+    margin-left: -0.1rem;
+    z-index: 1;
 }
