@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 03:10:07
+/* Smarty version 3.1.30, created on 2017-07-10 06:01:37
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhsetting.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962d3ef850876_55674400',
+  'unifunc' => 'content_5962fc21651209_94169856',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '319d36e524a0b3993adb3fc8a1abcd2a6c9137cb' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhsetting.html',
-      1 => 1499421700,
+      1 => 1499657055,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962d3ef850876_55674400 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962fc21651209_94169856 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,6 +38,19 @@ function content_5962d3ef850876_55674400 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
+        $(function() {
+            $(".back").click(function () {
+                history.go(-1);
+            })
+        })
+    <?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--header start-->
@@ -45,8 +58,8 @@ function content_5962d3ef850876_55674400 (Smarty_Internal_Template $_smarty_tpl)
     <div class="header-main">
         <a href="#" class="iconfont icon-fanhui back"></a>
         <div class="header-p">
-            <span>更多设置</span>
-            <span class="he-span">SOUSU JIEGUOSOUSU</span>
+            <span>··&nbsp;更多设置&nbsp;··</span>
+            <span class="he-span">GENGDUO  SHEZHI</span>
         </div>
     </div>
 </header>

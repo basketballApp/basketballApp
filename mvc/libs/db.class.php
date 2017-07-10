@@ -28,10 +28,11 @@ class db{
         $this->opts["order"]="";
         $this->opts["limit"]="";
         $this->opts["val"]="";
+        $this->opts["not"]="";
         $this->table=$table;
     }
     function select(){
-        $sql="select ".$this->opts["field"]." from ".$this->table." ".$this->opts["where"]." ".$this->opts["order"]." ".$this->opts["limit"];
+        $sql="select ".$this->opts["field"]." from ".$this->table." ".$this->opts["where"]." ".$this->opts["not"]." ".$this->opts["order"]." ".$this->opts["limit"];
         $result=$this->db->query($sql);
         $array=array();
         while($row=$result->fetch_assoc()){
@@ -45,6 +46,10 @@ class db{
     }
     function where($params){
         $this->opts["where"]="where ".$params;
+        return $this;
+    }
+    function not($params){
+        $this->opts["not"]="not ".$params;
         return $this;
     }
     function order($params){
@@ -104,6 +109,8 @@ class db{
         $sql="select ".$this->opts["field"]." from ".$tables." ".$this->opts["where"]." ".$this->opts["order"]." ".$this->opts["limit"];
         $result=$this->db->query($sql);
         $arr=array();
+//        var_dump($arr);
+//        exit;
         while($row=$result->fetch_assoc()){
             $arr[]=$row;
         }

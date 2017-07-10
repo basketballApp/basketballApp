@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 11:01:43
+/* Smarty version 3.1.30, created on 2017-07-10 09:52:05
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyspAfter.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f4df7a94668_49627385',
+  'unifunc' => 'content_59633225731ba1_21124740',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '446da80c570a7abfa4175ed02abb36896fc234e6' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyspAfter.html',
-      1 => 1499418102,
+      1 => 1499673123,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f4df7a94668_49627385 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59633225731ba1_21124740 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -59,10 +59,10 @@ function content_595f4df7a94668_49627385 (Smarty_Internal_Template $_smarty_tpl)
 </header>
 <div class="box">
     <div class="login jiao">
-        <a class="in" href="index.php?m=index&f=login&a=willLogin">登录</a>
+        <a class="in" href="index.php?m=index&f=login&a=selogin">登录</a>
     </div>
     <div class="reg jiao">
-        <a href="index.php?m=index&f=login&a=reg" class="in">注册</a>
+        <a href="index.php?m=index&f=login&a=sereg" class="in">注册</a>
     </div>
 </div>
 </body>

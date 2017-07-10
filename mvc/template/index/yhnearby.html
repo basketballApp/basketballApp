@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{CSS_PATH}/qzzmain.css">
     <script src="{JS_PATH}/rem.js"></script>
     <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/yhadd.js"></script>
     <script>
         $(function() {
             $(".back").click(function () {
@@ -52,8 +53,11 @@
                     </div>
                     <span class="mintitle">{$v["yname"]}</span>
                     <p class="detail">身高:{$v["height"]}  体重:{$v["weight"]}  位置:{$v["role"]}</p>
-                    <div class="attention">
-                        关注
+                    <div class="attention" mfid={$v["uid"]} uid={$uid} >
+                        {foreach $results as $f}
+                            {if strpos($f,{$uid})}已关注{/if}
+                            <!--{else} 未关注 {/else}-->
+                        {/foreach}
                     </div>
                 </div>
                 <div class="seri-hot">

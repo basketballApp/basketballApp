@@ -4,7 +4,6 @@ class login extends indexMain{
         $this->smarty->display("xhyspAfter.html");
     }
     function reg(){
-        $this->smarty->display("xhyreg.html");
             $uname=$_POST["uname"];
             if(empty($uname)){
                 echo "用户不能为空";
@@ -37,8 +36,13 @@ class login extends indexMain{
                 exit;
             }
     }
-    function willLogin(){
+    function selogin(){
         $this->smarty->display("xhylogin.html");
+    }
+    function sereg(){
+        $this->smarty->display("xhyreg.html");
+    }
+    function willLogin(){
         $uname=$_POST["uname"];
         if(empty($uname)){
             echo "用户不能为空";

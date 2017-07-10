@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.30, created on 2017-07-10 05:11:16
-=======
-/* Smarty version 3.1.30, created on 2017-07-07 12:25:38
->>>>>>> b5de5d3a1bbf792d2944f8a8ac35b1632230393c
+/* Smarty version 3.1.30, created on 2017-07-10 12:38:01
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhnearby.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-<<<<<<< HEAD
-  'unifunc' => 'content_5962f05492dab8_05338738',
-=======
-  'unifunc' => 'content_595f61a27e2b83_68244717',
->>>>>>> b5de5d3a1bbf792d2944f8a8ac35b1632230393c
+  'unifunc' => 'content_5963590942d813_96494517',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72078890a0a616d32e7cf5c129e914f6f58aad05' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhnearby.html',
-<<<<<<< HEAD
-      1 => 1499656273,
-=======
-      1 => 1499422996,
->>>>>>> b5de5d3a1bbf792d2944f8a8ac35b1632230393c
+      1 => 1499683079,
       2 => 'file',
     ),
   ),
@@ -33,11 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5962f05492dab8_05338738 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_595f61a27e2b83_68244717 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> b5de5d3a1bbf792d2944f8a8ac35b1632230393c
+function content_5963590942d813_96494517 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -51,7 +35,6 @@ function content_595f61a27e2b83_68244717 (Smarty_Internal_Template $_smarty_tpl)
 /iconfont.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /yhnearby.css">
-<<<<<<< HEAD
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /qzzmain.css">
     <?php echo '<script'; ?>
@@ -63,6 +46,10 @@ function content_595f61a27e2b83_68244717 (Smarty_Internal_Template $_smarty_tpl)
 /jQuery.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/yhadd.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
 >
         $(function() {
             $(".back").click(function () {
@@ -70,11 +57,6 @@ function content_595f61a27e2b83_68244717 (Smarty_Internal_Template $_smarty_tpl)
             })
         })
     <?php echo '</script'; ?>
-=======
-    <?php echo '<script'; ?>
- src="<?php echo JS_PATH;?>
-/rem.js"><?php echo '</script'; ?>
->>>>>>> b5de5d3a1bbf792d2944f8a8ac35b1632230393c
 >
 </head>
 <body>
@@ -125,8 +107,23 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
   体重:<?php echo $_smarty_tpl->tpl_vars['v']->value["weight"];?>
   位置:<?php echo $_smarty_tpl->tpl_vars['v']->value["role"];?>
 </p>
-                    <div class="attention">
-                        关注
+                    <div class="attention" mfid=<?php echo $_smarty_tpl->tpl_vars['v']->value["uid"];?>
+ uid=<?php echo $_smarty_tpl->tpl_vars['uid']->value;?>
+ >
+                        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['results']->value, 'f');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['f']->value) {
+?>
+                        <?php echo $_smarty_tpl->tpl_vars['f']->value["d"];?>
+
+                          关注
+                        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
                     </div>
                 </div>
                 <div class="seri-hot">
