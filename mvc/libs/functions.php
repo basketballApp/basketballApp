@@ -4,7 +4,7 @@ function e($params){
         echo "<pre>";
         var_dump($params);
         echo "</pre>";
-    }elseif (is_string($params)){
+    }else if (is_string($params)){
         echo $params;
     }
 }

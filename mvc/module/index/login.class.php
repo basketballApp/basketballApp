@@ -49,7 +49,7 @@ class login extends indexMain{
             echo "密码不能为空";
             exit;
         }
-        $db=new db("login");
+        $db=new db("user");
         $result=$db->select();
         foreach ($result as $v){
             if($v["uname"]==$uname){
