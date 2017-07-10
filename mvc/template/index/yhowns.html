@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="../../static/css/iconfont.css">
     <link rel="stylesheet" href="../../static/css/yhowns.css">
     <script src="../../static/js/rem.js"></script>
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script>
+        $(function() {
+            $(".back").click(function () {
+                history.go(-1);
+            })
+        })
+    </script>
 </head>
 <body>
 <header>
     <div class="header-main">
         <a href="#" class="iconfont icon-fanhui back"></a>
         <div class="header-p">
-            <span>个人中心</span>
+            <span>··&nbsp;个人中心&nbsp;··</span>
             <span class="he-span">GERENZHONGXIN</span>
         </div>
     </div>

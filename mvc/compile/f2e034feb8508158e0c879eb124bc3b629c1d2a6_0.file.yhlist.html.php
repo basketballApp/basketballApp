@@ -1,21 +1,56 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-07 13:25:25
+  from "F:\wamp\www\basketball\basketballApp\mvc\template\index\yhlist.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_595f6fa525f788_35745406',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f2e034feb8508158e0c879eb124bc3b629c1d2a6' => 
+    array (
+      0 => 'F:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhlist.html',
+      1 => 1499426723,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_595f6fa525f788_35745406 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/base.css">
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <link rel="stylesheet" href="{CSS_PATH}/yhlist.css">
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/jQuery.js"></script>
-    <script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/iconfont.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/yhlist.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
         $(function() {
             $(".back").click(function () {
                 history.go(-1);
             })
         })
-    </script>
+    <?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--header start-->
@@ -36,7 +71,8 @@
         <li>
             <div class="self">
                 <div class="self-tou">
-                    <img src="{IMG_PATH}/yhnew.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/yhnew.png" alt="">
                 </div>
             </div>
             <div class="seri">
@@ -53,7 +89,8 @@
         <li>
             <div class="self">
                 <div class="self-tou">
-                    <img src="{IMG_PATH}/yhall.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/yhall.png" alt="">
                 </div>
             </div>
             <div class="seri">
@@ -67,7 +104,8 @@
         <li>
             <div class="self">
                 <div class="self-tou">
-                    <img src="{IMG_PATH}/yhde.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/yhde.png" alt="">
                 </div>
             </div>
             <div class="seri">
@@ -103,7 +141,8 @@
         <ul class="frili">
             <li class="li">
                 <div class="li-left">
-                    <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
+                    <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
+/yhgeren1.png') no-repeat;background-size:contain ">
 
                     </div>
                 </div>
@@ -116,7 +155,8 @@
                     <p class="con">每天坚持锻炼身体</p>
                     <div class="video">
                         <a class="vi">
-                            <img src="{IMG_PATH}/yhvid.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/yhvid.png" alt="">
                         </a>
                         <span class="ipone iconfont icon-shouji">
 
@@ -126,7 +166,8 @@
             </li>
             <li class="li">
                 <div class="li-left">
-                    <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
+                    <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
+/yhgeren1.png') no-repeat;background-size:contain ">
 
                     </div>
                 </div>
@@ -139,7 +180,8 @@
                     <p class="con">每天坚持锻炼身体</p>
                     <div class="video">
                         <a class="vi">
-                            <img src="{IMG_PATH}/yhvid.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/yhvid.png" alt="">
                         </a>
                         <span class="ipone iconfont icon-shouji">
 
@@ -149,7 +191,8 @@
             </li>
             <li class="li">
                 <div class="li-left">
-                    <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
+                    <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
+/yhgeren1.png') no-repeat;background-size:contain ">
 
                     </div>
                 </div>
@@ -162,7 +205,8 @@
                     <p class="con">每天坚持锻炼身体</p>
                     <div class="video">
                         <a class="vi">
-                            <img src="{IMG_PATH}/yhvid.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/yhvid.png" alt="">
                         </a>
                         <span class="ipone iconfont icon-shouji">
 
@@ -202,13 +246,17 @@
     <div class="mask-main">
         <div class="banner">
             <a href="#" class="ba-yh">
-                <img src="{IMG_PATH}/yhbanner.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/yhbanner.png" alt="">
             </a>
-            <a href="#" class="tou" style="background-image: url('{IMG_PATH}/yhtou.png');background-position: center;background-size: contain;">
-                <div class="img" style="background-image: url('{IMG_PATH}/yhgeren2.png');background-position: center;background-size: contain; "></div>
+            <a href="#" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
+/yhtou.png');background-position: center;background-size: contain;">
+                <div class="img" style="background-image: url('<?php echo IMG_PATH;?>
+/yhgeren2.png');background-position: center;background-size: contain; "></div>
             </a>
             <div class="bedeck">
-                <img src="{IMG_PATH}/yhdian.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/yhdian.png" alt="">
             </div>
         </div>
         <div class="mask-title">
@@ -231,7 +279,8 @@
             </div>
             <div class="lists">
                 <div class="img">
-                    <img src="{IMG_PATH}/yhsmail.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/yhsmail.png" alt="">
                 </div>
                 <div class="title">
                     <p>粉丝</p>
@@ -241,7 +290,8 @@
             </div>
             <div class="lists">
                 <div class="img">
-                    <img src="{IMG_PATH}/yhsmail.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+/yhsmail.png" alt="">
                 </div>
                 <div class="title">
                     <p>动态</p>
@@ -254,4 +304,5 @@
 </div>
 <!--mask end-->
 </body>
-</html>
+</html><?php }
+}

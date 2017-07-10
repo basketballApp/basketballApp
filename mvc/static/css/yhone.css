@@ -12,6 +12,10 @@ header{
     font-size: 0.3rem;
     line-height: 0.88rem;
     color:#fff;
+    position:fixed;
+    top:0;left:0;
+    margin: auto;
+    z-index: 100;
 }
 .header-main{
     width: 7.02rem;
@@ -47,6 +51,8 @@ header{
 .banner{
     width: 100%;
     height: 4.44rem;
+    float: left;
+    margin-top: 0.88rem;
     position: relative;
 }
 .banner .ba-yh{

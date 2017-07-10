@@ -1,21 +1,56 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-07 13:24:53
+  from "F:\wamp\www\basketball\basketballApp\mvc\template\index\yhone.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_595f6f858cd414_94719428',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7ff694c912e70665e72cb08c5ca6d89b9b52f919' => 
+    array (
+      0 => 'F:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhone.html',
+      1 => 1499426691,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_595f6f858cd414_94719428 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}/base.css">
-    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
-    <link rel="stylesheet" href="{CSS_PATH}/yhone.css">
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/jQuery.js"></script>
-    <script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/iconfont.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/yhone.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
         $(function() {
             $(".back").click(function () {
                 history.go(-1);
             })
         })
-    </script>
+    <?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--header start-->
@@ -32,13 +67,17 @@
 <!--banner start-->
 <div class="banner">
     <a href="#" class="ba-yh">
-        <img src="{IMG_PATH}/yhbanner.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+/yhbanner.png" alt="">
     </a>
-    <a href="#" class="tou" style="background-image: url('{IMG_PATH}/yhtou.png');background-position: center;background-size: contain;">
-        <div class="img" style="background-image: url({IMG_PATH}/yhgeren2.png');background-position: center;background-size: contain; "></div>
+    <a href="#" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
+/yhtou.png');background-position: center;background-size: contain;">
+        <div class="img" style="background-image: url(<?php echo IMG_PATH;?>
+/yhgeren2.png');background-position: center;background-size: contain; "></div>
     </a>
     <div class="bedeck">
-        <img src="{IMG_PATH}/yhdian.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+/yhdian.png" alt="">
     </div>
 </div>
 <!--banner end-->
@@ -48,11 +87,16 @@
         <p class="top">LANQIUDASHENLUN</p>
         <span class="name">篮球大神周杰伦</span>
         <div class="medal">
-            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-            <img src="{IMG_PATH}/yhxunzhang.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/yhxunzhang.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/yhxunzhang.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/yhxunzhang.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/yhxunzhang.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/yhxunzhang.png" alt="">
         </div>
         <p class="referral">喜欢篮球又喜欢周杰伦的男子</p>
     </div>
@@ -63,10 +107,12 @@
     <div class="section-main">
         <div class="main-one">
             <a href="">
-                <img src="{IMG_PATH}/yhone.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/yhone.png" alt="">
             </a>
             <a href="">
-                <img src="{IMG_PATH}/yhown.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/yhown.png" alt="">
             </a>
         </div>
         <ul class="list">
@@ -134,4 +180,5 @@
 </footer>
 <!--loginout end-->
 </body>
-</html>
+</html><?php }
+}

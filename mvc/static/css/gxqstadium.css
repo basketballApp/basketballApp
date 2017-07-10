@@ -21,7 +21,7 @@ header .top .right{
     width: 1.39rem;height: 1.39rem;position: absolute;right:0.23rem;top:0;
 }
 header .top .left .ma,header .top .right .sou{
-     width: 0.69rem;height: 0.69rem;
+     width: 0.48rem;height: 0.48rem;
      position: absolute;top:0;bottom:0;margin:auto;
  }
 header .top .left .ma{
@@ -32,7 +32,7 @@ header .top .right .yuyin{
     position: absolute;left:0;right:0;top:0;bottom:0;margin:auto;
 }
 header h2{
-    font-size: 0.38rem;
+    font-size: 0.33rem;
     line-height:0.5rem;
     color: #fff;
 }
