@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 10:34:08
+/* Smarty version 3.1.30, created on 2017-07-10 03:49:42
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhown.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f47809e9bb5_21323674',
+  'unifunc' => 'content_5962dd369ae4f1_67806154',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6064bd7b760df16ab64de6aa824d0183155cd112' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhown.html',
-      1 => 1499416447,
+      1 => 1499650685,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f47809e9bb5_21323674 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962dd369ae4f1_67806154 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,6 +38,19 @@ function content_595f47809e9bb5_21323674 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
+        $(function() {
+            $(".back").click(function () {
+                history.go(-1);
+            })
+        })
+    <?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--header start-->
@@ -45,8 +58,8 @@ function content_595f47809e9bb5_21323674 (Smarty_Internal_Template $_smarty_tpl)
     <div class="header-main">
         <a href="#" class="iconfont icon-fanhui back"></a>
         <div class="header-p">
-            <span>个人中心</span>
-            <span class="he-span">GERENZHONGXIN</span>
+            <span>··&nbsp;朋友圈&nbsp;··</span>
+            <span class="he-span">PENGYOUQUAN</span>
         </div>
     </div>
 </header>

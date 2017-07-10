@@ -34,6 +34,7 @@
 <!--section start-->
 <section>
     <ul>
+        {foreach $result as $v}
         <li>
             <div class="self">
                 <div class="self-tou">
@@ -41,7 +42,7 @@
             </div>
             <div class="seri">
                 <div class="seri-tou">
-                    <span class="title">李大鹏</span>
+                    <span class="title">{$v["uname"]}</span>
                     <div class="medal">
                         <img src="{IMG_PATH}/yhxunzhang.png" alt="">
                         <img src="{IMG_PATH}/yhxunzhang.png" alt="">
@@ -49,8 +50,8 @@
                         <img src="{IMG_PATH}/yhxunzhang.png" alt="">
                         <img src="{IMG_PATH}/yhxunzhang.png" alt="">
                     </div>
-                    <span class="mintitle">LIDAPENGQIUYOU</span>
-                    <p class="detail">身高:185  体重:76KG  位置:大前锋</p>
+                    <span class="mintitle">{$v["yname"]}</span>
+                    <p class="detail">身高:{$v["height"]}  体重:{$v["weight"]}  位置:{$v["role"]}</p>
                     <div class="attention">
                         关注
                     </div>
@@ -61,114 +62,8 @@
 
             </div>
         </li>
-        <li>
-            <div class="self">
-                <div class="self-tou">
-                </div>
-            </div>
-            <div class="seri">
-                <div class="seri-tou">
-                    <span class="title">李大鹏</span>
-                    <div class="medal">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                    </div>
-                    <span class="mintitle">LIDAPENGQIUYOU</span>
-                    <p class="detail">身高:185  体重:76KG  位置:大前锋</p>
-                    <div class="attention">
-                        关注
-                    </div>
-                </div>
-                <div class="seri-hot">
-                    <img src="{IMG_PATH}/yh-hot.png" alt="">
-                </div>
+        {/foreach}
 
-            </div>
-        </li>
-        <li>
-            <div class="self">
-                <div class="self-tou">
-                </div>
-            </div>
-            <div class="seri">
-                <div class="seri-tou">
-                    <span class="title">李大鹏</span>
-                    <div class="medal">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                    </div>
-                    <span class="mintitle">LIDAPENGQIUYOU</span>
-                    <p class="detail">身高:185  体重:76KG  位置:大前锋</p>
-                    <div class="attention">
-                        关注
-                    </div>
-                </div>
-                <div class="seri-hot">
-                    <img src="{IMG_PATH}/yh-hot.png" alt="">
-                </div>
-
-            </div>
-        </li>
-        <li>
-            <div class="self">
-                <div class="self-tou">
-                </div>
-            </div>
-            <div class="seri">
-                <div class="seri-tou">
-                    <span class="title">李大鹏</span>
-                    <div class="medal">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                    </div>
-                    <span class="mintitle">LIDAPENGQIUYOU</span>
-                    <p class="detail">身高:185  体重:76KG  位置:大前锋</p>
-                    <div class="attention">
-                        关注
-                    </div>
-                </div>
-                <div class="seri-hot">
-                    <img src="{IMG_PATH}/yh-hot.png" alt="">
-                </div>
-
-            </div>
-        </li>
-        <li>
-            <div class="self">
-                <div class="self-tou">
-                </div>
-            </div>
-            <div class="seri">
-                <div class="seri-tou">
-                    <span class="title">李大鹏</span>
-                    <div class="medal">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                        <img src="{IMG_PATH}/yhxunzhang.png" alt="">
-                    </div>
-                    <span class="mintitle">LIDAPENGQIUYOU</span>
-                    <p class="detail">身高:185  体重:76KG  位置:大前锋</p>
-                    <div class="attention">
-                        关注
-                    </div>
-                </div>
-                <div class="seri-hot">
-                    <img src="{IMG_PATH}/yh-hot.png" alt="">
-                </div>
-
-            </div>
-        </li>
     </ul>
 </section>
 <!--section end-->

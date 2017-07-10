@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 11:43:09
+/* Smarty version 3.1.30, created on 2017-07-10 03:56:35
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\gxqorderDetails.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f57ad6365c6_67438930',
+  'unifunc' => 'content_5962ded362ad44_12864919',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0061cdaabfb963bb52bfdf59b24b14a6b352a32' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\gxqorderDetails.html',
-      1 => 1499420588,
+      1 => 1499650685,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f57ad6365c6_67438930 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962ded362ad44_12864919 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -34,12 +34,25 @@ function content_595f57ad6365c6_67438930 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
+        $(function() {
+            $(".left").click(function () {
+                history.go(-1);
+            })
+        })
+    <?php echo '</script'; ?>
+>
 </head>
 <body class="order">
 <header style="height: 1.02rem">
     <div class="top" style="height: 1.02rem;padding-top: 0.13rem">
-        <h2>订单详情</h2>
-        <h5>DINGDANXAINGQING</h5>
+        <h2 style="font-weight: 300">··&nbsp;订单详情&nbsp;··</h2>
+        <h5 style="font-weight: 300">DINGDANXAINGQING</h5>
         <div class="left" style="height: 1.02rem">
             <img src="<?php echo IMG_PATH;?>
 /gxq/gxqleftjt_03.png" alt="" class="ma">

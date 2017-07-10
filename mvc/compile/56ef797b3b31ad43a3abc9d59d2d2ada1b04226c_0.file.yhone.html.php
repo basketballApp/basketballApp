@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 12:00:19
+/* Smarty version 3.1.30, created on 2017-07-10 04:23:01
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhone.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f5bb34bce51_98768919',
+  'unifunc' => 'content_5962e505e391b2_01299418',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56ef797b3b31ad43a3abc9d59d2d2ada1b04226c' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhone.html',
-      1 => 1499421617,
+      1 => 1499653380,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f5bb34bce51_98768919 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962e505e391b2_01299418 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -37,6 +37,19 @@ function content_595f5bb34bce51_98768919 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
+        $(function() {
+            $(".back").click(function () {
+                history.go(-1);
+            })
+        })
+    <?php echo '</script'; ?>
 >
 </head>
 <body>
@@ -110,8 +123,8 @@ function content_595f5bb34bce51_98768919 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                     <div class="seri">
                         <a href="index.php?m=index&f=member&a=own" class="seri-tou">
-                            <span  class="title">个人中心</span>
-                            <span class="mintitle">LIDAPENGQIUYOU</span>
+                            <span  class="title">朋友圈</span>
+                            <span class="mintitle">PENGYOUQUAN</span>
                         </a>
                     </div>
                 </li>
@@ -145,8 +158,32 @@ function content_595f5bb34bce51_98768919 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
                 <div class="seri">
+                    <a href="index.php?m=index&f=upload&a=upload" class="seri-tou">
+                        <span class="title">上传头像</span>
+                        <span class="mintitle">LIDAPENGQIUYOU</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="self">
+                    <div class="self-tou">
+                    </div>
+                </div>
+                <div class="seri">
                     <a href="index.php?m=index&f=setting" class="seri-tou">
                         <span class="title">更多设置</span>
+                        <span class="mintitle">LIDAPENGQIUYOU</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="self">
+                    <div class="self-tou">
+                    </div>
+                </div>
+                <div class="seri">
+                    <a href="index.php?m=index&f=setting" class="seri-tou">
+                        <span class="title">发表动态</span>
                         <span class="mintitle">LIDAPENGQIUYOU</span>
                     </a>
                 </div>

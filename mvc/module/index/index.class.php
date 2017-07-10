@@ -8,7 +8,6 @@ class index extends indexMain {
         }else{
             $this->smarty->display("xhysplash.html");
         }
-
     }
     function qzzindex(){
         $this->smarty->display("qzzindex.html");

@@ -10,7 +10,7 @@ class login extends indexMain{
                 echo "用户不能为空";
                 exit;
             }
-            $db=new db("user");
+            $db=new db("login");
             $result=$db->where("uname='{$uname}'")->select();
             if(count($result)>0){
                 echo "用户名存在";
@@ -49,7 +49,7 @@ class login extends indexMain{
             echo "密码不能为空";
             exit;
         }
-        $db=new db("user");
+        $db=new db("login");
         $result=$db->select();
         foreach ($result as $v){
             if($v["uname"]==$uname){
