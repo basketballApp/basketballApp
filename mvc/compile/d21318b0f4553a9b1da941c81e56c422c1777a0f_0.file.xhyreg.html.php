@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 11:07:19
+/* Smarty version 3.1.30, created on 2017-07-10 03:26:43
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyreg.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f4f47485ec8_23722418',
+  'unifunc' => 'content_5962d7d3631699_99781964',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd21318b0f4553a9b1da941c81e56c422c1777a0f' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyreg.html',
-      1 => 1499418438,
+      1 => 1499649703,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f4f47485ec8_23722418 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962d7d3631699_99781964 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,7 +35,7 @@ function content_595f4f47485ec8_23722418 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /iconfont.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/xhyreg.css">
+/xhyreg2.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /animate.css">
     <?php echo '<script'; ?>
@@ -99,7 +99,7 @@ function content_595f4f47485ec8_23722418 (Smarty_Internal_Template $_smarty_tpl)
 </body>
 <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
-/xhyreg.js"><?php echo '</script'; ?>
+/xhyreg2.js"><?php echo '</script'; ?>
 >
 </html><?php }
 }
