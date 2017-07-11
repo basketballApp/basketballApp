@@ -1,10 +1,11 @@
 $(function () {
-    var flag=true;
-
         $(".attention").click(function () {
+            var flags=$(this).text();
+            var that=$(this);
+            console.log($.trim(flags));
             var mfid=$(this).attr("mfid");
             var uid=$(this).attr("uid");
-            if(flag){
+            if($.trim(flags)=="未关注"){
              $.ajax({
                 url:"index.php?m=index&f=friends&a=Concern",
                 data:{mfid:mfid,uid:uid},
@@ -12,9 +13,7 @@ $(function () {
                 success:function (e) {
                     console.log(e);
                     if(e=="ok"){
-                        $(".attention").html("已关注");
-                        flag=false;
-                        console.log(flag);
+                        that.html("已关注");
                         alert(1)
                     }
                 }

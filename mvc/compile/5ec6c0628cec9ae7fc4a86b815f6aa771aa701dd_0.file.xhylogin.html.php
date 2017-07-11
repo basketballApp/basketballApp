@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 05:26:01
+/* Smarty version 3.1.30, created on 2017-07-11 04:09:19
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhylogin.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962f3c9996a48_59713606',
+  'unifunc' => 'content_5964334feeaac5_47768868',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ec6c0628cec9ae7fc4a86b815f6aa771aa701dd' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhylogin.html',
-      1 => 1499657055,
+      1 => 1499738949,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962f3c9996a48_59713606 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964334feeaac5_47768868 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -40,25 +40,26 @@ function content_5962f3c9996a48_59713606 (Smarty_Internal_Template $_smarty_tpl)
 /animate.css">
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
 /mui.min.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
- src="<?php echo JS_PATH;?>
-/jQuery.js"><?php echo '</script'; ?>
->
+
 </head>
 <body>
 <header>
-    <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
+    <a href="#" onclick="location.href='index.php?m=index&f=login'" class="back iconfont icon-fanhui"></a>
     <img src="<?php echo IMG_PATH;?>
 /xhylogin.png" alt="">
 </header>
 <div class="box">
-    <form action="index.php?m=index&f=login&a=willlogin" method="post">
+    <form action="index.php?m=index&f=login&a=willLogin" method="post">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -93,29 +94,6 @@ function content_5962f3c9996a48_59713606 (Smarty_Internal_Template $_smarty_tpl)
 /xhyphoto.png" alt="">
         </div>
     </div>
-</div>
-<div class="box box1">
-    <form action="">
-        <div class="kuang alert">
-            <div class="a-top a-true">
-                <div class="ic-login">
-                    <div class="loginse iconfont icon-duihao2" style="color:#02be0f">
-                    </div>
-                    <span>登录成功</span>
-                </div>
-                <p style="color:#000;">来吧兄弟！约场精彩绝伦的球赛吧</p>
-            </div>
-            <div class="a-top a-false">
-                    <div class="ic-login">
-                        <div class="loginse loginfal iconfont icon-cuowu4" style="color:#ec5151"></div>
-                        <span style="color:#ec5151">登录失败</span>
-                    </div>
-                    <p style="color:#000;">对不起！网络出错了！请重新登录</p>
-            </div>
-            <img src="<?php echo IMG_PATH;?>
-/xhyloadBoy.png" alt="">
-        </div>
-    </form>
 </div>
 </body>
 <?php echo '<script'; ?>

@@ -706,6 +706,7 @@ body.order{
     position: relative;
     width: 100%;height:100%;overflow: hidden;
 }
+/*支付成功*/
 .stadium .kuang{
     width:6.68rem;height:5.49rem;
     background: url("../../static/image/gxq/zhifusuccess_03.png") center center no-repeat;

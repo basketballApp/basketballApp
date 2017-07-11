@@ -5,26 +5,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../static/css/base.css">
+    <link rel="stylesheet" href="{CSS_PATH}/base.css">
     <!--<link rel="stylesheet" href="../../static/css/mui.min.css">-->
-    <link rel="stylesheet" href="../../static/css/iconfont.css">
-    <link rel="stylesheet" href="../../static/css/xhyreg2.css">
-    <link rel="stylesheet" href="../../static/css/animate.css">
-    <script src="../../static/js/mui.min.js"></script>
-    <script src="../../static/js/rem.js"></script>
-    <script src="../../static/js/jQuery.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
+    <link rel="stylesheet" href="{CSS_PATH}/xhyreg2.css">
+    <link rel="stylesheet" href="{CSS_PATH}/animate.css">
+    <script src="{JS_PATH}/mui.min.js"></script>
+    <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/jQuery.js"></script>
 </head>
 <body>
 <header>
     <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
-    <img src="../../static/image/xhyregbg.png" alt="">
+    <img src="{IMG_PATH}/xhyregbg.png" alt="">
 </header>
 <div class="box">
-    <form method="post" action="index.php?m=index&f=login&a=reg">
+    <form method="post" action="index.php?m=index&f=login&a=reg2&uname={$uname}">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
-                <input type="text" name="uname" placeholder="请选择中文英文、符号作为您的昵称">
+                <input type="text" name="yname" placeholder="请选择中文英文、符号作为您的昵称">
                 <div class="icon1 uname namefalse iconfont icon-cuowu4" id="icon1"></div>
                 <div class="icon1 uname icon2 iconfont  nametrue icon-duihao2 " id="icon1"></div>
                 <div class="false">
@@ -34,19 +34,19 @@
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass" placeholder="请选择您的性别">
+                <input type="password" name="height" placeholder="请选择您的身高">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass1" placeholder="请填写您的身高">
+                <input type="password" name="weight" placeholder="请填写您的体重">
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass1" placeholder="请填写您的体重">
+                <textarea name="declaration" id="" cols="30" rows="10" placeholder="请填写您的宣言"></textarea>
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>
@@ -60,10 +60,25 @@
     <div class="photo">
         <div class="ph-rect">
             <span class="ph-left">02</span>
-            <span class="ph-right">基础信息完善JICHUXINXI WANSHAN</span>
+            <span class="ph-right">
+                <p class="up">基础信息完善</p>
+                <p class="down">JICHUXINXI WANSHAN</p>
+            </span>
+        </div>
+        <div class="step">
+            <img src="{IMG_PATH}/xhyroll.png" alt="" class="passroll">
+            <div class="s-line"></div>
+            <img src="{IMG_PATH}/xhyroll.png" alt="" class="passroll">
+            <div class="s-line"></div>
+            <div class="s-roll">
+                <div class="sm-roll">
+                    <div class="sx-roll"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 </body>
-<script src="../../static/js/xhyreg2.js"></script>
+<script src="{JS_PATH}/xhyreg2.js"></script>
 </html>

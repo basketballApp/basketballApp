@@ -62,14 +62,15 @@
             <div class="head">
             <img src="{IMG_PATH}/qzzc-fjqy.png" alt="">
         </div>
+            {foreach $result as $v}
             <div class="one">
                 <div class="title">
                     <div class="pics">
                         <img src="{IMG_PATH}/qzzuser1.png" alt="">
                     </div>
                     <div class="intro">
-                        <a href="#" class="user">篮球大神</a>
-                        <a href="#" class="eng"><span style="font-weight: 800">LANQIUD</span>ASHEN</a>
+                        <a href="index.php?m=index&f=index&a=pengyouquan&pid={$v['pid']}" class="user">{$v["nicheng"]}</a>
+                        <a href="" class="eng">{$v["ynicheng"]}</a>
                     </div>
                 </div>
                 <div class="con">
@@ -87,12 +88,12 @@
                     </a>
                 </div>
                 <div class="say">
-                    <p>希望有朋友和我一起切磋，共同进步。接受单挑，来挑战我吧！！星期六日可 以约哦。我在X球场打球呢</p>
+                    <p>{$v["title"]}</p>
                 </div>
                 <div class="comment">
                     <div class="zan com">
                         <img src="{IMG_PATH}/qzzzan.png" alt="">
-                        <span>5602</span>
+                        <span>{$v["belove"]}</span>
                     </div>
                     <div class="here com">
                         <img src="{IMG_PATH}/qzzgohere.png" alt="">
@@ -100,54 +101,12 @@
                     </div>
                     <div class="xing com">
                         <img src="{IMG_PATH}/qzzcollect.png" alt="">
-                        <span>5602</span>
+                        <span>{$v["collect"]}</span>
                     </div>
                     <input type="button" class="button" value="已关注" style="padding: 0">
                 </div>
             </div>
-            <div class="one" style="margin-top: 0.2rem">
-                <div class="title">
-                    <div class="pics">
-                        <img src="{IMG_PATH}/qzzuser2.png" alt="">
-                    </div>
-                    <div class="intro">
-                        <a href="#" class="user">赤脚大仙</a>
-                        <a href="#" class="eng"><span style="font-weight: 800">CHIJIAOD</span>IAN</a>
-                    </div>
-                </div>
-                <div class="con">
-                    <a href="">
-                        <img src="{IMG_PATH}/qzzc2-pic1.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="{IMG_PATH}/qzzc2-pic2.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="{IMG_PATH}/qzzc2-pic3.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="{IMG_PATH}/qzzc2-pic4.png" alt="">
-                    </a>
-                </div>
-                <div class="say">
-                    <p>希望有朋友和我一起切磋，共同进步。接受单挑，来挑战我吧！！星期六日可 以约哦。我在X球场打球呢</p>
-                </div>
-                <div class="comment">
-                    <div class="zan com">
-                        <img src="{IMG_PATH}/qzzzan.png" alt="">
-                        <span>5602</span>
-                    </div>
-                    <div class="here com">
-                        <img src="{IMG_PATH}/qzzgohere.png" alt="">
-                        <span>到这去</span>
-                    </div>
-                    <div class="xing com">
-                        <img src="{IMG_PATH}/qzzcollect.png" alt="">
-                        <span>5602</span>
-                    </div>
-                    <input type="button" class="button" value="已关注" style="padding: 0;">
-                </div>
-            </div>
+            {/foreach}
         </div>
     </div>
 <!--附近球友结束-->
@@ -158,12 +117,13 @@
         </div>
         <div class="content">
             <div class="cons">
+            {foreach $result2 as $v}
             <div class="rect">
                 <a class="imgs">
                     <img src="{IMG_PATH}/qzzc3-pic1.png" alt="">
                 </a>
                 <div class="mask">
-                    <a href="#" class="title">飞鸟体育篮球场</a>
+                    <a href="#" class="title">{$v["cname"]}</a>
                     <div class="comment">
                         <div class="iconfont icon-wujiaoxing icons"></div>
                         <div class="iconfont icon-wujiaoxing icons"></div>
@@ -172,17 +132,17 @@
                         <div class="iconfont icon-wujiaoxing icons"></div>
                     </div>
                 </div>
-                <div class="details">查看详情</div>
+                <div class="details"><a href="index.php?m=index&f=index&a=addOrder&cid={$v['cid']}">查看详情</a></div>
                 <div class="address">
                     <div class="add">
                         <img src="{IMG_PATH}/qzzaddress.png" alt="">
                     </div>
-                    <div class="intros">太原市迎泽区双塔西街  103号</div>
+                    <div class="intros">{$v["cdesc"]}</div>
                 </div>
                 <div class="other">
                     <div class="zan">
                         <img src="{IMG_PATH}/qzzssdz.png" alt="" class="pics">
-                        <span>8804</span>
+                        <span>{$v["cwatch"]}</span>
 
                     </div>
                     <div class="here">
@@ -191,72 +151,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rect">
-                <a class="imgs">
-                    <img src="{IMG_PATH}/qzzc3-pic2.png" alt="">
-                </a>
-                <div class="mask">
-                    <a href="#" class="title">飞鸟体育篮球场</a>
-                    <div class="comment">
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                    </div>
-                </div>
-                <div class="details">查看详情</div>
-                <div class="address">
-                    <div class="add">
-                        <img src="{IMG_PATH}/qzzaddress.png" alt="">
-                    </div>
-                    <div class="intros">太原市迎泽区双塔西街  103号</div>
-                </div>
-                <div class="other">
-                    <div class="zan">
-                        <img src="{IMG_PATH}/qzzssdz.png" alt="" class="pics">
-                        <span>8804</span>
-
-                    </div>
-                    <div class="here">
-                        <img src="{IMG_PATH}/qzzgohere.png" alt="" class="pics">
-                        <span>到这去</span>
-                    </div>
-                </div>
-            </div>
-            <div class="rect">
-                <a class="imgs">
-                    <img src="{IMG_PATH}/qzzc3-pic3.png" alt="">
-                </a>
-                <div class="mask">
-                    <a href="#" class="title">飞鸟体育篮球场</a>
-                    <div class="comment">
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                    </div>
-                </div>
-                <div class="details">查看详情</div>
-                <div class="address">
-                    <div class="add">
-                        <img src="{IMG_PATH}/qzzaddress.png" alt="">
-                    </div>
-                    <div class="intros">太原市迎泽区双塔西街  103号</div>
-                </div>
-                <div class="other">
-                    <div class="zan">
-                        <img src="{IMG_PATH}/qzzssdz.png" alt="" class="pics">
-                        <span>8804</span>
-
-                    </div>
-                    <div class="here">
-                        <img src="{IMG_PATH}/qzzgohere.png" alt="" class="pics">
-                        <span>到这去</span>
-                    </div>
-                </div>
-            </div>
+            {/foreach}
         </div>
         </div>
     </div>

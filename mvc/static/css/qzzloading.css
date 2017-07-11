@@ -78,9 +78,6 @@ header .header-main{
     position: absolute;
     top:0;left:0;right:0;
     margin:auto;
-    background-image: url('{IMG_PATH}/qzz/qzzsslan.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 .search-main .search-bg{
     width: 6.07rem;
@@ -226,7 +223,7 @@ header .header-main{
 }
 .search-false .titles{
     width: 6.6rem;
-    height: 1.64rem;
+    height: 1.3rem;
     float: left;
     margin:0 0.21rem;
     border-bottom: 0.01rem solid #d8d8d9;
@@ -254,7 +251,7 @@ header .header-main{
 }
 .search-false .titles .titlecon .eng{
     width: 100%;
-    height: 0.6rem;
+    height: 0.3rem;
     float: left;
     line-height: 0.3rem;
     text-align: left;
@@ -328,6 +325,7 @@ header .header-main{
 .place .title .pics img{
     width: 100%;
     height: 100%;
+    float: left;
 }
 .place .title .intro{
     width: 5.96rem;
@@ -422,7 +420,7 @@ header .header-main{
     width: 5rem;
     height: 100%;
     float: left;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     margin: 0.15rem 0 0.15rem 0.1rem;
 }
 .around .place .lists .list-main .list .deintros .de{
@@ -463,7 +461,7 @@ header .header-main{
 .deintros .comment{
     width: 5rem;
     height: 0.24rem;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -477,9 +475,51 @@ header .header-main{
     float: left;
 }
 .deintros .comment .com span{
-    margin-top: -0.1rem;
+    margin-top: -0.05rem;
 }
-
+/*后台开始*/
+footer{
+    width: 100%;
+    height: 0.98rem;
+    background: #f2261c;
+    position: fixed;
+    bottom:0;left:0;
+    marign:auto;
+    padding: 0.06rem 0;
+}
+.footer-main{
+    width: 6.08rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-main .setting{
+    width: 0.7rem;
+    height: 100%;
+}
+.footer-main .setting .pics{
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 50%;
+    background: #fff;
+    font-size:0.4rem;
+    color: #5d5c57;
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.62rem;
+    float: left;
+    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0,0,0,0.1);
+}
+.footer-main .setting .intros{
+    width: 0.62rem;
+    float: left;
+    margin-top: 0.04rem;
+    font-size: 0.18rem;
+    text-align: center;
+    line-height: 0.18rem;
+    color: #fff;
+}
 /*loading开始*/
 .mask{
     width: 100%;
@@ -487,7 +527,7 @@ header .header-main{
     position: fixed;
     top:0;left:0;right:0;bottom: 0;
     margin:auto;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.7);
     z-index: 1000;
 }
 .mask .load{
@@ -523,7 +563,7 @@ header .header-main{
     position: fixed;
     top:0;left:0;right:0;bottom: 0;
     margin:auto;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.7);
     z-index: 1000;
 }
 .masks .loads{
@@ -576,7 +616,7 @@ header .header-main{
     width: 5.02rem;
     height:0.88rem;
     position: absolute;
-    top:33%;left:0.8rem;
+    top:31%;left:0.8rem;
     margin:auto;
 }
 .masks .loads .error .imgs img{
@@ -629,6 +669,7 @@ header .header-main{
     background: #3c3939;
     font-size: 0.3rem;
     color: #807b7b;
+    outline: none;
 }
 .masks .loads .error .button .again{
     width: 1.96rem;
@@ -639,6 +680,7 @@ header .header-main{
     font-size: 0.3rem;
     color: #3c3939;
     position: relative;
+    outline: none;
 }
 .masks .loads .error .button .again：before{
     content: "";
@@ -679,7 +721,7 @@ header .header-main{
     position: fixed;
     top:0;left:0;right:0;bottom: 0;
     margin:auto;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.7);
     z-index: 1000;
 
 }
@@ -729,6 +771,7 @@ header .header-main{
 .alert .title .pics img{
     width: 100%;
     height: 100%;
+    float: left;
 }
 .alert .title .intro{
     width: 3.96rem;

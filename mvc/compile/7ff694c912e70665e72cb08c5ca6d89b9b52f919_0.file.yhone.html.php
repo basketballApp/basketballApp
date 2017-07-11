@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 13:24:53
+/* Smarty version 3.1.30, created on 2017-07-10 06:14:51
   from "F:\wamp\www\basketball\basketballApp\mvc\template\index\yhone.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f6f858cd414_94719428',
+  'unifunc' => 'content_5962ff3b1f9474_17282752',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7ff694c912e70665e72cb08c5ca6d89b9b52f919' => 
     array (
       0 => 'F:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhone.html',
-      1 => 1499426691,
+      1 => 1499657340,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f6f858cd414_94719428 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962ff3b1f9474_17282752 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -158,8 +158,32 @@ function content_595f6f858cd414_94719428 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
                 <div class="seri">
+                    <a href="index.php?m=index&f=upload&a=upload" class="seri-tou">
+                        <span class="title">上传头像</span>
+                        <span class="mintitle">LIDAPENGQIUYOU</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="self">
+                    <div class="self-tou">
+                    </div>
+                </div>
+                <div class="seri">
                     <a href="index.php?m=index&f=setting" class="seri-tou">
                         <span class="title">更多设置</span>
+                        <span class="mintitle">LIDAPENGQIUYOU</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="self">
+                    <div class="self-tou">
+                    </div>
+                </div>
+                <div class="seri">
+                    <a href="index.php?m=index&f=setting" class="seri-tou">
+                        <span class="title">发表动态</span>
                         <span class="mintitle">LIDAPENGQIUYOU</span>
                     </a>
                 </div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 12:38:01
+/* Smarty version 3.1.30, created on 2017-07-11 11:05:05
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhnearby.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5963590942d813_96494517',
+  'unifunc' => 'content_596494c124d893_40914050',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72078890a0a616d32e7cf5c129e914f6f58aad05' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhnearby.html',
-      1 => 1499683079,
+      1 => 1499763903,
       2 => 'file',
     ),
   ),
@@ -21,10 +21,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-function content_5963590942d813_96494517 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596494c124d893_40914050 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" >
@@ -110,27 +110,21 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
                     <div class="attention" mfid=<?php echo $_smarty_tpl->tpl_vars['v']->value["uid"];?>
  uid=<?php echo $_smarty_tpl->tpl_vars['uid']->value;?>
  >
-                        <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['results']->value, 'f');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['f']->value) {
-?>
-                        <?php echo $_smarty_tpl->tpl_vars['f']->value["d"];?>
-
-                          关注
-                        <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
-?>
-
+                            <?php if (isset($_smarty_tpl->tpl_vars['arr']->value)) {?>
+                                <?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value["uid"];
+$_prefixVariable1=ob_get_clean();
+if (in_array($_prefixVariable1,$_smarty_tpl->tpl_vars['arr']->value)) {?>
+                                   已关注
+                              <?php } else { ?>未关注
+                                <?php }?>
+                            <?php }?>
                     </div>
                 </div>
                 <div class="seri-hot">
                     <img src="<?php echo IMG_PATH;?>
 /yh-hot.png" alt="">
                 </div>
-
             </div>
         </li>
         <?php

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 06:10:26
+/* Smarty version 3.1.30, created on 2017-07-10 17:31:38
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhown.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962fe32952f17_66955743',
+  'unifunc' => 'content_59639dda5e3dd8_97902222',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6064bd7b760df16ab64de6aa824d0183155cd112' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhown.html',
-      1 => 1499657055,
+      1 => 1499695151,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962fe32952f17_66955743 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59639dda5e3dd8_97902222 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -70,7 +70,7 @@ function content_5962fe32952f17_66955743 (Smarty_Internal_Template $_smarty_tpl)
         <img src="<?php echo IMG_PATH;?>
 /yhbanner.png" alt="">
     </a>
-    <a href="#" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
+    <a href="index.php?m=index&f=own" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
 /yhtou.png');background-position: center;background-size: contain;">
        <div class="img" style="background-image: url('<?php echo IMG_PATH;?>
 /yhgeren2.png');background-position: center;background-size: contain; "></div>

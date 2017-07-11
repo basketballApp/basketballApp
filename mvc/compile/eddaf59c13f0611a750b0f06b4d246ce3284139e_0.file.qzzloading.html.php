@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 12:18:03
+/* Smarty version 3.1.30, created on 2017-07-11 04:51:51
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\qzzloading.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f5fdb2ee3e1_95236726',
+  'unifunc' => 'content_59643d471bb886_51588366',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eddaf59c13f0611a750b0f06b4d246ce3284139e' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\qzzloading.html',
-      1 => 1499422669,
+      1 => 1499695151,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59643d471bb886_51588366 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -43,8 +43,19 @@ function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl)
 >
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /iconfont.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/mui.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
+        $(function() {
+            $(".l").click(function () {
+                history.go(-1);
+            })
+        })
+    <?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--头部开始-->
@@ -62,12 +73,13 @@ function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl)
     </header>
 <!--头部结束-->
 <!--搜索成功开始-->
-    <div class="search sc" style="height: 4.3rem;display: none">
-        <div class="search-main">
+    <div class="search sc" style="height: 4.3rem;">
+        <div class="search-main" style="background-image: url('<?php echo IMG_PATH;?>
+/qzz/qzzsslan.png'); background-size: 100%;background-repeat: no-repeat;">
             <div class="search-bg">
                 <div class="top">搜索</div>
                 <div class="bottom">
-                    <span style="float: left"> FUJINQIUCHANG NEARBY</span>
+                    <input type="text" style="float: left;width: 85%;height: 80%;font-size:0.18rem;background:none;border: none;outline: none" value="FUJINQIUCHANG NEARBY">
                     <div class="icon">
                         <!--<div class="iconfont icon-vioce icons"></div>-->
                         <div class="iconfont icon-search icons"></div>
@@ -89,12 +101,13 @@ function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 <!--搜索成功结束-->
 <!--搜索失败开始-->
-    <div class="search sf" style="height: 5.8rem;">
-    <div class="search-main">
+    <div class="search sf" style="height: 5.5rem;display: none">
+    <div class="search-main" style="background-image: url('<?php echo IMG_PATH;?>
+/qzz/qzzsslan.png');background-size: 100%;background-repeat: no-repeat;">
         <div class="search-bg">
             <div class="top">搜索</div>
             <div class="bottom">
-                <span style="float: left"> FUJINQIUCHANG NEARBY</span>
+                <input type="text" style="float: left;width: 85%;height: 80%;font-size:0.18rem;background:none;border: none;outline: none" value="FUJINQIUCHANG NEARBY">
                 <div class="icon">
                     <!--<div class="iconfont icon-vioce icons"></div>-->
                     <div class="iconfont icon-search icons"></div>
@@ -111,7 +124,7 @@ function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl)
                     对不起，没有搜索到您需要的相关商品
                 </div>
                 <div class="eng">
-                    DUIBUQI MEIYOUSOUSUODAONINXUYAODEXIANGGUANSHANGPIN
+                  MEIYOUSOUSUODAONINXUYAODEXIANGGUANSHANGPIN
                 </div>
             </div>
         </div>
@@ -262,12 +275,12 @@ function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="<?php echo IMG_PATH;?>
 /qzzloading.png" alt="">
             </div>
-            <div class="font"><i>LOADING···</i></div>
+            <div class="font"><b><i>LOADING···</i></b></div>
         </div>
 </div>
 <!--loading结束-->
 <!--error开始-->
-    <div class="masks" style="display: none">
+    <div class="masks">
     <div class="loads">
         <div class="error">
             <div class="imgs">
@@ -299,13 +312,13 @@ function content_595f5fdb2ee3e1_95236726 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 <!--error结束-->
 <!--搜索弹出开始-->
-    <div class="masksearch" >
+    <div class="masksearch" style="display: none">
         <div class="searchs">
             <div class="search-main" style="background-image: none">
                 <div class="search-bg">
                     <div class="top">搜索</div>
                     <div class="bottom">
-                        <span style="float: left"> FUJINQIUCHANG NEARBY</span>
+                        <input type="text" style="float: left;width: 85%;height: 80%;font-size:0.18rem;background:none;border: none;outline: none" value="FUJINQIUCHANG NEARBY">
                         <div class="icon">
                             <!--<div class="iconfont icon-vioce icons"></div>-->
                             <div class="iconfont icon-search icons"></div>

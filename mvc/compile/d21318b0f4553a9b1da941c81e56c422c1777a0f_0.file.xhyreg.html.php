@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 09:36:01
+/* Smarty version 3.1.30, created on 2017-07-11 04:09:15
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyreg.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59632e61d87028_89308732',
+  'unifunc' => 'content_5964334bc76975_47159300',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd21318b0f4553a9b1da941c81e56c422c1777a0f' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyreg.html',
-      1 => 1499657055,
+      1 => 1499738949,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59632e61d87028_89308732 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964334bc76975_47159300 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,9 +35,13 @@ function content_59632e61d87028_89308732 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /iconfont.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/xhyreg2.css">
+/xhyreg.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /animate.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /mui.min.js"><?php echo '</script'; ?>
@@ -46,14 +50,10 @@ function content_59632e61d87028_89308732 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
-    <?php echo '<script'; ?>
- src="<?php echo JS_PATH;?>
-/jQuery.js"><?php echo '</script'; ?>
->
 </head>
 <body>
 <header>
-    <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
+    <a href="#" onclick="location.href='index.php?m=index&f=login'" class="back iconfont icon-fanhui"></a>
     <img src="<?php echo IMG_PATH;?>
 /xhyregbg.png" alt="">
 </header>
@@ -99,7 +99,7 @@ function content_59632e61d87028_89308732 (Smarty_Internal_Template $_smarty_tpl)
 </body>
 <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
-/xhyreg2.js"><?php echo '</script'; ?>
+/xhyreg.js"><?php echo '</script'; ?>
 >
 </html><?php }
 }

@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../../static/css/gxqstadium.css">
-    <script src="../../static/js/rem.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}/gxqstadium.css">
+    <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script>
+        $(function(){
+            $(".titlebox").click(function(){
+                $(".mask").css("display","block")
+            })
+            $(".mask").click(function(){
+                $(".mask").css("display","none")
+                $(".kuang").css("display","block")
+            })
+            $(".select .back").click(function(){
+                history.go(-1)
+            })
+            $(".select").click(function(){
+                $(".kuang").css("display","none")
+            })
+        })
+    </script>
 </head>
 <body class="stadium">
     <header>
@@ -27,8 +45,8 @@
             <p class="titlebox2" style="text-align: center">DISANFANGZHISFU</p>
         </div>
         <div class="zfb-wx">
-            <div class="zfb"><img src="../../static/image/gxq/gxqmethod_03.png" alt=""></div>
-            <div class="wx"><img src="../../static/image/gxq/gxqmethod_05.png" alt=""></div>
+            <div class="zfb"><img src="{IMG_PATH}/gxq/gxqmethod_03.png" alt=""></div>
+            <div class="wx"><img src="{IMG_PATH}/gxq/gxqmethod_05.png" alt=""></div>
         </div>
         <div style="height: 0.2rem"></div>
         <p class="circle">......................................................................................................</p>

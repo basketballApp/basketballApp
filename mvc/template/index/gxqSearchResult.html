@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="{CSS_PATH}/gxqstadium.css">
     <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script>
+        $(function(){
+            $(".order").click(function(){
+                location.href="index.php?m=index&f=index&a=courtDetails";
+            })
+        })
+    </script>
 </head>
 <body class="searchSearchResult">
 <header style="height: 2.30rem">
@@ -149,6 +157,7 @@
 </div>
 <!--弹出框-->
 <div class="tan">
+    {foreach $xiangqing as $v}
     <div class="con">
         <p class="p1">场馆详情</p>
         <p class="p2">CHANGGUANXIANGQING</p>
@@ -160,9 +169,9 @@
                     <img src="{IMG_PATH}/gxq/gxqlogo_05.png" alt="" class="shoucang">
                 </div>
                 <div class="mask">
-                    <p class="title1">飞鸟体育篮球场</p>
-                    <p class="title2"><span>FEINIAOTIYU</span>LANQIUCHANG</p>
-                    <p class="title3">周一至周五免费一小时，周六日10元/小时</p>
+                    <p class="title1">{$v["cname"]}</p>
+                    <p class="title2">{$v["cyname"]}</p>
+                    <p class="title3">{$v["privilege"]}</p>
                     <ul class="headBox">
                         <li><img src="{IMG_PATH}/gxq/gxq112.png" alt=""></li>
                         <li><img src="{IMG_PATH}/gxq/gxq112.png" alt=""></li>
@@ -178,10 +187,10 @@
                 </ul>
             </div>
             <div class="details">
-                <p class="addr">详细地址：太原市迎泽区双塔西街滨河东路交叉口</p>
+                <p class="addr">详细地址：{$v["addr"]}</p>
                 <p class="bottomp2">.......................................................................</p>
-                <p class="addr">支持项目/篮球</p>
-                <p class="addr">营业时间＃08:０0－22:０0</p>
+                <p class="addr">支持</p>
+                <p class="addr">营业时间＃</p>
             </div>
             <ul class="xiangmu">
                 <li>
@@ -203,6 +212,7 @@
 
         </div>
     </div>
+    {/foreach}
 </div>
 </body>
 </html>

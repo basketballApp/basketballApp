@@ -10,7 +10,9 @@ class friends extends indexMain{
         $db=new db("myfriends");
         $result=$db->insert("uid=$uid,mfid=$mfid");
         $this->smarty->assign("result",$result);
-        echo "ok";
-
+        if( $result){
+            echo "ok";
+        }
+       
     }
 }

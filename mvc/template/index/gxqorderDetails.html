@@ -12,7 +12,11 @@
             $(".left").click(function () {
                 history.go(-1);
             })
+            $(".zhifu").click(function(){
+//                $(".heji").css("display","block");
+            })
         })
+
     </script>
 </head>
 <body class="order">
@@ -71,7 +75,9 @@
     <div class="heji">
         合计：<span class="shu">30.50</span><span class="rmb">RMB</span>
     </div>
-    <div class="zhifu"></div>
+    <div class="zhifu">
+        <a href="index.php?m=index&f=index&a=ljzf" style="display: block">&nbsp;</a>
+    </div>
     <!--历史订单-->
     <div class="history">
         <p class="title1">LISHIDINGDAN</p>

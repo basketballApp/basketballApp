@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 05:27:48
+/* Smarty version 3.1.30, created on 2017-07-11 02:55:01
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\qzzindex.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962f434867522_40528848',
+  'unifunc' => 'content_596421e51de5f1_24240322',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60a182eed17d2a10702044b97d25b2c533e6afe7' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\qzzindex.html',
-      1 => 1499657055,
+      1 => 1499682656,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596421e51de5f1_24240322 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -103,6 +103,11 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
             <img src="<?php echo IMG_PATH;?>
 /qzzc-fjqy.png" alt="">
         </div>
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
             <div class="one">
                 <div class="title">
                     <div class="pics">
@@ -110,8 +115,11 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
 /qzzuser1.png" alt="">
                     </div>
                     <div class="intro">
-                        <a href="#" class="user">篮球大神</a>
-                        <a href="#" class="eng"><span style="font-weight: 800">LANQIUD</span>ASHEN</a>
+                        <a href="index.php?m=index&f=index&a=pengyouquan&pid=<?php echo $_smarty_tpl->tpl_vars['v']->value['pid'];?>
+" class="user"><?php echo $_smarty_tpl->tpl_vars['v']->value["nicheng"];?>
+</a>
+                        <a href="" class="eng"><?php echo $_smarty_tpl->tpl_vars['v']->value["ynicheng"];?>
+</a>
                     </div>
                 </div>
                 <div class="con">
@@ -133,13 +141,15 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
                     </a>
                 </div>
                 <div class="say">
-                    <p>希望有朋友和我一起切磋，共同进步。接受单挑，来挑战我吧！！星期六日可 以约哦。我在X球场打球呢</p>
+                    <p><?php echo $_smarty_tpl->tpl_vars['v']->value["title"];?>
+</p>
                 </div>
                 <div class="comment">
                     <div class="zan com">
                         <img src="<?php echo IMG_PATH;?>
 /qzzzan.png" alt="">
-                        <span>5602</span>
+                        <span><?php echo $_smarty_tpl->tpl_vars['v']->value["belove"];?>
+</span>
                     </div>
                     <div class="here com">
                         <img src="<?php echo IMG_PATH;?>
@@ -149,62 +159,18 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="xing com">
                         <img src="<?php echo IMG_PATH;?>
 /qzzcollect.png" alt="">
-                        <span>5602</span>
+                        <span><?php echo $_smarty_tpl->tpl_vars['v']->value["collect"];?>
+</span>
                     </div>
                     <input type="button" class="button" value="已关注" style="padding: 0">
                 </div>
             </div>
-            <div class="one" style="margin-top: 0.2rem">
-                <div class="title">
-                    <div class="pics">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzuser2.png" alt="">
-                    </div>
-                    <div class="intro">
-                        <a href="#" class="user">赤脚大仙</a>
-                        <a href="#" class="eng"><span style="font-weight: 800">CHIJIAOD</span>IAN</a>
-                    </div>
-                </div>
-                <div class="con">
-                    <a href="">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzc2-pic1.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzc2-pic2.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzc2-pic3.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzc2-pic4.png" alt="">
-                    </a>
-                </div>
-                <div class="say">
-                    <p>希望有朋友和我一起切磋，共同进步。接受单挑，来挑战我吧！！星期六日可 以约哦。我在X球场打球呢</p>
-                </div>
-                <div class="comment">
-                    <div class="zan com">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzzan.png" alt="">
-                        <span>5602</span>
-                    </div>
-                    <div class="here com">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzgohere.png" alt="">
-                        <span>到这去</span>
-                    </div>
-                    <div class="xing com">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzcollect.png" alt="">
-                        <span>5602</span>
-                    </div>
-                    <input type="button" class="button" value="已关注" style="padding: 0;">
-                </div>
-            </div>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
         </div>
     </div>
 <!--附近球友结束-->
@@ -216,13 +182,19 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         <div class="content">
             <div class="cons">
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result2']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
             <div class="rect">
                 <a class="imgs">
                     <img src="<?php echo IMG_PATH;?>
 /qzzc3-pic1.png" alt="">
                 </a>
                 <div class="mask">
-                    <a href="#" class="title">飞鸟体育篮球场</a>
+                    <a href="#" class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value["cname"];?>
+</a>
                     <div class="comment">
                         <div class="iconfont icon-wujiaoxing icons"></div>
                         <div class="iconfont icon-wujiaoxing icons"></div>
@@ -231,19 +203,22 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="iconfont icon-wujiaoxing icons"></div>
                     </div>
                 </div>
-                <div class="details">查看详情</div>
+                <div class="details"><a href="index.php?m=index&f=index&a=addOrder&cid=<?php echo $_smarty_tpl->tpl_vars['v']->value['cid'];?>
+">查看详情</a></div>
                 <div class="address">
                     <div class="add">
                         <img src="<?php echo IMG_PATH;?>
 /qzzaddress.png" alt="">
                     </div>
-                    <div class="intros">太原市迎泽区双塔西街  103号</div>
+                    <div class="intros"><?php echo $_smarty_tpl->tpl_vars['v']->value["cdesc"];?>
+</div>
                 </div>
                 <div class="other">
                     <div class="zan">
                         <img src="<?php echo IMG_PATH;?>
 /qzzssdz.png" alt="" class="pics">
-                        <span>8804</span>
+                        <span><?php echo $_smarty_tpl->tpl_vars['v']->value["cwatch"];?>
+</span>
 
                     </div>
                     <div class="here">
@@ -253,80 +228,12 @@ function content_5962f434867522_40528848 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
             </div>
-            <div class="rect">
-                <a class="imgs">
-                    <img src="<?php echo IMG_PATH;?>
-/qzzc3-pic2.png" alt="">
-                </a>
-                <div class="mask">
-                    <a href="#" class="title">飞鸟体育篮球场</a>
-                    <div class="comment">
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                    </div>
-                </div>
-                <div class="details">查看详情</div>
-                <div class="address">
-                    <div class="add">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzaddress.png" alt="">
-                    </div>
-                    <div class="intros">太原市迎泽区双塔西街  103号</div>
-                </div>
-                <div class="other">
-                    <div class="zan">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzssdz.png" alt="" class="pics">
-                        <span>8804</span>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
 
-                    </div>
-                    <div class="here">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzgohere.png" alt="" class="pics">
-                        <span>到这去</span>
-                    </div>
-                </div>
-            </div>
-            <div class="rect">
-                <a class="imgs">
-                    <img src="<?php echo IMG_PATH;?>
-/qzzc3-pic3.png" alt="">
-                </a>
-                <div class="mask">
-                    <a href="#" class="title">飞鸟体育篮球场</a>
-                    <div class="comment">
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                        <div class="iconfont icon-wujiaoxing icons"></div>
-                    </div>
-                </div>
-                <div class="details">查看详情</div>
-                <div class="address">
-                    <div class="add">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzaddress.png" alt="">
-                    </div>
-                    <div class="intros">太原市迎泽区双塔西街  103号</div>
-                </div>
-                <div class="other">
-                    <div class="zan">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzssdz.png" alt="" class="pics">
-                        <span>8804</span>
-
-                    </div>
-                    <div class="here">
-                        <img src="<?php echo IMG_PATH;?>
-/qzzgohere.png" alt="" class="pics">
-                        <span>到这去</span>
-                    </div>
-                </div>
-            </div>
         </div>
         </div>
     </div>

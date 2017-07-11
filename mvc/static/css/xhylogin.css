@@ -182,7 +182,7 @@ form {
     position: relative;
 }
 
-.kuang .login .login-btn  input {
+.kuang .login .login-btn input {
     width: 3.16rem;
     height: 0.68rem;
     position: absolute;
@@ -250,14 +250,14 @@ form {
     font-size: 0.28rem;
 }
 .a-true {
-    display: none;
+    /*display: none;*/
 }
 
 .a-false {
     display: none;
 }
 .box1{
-    display: none;
+    /*display: none;*/
 }
 .alert img {
     width: 4.35rem;

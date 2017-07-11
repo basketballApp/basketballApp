@@ -65,24 +65,20 @@ header .header-main{
 }
 .partener{
     width: 100%;
-    height: 8.5rem;
+    overflow: hidden;
     float: left;
 }
 .par-main{
     width: 7.02rem;
-    height: 7.8rem;
+    overflow: hidden;
     margin:0 auto;
     position: relative;
 }
 .par-main .head{
-    width:2.27rem;
+    width: 2.27rem;
     height: 0.51rem;
-    float: left;
     margin: 0 auto;
-    position: absolute;
-    top:0.5rem;
-    left:0;right:0;
-    margin:auto;
+    margin: 0.3rem auto;
 }
 .par-main .head img{
     width: 100%;
@@ -92,9 +88,12 @@ header .header-main{
     padding: 0.2rem 0 0.19rem 0.1rem;
     width: 7.02rem;
     height: 3.6rem;
-  float: left;
-    margin-top: 1.22rem;
+    float: left;
+    margin-bottom: 0.2rem;
     box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0,0,0,0.1);
+}
+.one:first-child{
+    margin-top: 1.22rem;
 }
 .par-main .one .title{
     width: 100%;
@@ -298,6 +297,10 @@ header .header-main{
     color: #fff;
     text-align: center;
     line-height: 0.24rem;
+}
+.details a{
+    color: #fff;
+    display: block;
 }
 .address{
     width: 100%;
