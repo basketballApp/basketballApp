@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 12:32:45
+/* Smarty version 3.1.30, created on 2017-07-11 09:44:15
   from "F:\wamp\www\basketball\basketballApp\mvc\template\index\xhysplash.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f634dc2c8d2_54985302',
+  'unifunc' => 'content_596481cf08ebe7_83693278',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3c1d4560fb4954fae0c20cde3df4c4d441927a73' => 
     array (
       0 => 'F:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhysplash.html',
-      1 => 1499423429,
+      1 => 1499757448,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f634dc2c8d2_54985302 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596481cf08ebe7_83693278 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -31,18 +31,18 @@ function content_595f634dc2c8d2_54985302 (Smarty_Internal_Template $_smarty_tpl)
     <title>Document</title>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /base.css">
-    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/mui.min.css">
+    <!--<link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/mui.min.css">-->
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /bootstrap.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /animate.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /xhysplash.css">
-    <?php echo '<script'; ?>
+    <!--<?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /mui.min.js"><?php echo '</script'; ?>
->
+>-->
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
@@ -53,32 +53,32 @@ function content_595f634dc2c8d2_54985302 (Smarty_Internal_Template $_smarty_tpl)
 >
 </head>
 <body>
-<div class="mui-slider">
-    <div class="mui-slider-group">
-        <div class="mui-slider-item">
+<div class="box">
+    <ul class="bannerbox">
+        <li>
             <a href="#">
                 <img src="<?php echo IMG_PATH;?>
 /xhysplate1.png">
             </a>
-        </div>
-        <div class="mui-slider-item">
+        </li>
+        <li>
             <a href="#">
                 <img src="<?php echo IMG_PATH;?>
 /xhysplate2.png">
             </a>
-        </div>
-        <div class="mui-slider-item" style="position: relative">
+        </li>
+        <li>
             <a href="#">
                 <img src="<?php echo IMG_PATH;?>
 /xhysplate3.png">
             </a>
-        </div>
-    </div>
-    <div class="mui-slider-indicator btnbox">
-        <div class="mui-indicator mui-active btns"></div>
-        <div class="mui-indicator btns"></div>
-        <div class="active mui-indicator btns "></div>
-    </div>
+        </li>
+    </ul>
+    <ul class="btnbox">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+    </ul>
 </div>
 <a class="start animated tada" href="index.php?m=index&f=login">就差你了,老铁</a>
 </body>

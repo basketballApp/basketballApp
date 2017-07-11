@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="{CSS_PATH}/base.css">
+    <link rel="stylesheet" href="{CSS_PATH}/qzznews.css">
+    <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/mui.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
+    <link rel="stylesheet" href="{CSS_PATH}/mui.css">
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script>
+        $(function() {
+            $(".l").click(function () {
+                history.go(-1);
+            })
+        })
+    </script>
+</head>
+<body>
+<!--头部开始-->
+    <header>
+    <div class="header-main">
+        <div class="l iconfont icon-fanhui1"></div>
+        <div class="m">
+            <div class="china">··&nbsp;发表动态&nbsp;··</div>
+            <div class="eng">FABIAO   DONGTAI</div>
+        </div>
+    </div>
+</header>
+<!--头部结束-->
+<!--内容开始-->
+    <div class="content">
+        <div class="text">
+            <textarea name="" id="" cols="30" rows="5" style="border: none;color: #545454;font-size: 0.24rem" placeholder="这一刻的想法..."></textarea>
+            <div class="add">+</div>
+            <div class="position">
+                <div class="icon iconfont icon-weizhi-copy"></div>
+                <span>所在位置</span>
+            </div>
+        </div>
+        <input type="button" class="button" value="发表">
+
+    </div>
+<!--内容结束-->
+</body>
+</html>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 10:03:45
+/* Smarty version 3.1.30, created on 2017-07-11 09:44:30
   from "F:\wamp\www\basketball\basketballApp\mvc\template\index\xhyreg.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596334e1c46c47_52133005',
+  'unifunc' => 'content_596481dee8ba24_07338063',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '32365e30e08e6e29e526e58214d261cdfc41927e' => 
     array (
       0 => 'F:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyreg.html',
-      1 => 1499657340,
+      1 => 1499757448,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596481dee8ba24_07338063 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,7 +35,7 @@ function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /iconfont.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/xhyreg2.css">
+/xhyreg.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 /animate.css">
     <?php echo '<script'; ?>
@@ -50,6 +50,14 @@ function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /jQuery.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.validate.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/messages_zh.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header>
@@ -58,7 +66,7 @@ function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl)
 /xhyregbg.png" alt="">
 </header>
 <div class="box">
-    <form method="post" action="index.php?m=index&f=login&a=reg">
+    <form method="post" action="index.php?m=index&f=login&a=reg" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -72,13 +80,13 @@ function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass" placeholder="请输入您的5-8位数字或字母密码">
+                <input type="password" name="upass" placeholder="请输入您的5-8位数字或字母密码" id="password">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass1" placeholder="请再次确认您的密码">
+                <input type="password" name="upass1" placeholder="请再次确认您的密码" >
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>
@@ -90,7 +98,28 @@ function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </form>
     <div class="photo">
-        <div class="ph-rect">
+        <div class="step">
+            <img src="<?php echo IMG_PATH;?>
+/xhyroll.png" alt="" class="passroll">
+            <div class="s-line"></div>
+            <div class="s-roll">
+                <div class="sm-roll">
+                    <div class="sx-roll"></div>
+                </div>
+            </div>
+            <div class="s-line"></div>
+            <div class="s-roll">
+                <div class="sm-roll">
+                    <div class="sx-roll"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="photo1">
+        <div class="circle yuan1"></div>
+        <div class="circle yuan2"></div>
+        <div class="ph-rect1">
             <img src="<?php echo IMG_PATH;?>
 /xhyphoto.png" alt="">
         </div>
@@ -99,7 +128,7 @@ function content_596334e1c46c47_52133005 (Smarty_Internal_Template $_smarty_tpl)
 </body>
 <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
-/xhyreg2.js"><?php echo '</script'; ?>
+/xhyreg.js"><?php echo '</script'; ?>
 >
 </html><?php }
 }
