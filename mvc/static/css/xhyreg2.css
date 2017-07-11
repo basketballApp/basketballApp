@@ -46,7 +46,15 @@ header img {
     top: 3.78rem;
     padding: 0 0.5rem;
 }
-
+#yname-error,#height-error,#weight-error,#declaration-error{
+    height: 100%;
+    line-height:0.58rem;
+    position: absolute;
+    font-size: 0.18rem;
+    color:#ccc;
+    right:0.2rem;
+    bottom:-0.6rem;
+}
 form {
     width: 6.52rem;
     height: 4rem;
@@ -71,7 +79,7 @@ form {
     border: 1px solid #bbbbbc;
     border-radius: 0.7rem;
     position: relative;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
 
 .kuang .icon {
@@ -117,6 +125,12 @@ form {
     line-height: 0.7rem;
     font-size: 0.25rem;
     color: #ccc;
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+textarea:focus{
+    background: none;
+    overflow: hidden;
 }
 .kuang .false {
     position: absolute;

@@ -13,6 +13,8 @@
     <script src="../../static/js/mui.min.js"></script>
     <script src="../../static/js/rem.js"></script>
     <script src="../../static/js/jQuery.js"></script>
+    <script src="../../static/js/jquery.validate.js"></script>
+    <script src="../../static/js/messages_zh.js"></script>
 </head>
 <body>
 <header>
@@ -20,11 +22,11 @@
     <img src="../../static/image/xhyregbg.png" alt="">
 </header>
 <div class="box">
-    <form method="post" action="index.php?m=index&f=login&a=reg">
+    <form method="post" action="index.php?m=index&f=login&a=reg" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
-                <input type="text" name="uname" placeholder="请选择中文英文、符号作为您的昵称">
+                <input type="text" name="yname" placeholder="请选择中文英文、符号作为您的昵称">
                 <div class="icon1 uname namefalse iconfont icon-cuowu4" id="icon1"></div>
                 <div class="icon1 uname icon2 iconfont  nametrue icon-duihao2 " id="icon1"></div>
                 <div class="false">
@@ -34,19 +36,19 @@
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass" placeholder="请选择您的性别">
+                <input type="password" name="height" placeholder="请填写您的身高">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass1" placeholder="请填写您的体重">
+                <input type="password" name="weight" placeholder="请填写您的体重">
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <textarea name="notice" id="" cols="30" rows="10" placeholder="请填写您的宣言"></textarea>
+                <textarea name="declaration" id="" cols="30" rows="10" placeholder="请填写您的宣言"></textarea>
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>
