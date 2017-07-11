@@ -1,15 +1,56 @@
+body,html{
+    width: 100%;
+    height:100%;
+    font-family: '微软雅黑';
+}
 a:hover{
     text-decoration: none;
     color:#000;
 }
-.btnbox{
-    height:0.40rem;
-    bottom:0.3rem;
-
+.box{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position: relative;
 }
-.btnbox .btns{
+.bannerbox{
+    width: 22.5rem;
+    height:100%;
+}
+.bannerbox li{
+    width:7.5rem;
+    height:100%;
+    float: left;
+}
+.bannerbox li a{
+    display: block;
+}
+.bannerbox li a img{
+    width: 100%;
+    height: 100%;
+}
+.btnbox{
+    width: 1.8rem;
+    height:0.40rem;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0.3rem;
+    margin: auto;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    z-index: 999;
+}
+.btnbox li{
     width: 0.22rem;
     height:0.22rem;
+    border-radius: 50%;
+    background:#fff;
+    float: left;
+    margin: 0  0.19rem;
+}
+.btnbox .active{
+    background:#666;
 }
 .start{
     width: 2.5rem;
@@ -28,5 +69,5 @@ a:hover{
     font-size: 0.3rem;
     font-weight: 600;
     box-shadow: 0.01rem 0.01rem 0.1rem 0.01rem #000 ;
-    /*display: none;*/
+    display: none;
 }
