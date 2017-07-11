@@ -6,5 +6,4 @@ class yue extends indexMain{
         $this->smarty->assign("result",$result);
         $this->smarty->display("yhnearby.html");
     }
-
 }

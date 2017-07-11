@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 10:14:54
+/* Smarty version 3.1.30, created on 2017-07-11 08:28:03
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhylogin.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5963377e64bd47_34450698',
+  'unifunc' => 'content_59646ff349b604_14982978',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ec6c0628cec9ae7fc4a86b815f6aa771aa701dd' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhylogin.html',
-      1 => 1499659765,
+      1 => 1499754481,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5963377e64bd47_34450698 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59646ff349b604_14982978 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -50,6 +50,14 @@ function content_5963377e64bd47_34450698 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /jQuery.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.validate.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/messages_zh.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header>
@@ -58,7 +66,7 @@ function content_5963377e64bd47_34450698 (Smarty_Internal_Template $_smarty_tpl)
 /xhylogin.png" alt="">
 </header>
 <div class="box">
-    <form action="index.php?m=index&f=login&a=willlogin" method="post">
+    <form action="index.php?m=index&f=login&a=willlogin" method="post" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -80,7 +88,7 @@ function content_5963377e64bd47_34450698 (Smarty_Internal_Template $_smarty_tpl)
                 <!--<input type="radio">记住密码-->
                 <!--<a href="#">忘记密码</a>-->
             <!--</div>-->
-            <div class="login" style="margin-top: 0.2rem">
+            <div class="login">
                 <div class="login-btn">
                     <input type="submit" value="登录">
                 </div>
@@ -88,6 +96,8 @@ function content_5963377e64bd47_34450698 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </form>
     <div class="photo">
+        <div class="circle yuan1"></div>
+        <div class="circle yuan2"></div>
         <div class="ph-rect">
             <img src="<?php echo IMG_PATH;?>
 /xhyphoto.png" alt="">

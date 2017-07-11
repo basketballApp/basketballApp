@@ -71,7 +71,7 @@ form {
     border: 1px solid #bbbbbc;
     border-radius: 0.7rem;
     position: relative;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
 
 .kuang .icon {
@@ -183,7 +183,15 @@ form {
     margin: 0 auto;
     position: relative;
 }
-
+#uname-error,#password-error,#upass1-error{
+    height: 100%;
+    line-height:0.58rem;
+    position: absolute;
+    font-size: 0.18rem;
+    color:#ccc;
+    right:0.2rem;
+    bottom:-0.6rem;
+}
 .kuang .login .login-btn input {
     width: 3.16rem;
     height: 0.68rem;
@@ -199,18 +207,125 @@ form {
     border: none;
     border-radius: 1rem;
 }
-
 .photo {
+    width:100%;
+    height: 1.63rem;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.step{
+    width: 100%;
+    height:0.5rem;
+    /*background: red;*/
+    margin-top: 1.6em;
+    padding-left: 1.9rem;
+    padding-top: 0.1rem;
+}
+.step .passroll{
+    width: 0.44rem;
+    height: 0.3rem;
+    float: left;
+}
+.step .s-roll{
+    width: 0.3rem;
+    height:0.3rem;
+    border-radius: 50%;
+    background:#b2b4b5;
+    position: relative;
+    float: left;
+}
+.step .s-roll .sm-roll{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.2rem;
+    height:0.2rem;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background: #d9dbdc;
+    border-radius: 50%;
+    z-index: 5;
+}
+.step .s-roll .sm-roll .sx-roll{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.1rem;
+    height:0.1rem;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%;
+}
+.step .s-line{
+    width: 1.34rem;
+    height:0.02rem;
+    float: left;
+    background: #a8a8a8;
+    margin-top: 0.14rem;
+    margin-left: -0.1rem;
+    z-index: 1;
+}
+.photo1 {
     width: 1.63rem;
     height: 1.63rem;
     position: absolute;
     left: 2.93rem;
-    top: 0;
+    top: -0.3rem;
     border-radius: 50%;
     border: 2px solid #dcdcdc;
 }
+.photo1:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left:0;
+    top:-0.1rem;
+    right:0;
+    margin: auto;
+    width: 0.16rem;
+    height:0.16rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.photo1:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left:0;
+    bottom:-0.1rem;
+    right:0;
+    margin: auto;
+    width: 0.16rem;
+    height:0.16rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.photo1 .circle{
+    position: absolute;
+    top:0;
 
-.ph-rect {
+    bottom:0;
+    margin: auto;
+    width: 0.16rem;
+    height:0.16rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.photo1 .yuan1{
+    left:-0.1rem;
+}
+.photo1 .yuan2{
+    right:-0.1rem;
+}
+.ph-rect1 {
     width: 1.31rem;
     height: 1.31rem;
     margin-left: 0.13rem;
@@ -218,7 +333,7 @@ form {
     border-radius: 50%;
 }
 
-.ph-rect img {
+.ph-rect1 img {
     width: 100%;
     height: 100%;
 }
