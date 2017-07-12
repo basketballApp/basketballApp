@@ -14,7 +14,6 @@ $(function () {
                     console.log(e);
                     if(e=="ok"){
                         that.html("已关注");
-                        alert(1)
                     }
                 }
             })

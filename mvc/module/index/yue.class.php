@@ -19,5 +19,4 @@ class yue extends indexMain{
         $this->smarty->assign("uid",$uid);
         $this->smarty->display("yhnearby.html");
     }
-
 }

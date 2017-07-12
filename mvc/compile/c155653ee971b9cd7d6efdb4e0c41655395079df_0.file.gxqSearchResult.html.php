@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 04:58:59
+/* Smarty version 3.1.30, created on 2017-07-12 02:54:58
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\gxqSearchResult.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59643ef34dbea4_93706881',
+  'unifunc' => 'content_596573621f3345_59585515',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c155653ee971b9cd7d6efdb4e0c41655395079df' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\gxqSearchResult.html',
-      1 => 1499683218,
+      1 => 1499820702,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59643ef34dbea4_93706881 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596573621f3345_59585515 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -41,8 +41,31 @@ function content_59643ef34dbea4_93706881 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
 >
         $(function(){
+
+            $(".backbox .back").click(function () {
+                $(".tan").css("display","none")
+            })
+            $(".ma").click(function(){
+                history.go(-1)
+            })
+
+            //立即预定
             $(".order").click(function(){
-                location.href="index.php?m=index&f=index&a=courtDetails";
+                var courtName=$("p.title1").html();
+                var courtId=$("input[name=cid]").attr("cid");
+                var price=$("input[name=price]").attr("price");
+                $.ajax({
+                    url:"index.php?m=index&f=index&a=shengchengOrder&price=price",
+                    type:"post",
+                    data:{
+                        courtId:courtId,courtName:courtName,price:price
+                    },
+                    success:function(e){
+                        if(e!=0){
+                            location.href="index.php?m=index&f=index&a=courtDetails";
+                        }
+                    }
+                })
             })
         })
     <?php echo '</script'; ?>
@@ -58,15 +81,14 @@ function content_59643ef34dbea4_93706881 (Smarty_Internal_Template $_smarty_tpl)
 /gxq/gxqleftjt_03.png" alt="" class="ma">
         </div>
         <div class="right">
-        <img src="<?php echo IMG_PATH;?>
-/gxq/gxqcg_03.png" alt="" class="yuyin">
+
         </div>
     </div>
     <div class="search">
         <div class="dian1"></div>
         <div class="dian2"></div>
         <div class="toptitle">搜索</div>
-        <p class="bottomtitle"><span>FUJINQIUCHANG</span>  NEARBY</p>
+        <input class="bottomtitle" placeholder="FUJINQIUCHANG&nbsp;NEARBY">
         <div class="bottomxian"></div>
         <div class="logo">
             <img src="<?php echo IMG_PATH;?>
@@ -153,62 +175,51 @@ function content_59643ef34dbea4_93706881 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 <!--篮球场-->
 <div class="gxqchang">
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['xiangqing']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
     <div class="list">
         <div class="left">
             <img src="<?php echo IMG_PATH;?>
 /gxq/gxqcg_44.png" alt="">
         </div>
         <div class="right">
-            <p class="p1">飞鸟篮球场</p>
-            <p class="p2"><span>FEINIAOLANQIUCHANG</span>NEARBY</p>
+            <p class="p1"><a href="index.php?m=index&f=index&a=addOrder&cid=<?php echo $_smarty_tpl->tpl_vars['v']->value['cid'];?>
+"><?php echo $_smarty_tpl->tpl_vars['v']->value["cname"];?>
+</a></p>
+            <p class="p2"><?php echo $_smarty_tpl->tpl_vars['v']->value["cyname"];?>
+</p>
             <p class="p3">....................</p>
             <ul class="caozuo">
                 <li>
                     <img src="<?php echo IMG_PATH;?>
 /gxq/gxqcg_47.png" alt="" class="like">
-                    <p class="shu">2334</p>
+                    <p class="shu"><?php echo $_smarty_tpl->tpl_vars['v']->value["belove"];?>
+</p>
                 </li>
                 <li>
                     <img src="<?php echo IMG_PATH;?>
 /gxq/gxqcg_50.png" alt="" class="like">
-                    <p class="shu">2334</p>
+                    <p class="shu">到这</p>
                 </li>
                 <li>
                     <img src="<?php echo IMG_PATH;?>
 /gxq/gxqcg_53.png" alt="" class="like">
-                    <p class="shu">2334</p>
+                    <p class="shu"><?php echo $_smarty_tpl->tpl_vars['v']->value["cwatch"];?>
+</p>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="list">
-        <div class="left">
-            <img src="<?php echo IMG_PATH;?>
-/gxq/gxqcg_59.png" alt="">
-        </div>
-        <div class="right">
-            <p class="p1">飞鸟篮球场</p>
-            <p class="p2"><span>FEINIAOLANQIUCHANG</span>NEARBY</p>
-            <p class="p3">....................</p>
-            <ul class="caozuo">
-                <li>
-                    <img src="<?php echo IMG_PATH;?>
-/gxq/gxqcg_47.png" alt="" class="like">
-                    <p class="shu">2334</p>
-                </li>
-                <li>
-                    <img src="<?php echo IMG_PATH;?>
-/gxq/gxqcg_50.png" alt="" class="like">
-                    <p class="shu">2334</p>
-                </li>
-                <li>
-                    <img src="<?php echo IMG_PATH;?>
-/gxq/gxqcg_53.png" alt="" class="like">
-                    <p class="shu">2334</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
+
 </div>
 <!--弹出框-->
 <div class="tan">
@@ -231,6 +242,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 /gxq/gxqlogo_05.png" alt="" class="shoucang">
                 </div>
                 <div class="mask">
+                    <input type="hidden" cid="<?php echo $_smarty_tpl->tpl_vars['v']->value['cid'];?>
+" name="cid">
+                    <input type="hidden" price="<?php echo $_smarty_tpl->tpl_vars['v']->value['price'];?>
+" name="price">
                     <p class="title1"><?php echo $_smarty_tpl->tpl_vars['v']->value["cname"];?>
 </p>
                     <p class="title2"><?php echo $_smarty_tpl->tpl_vars['v']->value["cyname"];?>
@@ -259,8 +274,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
                 <p class="addr">详细地址：<?php echo $_smarty_tpl->tpl_vars['v']->value["addr"];?>
 </p>
                 <p class="bottomp2">.......................................................................</p>
-                <p class="addr">支持</p>
-                <p class="addr">营业时间＃</p>
+                <p class="addr">支持<?php echo $_smarty_tpl->tpl_vars['v']->value["provide"];?>
+</p>
+                <p class="addr">营业时间＃<?php echo $_smarty_tpl->tpl_vars['v']->value["yytime"];?>
+</p>
             </div>
             <ul class="xiangmu">
                 <li>

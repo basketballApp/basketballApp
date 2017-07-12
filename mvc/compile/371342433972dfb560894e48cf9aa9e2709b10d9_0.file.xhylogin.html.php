@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 05:29:45
+/* Smarty version 3.1.30, created on 2017-07-11 09:44:26
   from "F:\wamp\www\basketball\basketballApp\mvc\template\index\xhylogin.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962f4a9753b44_60100627',
+  'unifunc' => 'content_596481da627496_25363848',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '371342433972dfb560894e48cf9aa9e2709b10d9' => 
     array (
       0 => 'F:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhylogin.html',
-      1 => 1499657340,
+      1 => 1499757448,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962f4a9753b44_60100627 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596481da627496_25363848 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -50,6 +50,14 @@ function content_5962f4a9753b44_60100627 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /jQuery.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.validate.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/messages_zh.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header>
@@ -58,7 +66,7 @@ function content_5962f4a9753b44_60100627 (Smarty_Internal_Template $_smarty_tpl)
 /xhylogin.png" alt="">
 </header>
 <div class="box">
-    <form action="index.php?m=index&f=login&a=willlogin" method="post">
+    <form action="index.php?m=index&f=login&a=willlogin" method="post" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -80,7 +88,7 @@ function content_5962f4a9753b44_60100627 (Smarty_Internal_Template $_smarty_tpl)
                 <!--<input type="radio">记住密码-->
                 <!--<a href="#">忘记密码</a>-->
             <!--</div>-->
-            <div class="login" style="margin-top: 0.2rem">
+            <div class="login">
                 <div class="login-btn">
                     <input type="submit" value="登录">
                 </div>
@@ -88,34 +96,13 @@ function content_5962f4a9753b44_60100627 (Smarty_Internal_Template $_smarty_tpl)
         </div>
     </form>
     <div class="photo">
+        <div class="circle yuan1"></div>
+        <div class="circle yuan2"></div>
         <div class="ph-rect">
             <img src="<?php echo IMG_PATH;?>
 /xhyphoto.png" alt="">
         </div>
     </div>
-</div>
-<div class="box box1">
-    <form action="">
-        <div class="kuang alert">
-            <div class="a-top a-true">
-                <div class="ic-login">
-                    <div class="loginse iconfont icon-duihao2" style="color:#02be0f">
-                    </div>
-                    <span>登录成功</span>
-                </div>
-                <p style="color:#000;">来吧兄弟！约场精彩绝伦的球赛吧</p>
-            </div>
-            <div class="a-top a-false">
-                    <div class="ic-login">
-                        <div class="loginse loginfal iconfont icon-cuowu4" style="color:#ec5151"></div>
-                        <span style="color:#ec5151">登录失败</span>
-                    </div>
-                    <p style="color:#000;">对不起！网络出错了！请重新登录</p>
-            </div>
-            <img src="<?php echo IMG_PATH;?>
-/xhyloadBoy.png" alt="">
-        </div>
-    </form>
 </div>
 </body>
 <?php echo '<script'; ?>

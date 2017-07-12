@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
     <link rel="stylesheet" href="{CSS_PATH}/xhyreg.css">
     <link rel="stylesheet" href="{CSS_PATH}/animate.css">
-    <script src="{JS_PATH}/jQuery.js"></script>
     <script src="{JS_PATH}/mui.min.js"></script>
     <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/jquery.validate.js"></script>
+    <script src="{JS_PATH}/messages_zh.js"></script>
 </head>
 <body>
 <header>
-    <a href="#" onclick="location.href='index.php?m=index&f=login'" class="back iconfont icon-fanhui"></a>
+    <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
     <img src="{IMG_PATH}/xhyregbg.png" alt="">
 </header>
 <div class="box">
-    <form method="post" action="index.php?m=index&f=login&a=reg">
+    <form method="post" action="index.php?m=index&f=login&a=reg" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -34,13 +36,13 @@
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass" placeholder="请输入您的5-8位数字或字母密码">
+                <input type="password" name="upass" placeholder="请输入您的5-8位数字或字母密码" id="password">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="upass1" placeholder="请再次确认您的密码">
+                <input type="password" name="upass1" placeholder="请再次确认您的密码" >
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>
@@ -52,7 +54,27 @@
         </div>
     </form>
     <div class="photo">
-        <div class="ph-rect">
+        <div class="step">
+            <img src="{IMG_PATH}/xhyroll.png" alt="" class="passroll">
+            <div class="s-line"></div>
+            <div class="s-roll">
+                <div class="sm-roll">
+                    <div class="sx-roll"></div>
+                </div>
+            </div>
+            <div class="s-line"></div>
+            <div class="s-roll">
+                <div class="sm-roll">
+                    <div class="sx-roll"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="photo1">
+        <div class="circle yuan1"></div>
+        <div class="circle yuan2"></div>
+        <div class="ph-rect1">
             <img src="{IMG_PATH}/xhyphoto.png" alt="">
         </div>
     </div>

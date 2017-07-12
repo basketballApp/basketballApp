@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 03:35:30
+/* Smarty version 3.1.30, created on 2017-07-11 11:53:57
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyreg2.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59642b6271c394_25361592',
+  'unifunc' => 'content_5964a03532d688_80033329',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b1c470eec06bf3783e2260dbd2ffa9b3ae004f31' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyreg2.html',
-      1 => 1499736929,
+      1 => 1499766484,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59642b6271c394_25361592 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964a03532d688_80033329 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -50,6 +50,14 @@ function content_59642b6271c394_25361592 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /jQuery.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jquery.validate.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/messages_zh.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header>
@@ -59,7 +67,7 @@ function content_59642b6271c394_25361592 (Smarty_Internal_Template $_smarty_tpl)
 </header>
 <div class="box">
     <form method="post" action="index.php?m=index&f=login&a=reg2&uname=<?php echo $_smarty_tpl->tpl_vars['uname']->value;?>
-">
+" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -73,7 +81,7 @@ function content_59642b6271c394_25361592 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="height" placeholder="请选择您的身高">
+                <input type="password" name="height" placeholder="请填写您的身高">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>

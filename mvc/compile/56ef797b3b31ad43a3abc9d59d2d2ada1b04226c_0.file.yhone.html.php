@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 05:30:37
+/* Smarty version 3.1.30, created on 2017-07-12 02:48:08
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhone.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962f4dd167268_43998633',
+  'unifunc' => 'content_596571c84893f8_21053708',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56ef797b3b31ad43a3abc9d59d2d2ada1b04226c' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhone.html',
-      1 => 1499657055,
+      1 => 1499770462,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962f4dd167268_43998633 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596571c84893f8_21053708 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
@@ -182,7 +182,7 @@ function content_5962f4dd167268_43998633 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
                 <div class="seri">
-                    <a href="index.php?m=index&f=setting" class="seri-tou">
+                    <a href="index.php?m=index&f=send" class="seri-tou">
                         <span class="title">发表动态</span>
                         <span class="mintitle">LIDAPENGQIUYOU</span>
                     </a>

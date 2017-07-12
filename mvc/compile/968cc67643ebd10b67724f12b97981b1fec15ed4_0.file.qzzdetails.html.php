@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 05:45:59
+/* Smarty version 3.1.30, created on 2017-07-11 12:37:20
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\qzzdetails.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596449f74a0853_81135358',
+  'unifunc' => 'content_5964aa60c02fb6_19180502',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '968cc67643ebd10b67724f12b97981b1fec15ed4' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\qzzdetails.html',
-      1 => 1499744758,
+      1 => 1499767185,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596449f74a0853_81135358 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964aa60c02fb6_19180502 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -72,6 +72,7 @@ function content_596449f74a0853_81135358 (Smarty_Internal_Template $_smarty_tpl)
             <div class="s-line"></div>
             <img src="<?php echo IMG_PATH;?>
 /xhyroll.png" alt="" class="passroll">
+
         </div>
         <div class="ph-rect">
             <span class="ph-left">03</span>

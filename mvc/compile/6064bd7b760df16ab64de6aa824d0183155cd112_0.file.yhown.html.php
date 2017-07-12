@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 17:31:38
+/* Smarty version 3.1.30, created on 2017-07-11 12:32:08
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhown.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59639dda5e3dd8_97902222',
+  'unifunc' => 'content_5964a928b7fee1_98440241',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6064bd7b760df16ab64de6aa824d0183155cd112' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhown.html',
-      1 => 1499695151,
+      1 => 1499769127,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59639dda5e3dd8_97902222 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5964a928b7fee1_98440241 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>

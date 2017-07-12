@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -9,8 +9,31 @@
     <script src="{JS_PATH}/jQuery.js"></script>
     <script>
         $(function(){
+
+            $(".backbox .back").click(function () {
+                $(".tan").css("display","none")
+            })
+            $(".ma").click(function(){
+                history.go(-1)
+            })
+
+            //立即预定
             $(".order").click(function(){
-                location.href="index.php?m=index&f=index&a=courtDetails";
+                var courtName=$("p.title1").html();
+                var courtId=$("input[name=cid]").attr("cid");
+                var price=$("input[name=price]").attr("price");
+                $.ajax({
+                    url:"index.php?m=index&f=index&a=shengchengOrder&price=price",
+                    type:"post",
+                    data:{
+                        courtId:courtId,courtName:courtName,price:price
+                    },
+                    success:function(e){
+                        if(e!=0){
+                            location.href="index.php?m=index&f=index&a=courtDetails";
+                        }
+                    }
+                })
             })
         })
     </script>
@@ -24,14 +47,14 @@
             <img src="{IMG_PATH}/gxq/gxqleftjt_03.png" alt="" class="ma">
         </div>
         <div class="right">
-        <img src="{IMG_PATH}/gxq/gxqcg_03.png" alt="" class="yuyin">
+
         </div>
     </div>
     <div class="search">
         <div class="dian1"></div>
         <div class="dian2"></div>
         <div class="toptitle">搜索</div>
-        <p class="bottomtitle"><span>FUJINQIUCHANG</span>  NEARBY</p>
+        <input class="bottomtitle" placeholder="FUJINQIUCHANG&nbsp;NEARBY">
         <div class="bottomxian"></div>
         <div class="logo">
             <img src="{IMG_PATH}/gxq/gxqcg_07.png" alt="" class="leida">
@@ -106,54 +129,33 @@
 </div>
 <!--篮球场-->
 <div class="gxqchang">
+    {foreach $xiangqing as $v}
     <div class="list">
         <div class="left">
             <img src="{IMG_PATH}/gxq/gxqcg_44.png" alt="">
         </div>
         <div class="right">
-            <p class="p1">飞鸟篮球场</p>
-            <p class="p2"><span>FEINIAOLANQIUCHANG</span>NEARBY</p>
+            <p class="p1"><a href="index.php?m=index&f=index&a=addOrder&cid={$v['cid']}">{$v["cname"]}</a></p>
+            <p class="p2">{$v["cyname"]}</p>
             <p class="p3">....................</p>
             <ul class="caozuo">
                 <li>
                     <img src="{IMG_PATH}/gxq/gxqcg_47.png" alt="" class="like">
-                    <p class="shu">2334</p>
+                    <p class="shu">{$v["belove"]}</p>
                 </li>
                 <li>
                     <img src="{IMG_PATH}/gxq/gxqcg_50.png" alt="" class="like">
-                    <p class="shu">2334</p>
+                    <p class="shu">到这</p>
                 </li>
                 <li>
                     <img src="{IMG_PATH}/gxq/gxqcg_53.png" alt="" class="like">
-                    <p class="shu">2334</p>
+                    <p class="shu">{$v["cwatch"]}</p>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="list">
-        <div class="left">
-            <img src="{IMG_PATH}/gxq/gxqcg_59.png" alt="">
-        </div>
-        <div class="right">
-            <p class="p1">飞鸟篮球场</p>
-            <p class="p2"><span>FEINIAOLANQIUCHANG</span>NEARBY</p>
-            <p class="p3">....................</p>
-            <ul class="caozuo">
-                <li>
-                    <img src="{IMG_PATH}/gxq/gxqcg_47.png" alt="" class="like">
-                    <p class="shu">2334</p>
-                </li>
-                <li>
-                    <img src="{IMG_PATH}/gxq/gxqcg_50.png" alt="" class="like">
-                    <p class="shu">2334</p>
-                </li>
-                <li>
-                    <img src="{IMG_PATH}/gxq/gxqcg_53.png" alt="" class="like">
-                    <p class="shu">2334</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    {/foreach}
+
 </div>
 <!--弹出框-->
 <div class="tan">
@@ -169,6 +171,8 @@
                     <img src="{IMG_PATH}/gxq/gxqlogo_05.png" alt="" class="shoucang">
                 </div>
                 <div class="mask">
+                    <input type="hidden" cid="{$v['cid']}" name="cid">
+                    <input type="hidden" price="{$v['price']}" name="price">
                     <p class="title1">{$v["cname"]}</p>
                     <p class="title2">{$v["cyname"]}</p>
                     <p class="title3">{$v["privilege"]}</p>
@@ -189,8 +193,8 @@
             <div class="details">
                 <p class="addr">详细地址：{$v["addr"]}</p>
                 <p class="bottomp2">.......................................................................</p>
-                <p class="addr">支持</p>
-                <p class="addr">营业时间＃</p>
+                <p class="addr">支持{$v["provide"]}</p>
+                <p class="addr">营业时间＃{$v["yytime"]}</p>
             </div>
             <ul class="xiangmu">
                 <li>

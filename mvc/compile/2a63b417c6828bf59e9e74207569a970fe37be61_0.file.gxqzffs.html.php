@@ -1,13 +1,45 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-12 02:47:50
+  from "E:\wamp\www\basketball\basketballApp\mvc\template\index\gxqzffs.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_596571b6952603_68247091',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2a63b417c6828bf59e9e74207569a970fe37be61' => 
+    array (
+      0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\gxqzffs.html',
+      1 => 1499770462,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_596571b6952603_68247091 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="{CSS_PATH}/gxqstadium.css">
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/jQuery.js"></script>
-    <script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+/gxqstadium.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>
         $(function(){
             $(".titlebox").click(function(){
                 $(".mask").css("display","block")
@@ -26,13 +58,15 @@
                 history.go(-1)
             })
         })
-    </script>
+    <?php echo '</script'; ?>
+>
 </head>
 <body class="stadium">
     <header>
         <div class="top">
             <div class="left">
-                <img src="{IMG_PATH}/gxq/gxqleftjt_03.png" alt="" class="ma">
+                <img src="<?php echo IMG_PATH;?>
+/gxq/gxqleftjt_03.png" alt="" class="ma">
             </div>
         </div>
         <div class="middle">
@@ -48,8 +82,10 @@
             <p class="titlebox2" style="text-align: center">DISANFANGZHISFU</p>
         </div>
         <div class="zfb-wx">
-            <div class="zfb"><img src="{IMG_PATH}/gxq/gxqmethod_03.png" alt=""></div>
-            <div class="wx"><img src="{IMG_PATH}/gxq/gxqmethod_05.png" alt=""></div>
+            <div class="zfb"><img src="<?php echo IMG_PATH;?>
+/gxq/gxqmethod_03.png" alt=""></div>
+            <div class="wx"><img src="<?php echo IMG_PATH;?>
+/gxq/gxqmethod_05.png" alt=""></div>
         </div>
         <div style="height: 0.2rem"></div>
         <p class="circle">......................................................................................................</p>
@@ -92,7 +128,8 @@
         <div class="lijibox">
             <div class="money">30.50</div>
             <div class="yinhang">
-                <img src="{IMG_PATH}/gxq/jianghang_06.png" alt="" class="logo">
+                <img src="<?php echo IMG_PATH;?>
+/gxq/jianghang_06.png" alt="" class="logo">
                 <div class="yh2">
                     <p class="title1">中国建设银行</p>
                     <p class="title1" style="clear: both">0321 **** **** 8875</p>
@@ -103,4 +140,5 @@
     </div>
 
 </body>
-</html>
+</html><?php }
+}

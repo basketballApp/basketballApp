@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -13,6 +13,8 @@
     <script src="{JS_PATH}/mui.min.js"></script>
     <script src="{JS_PATH}/rem.js"></script>
     <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/jquery.validate.js"></script>
+    <script src="{JS_PATH}/messages_zh.js"></script>
 </head>
 <body>
 <header>
@@ -20,7 +22,7 @@
     <img src="{IMG_PATH}/xhyregbg.png" alt="">
 </header>
 <div class="box">
-    <form method="post" action="index.php?m=index&f=login&a=reg2&uname={$uname}">
+    <form method="post" action="index.php?m=index&f=login&a=reg2&uname={$uname}" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -34,13 +36,13 @@
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="height" placeholder="请选择您的身高">
+                <input type="text" name="height" placeholder="请填写您的身高">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="weight" placeholder="请填写您的体重">
+                <input type="text" name="weight" placeholder="请填写您的体重">
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>

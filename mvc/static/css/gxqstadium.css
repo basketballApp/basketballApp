@@ -212,7 +212,15 @@ header .fen{
     font-size: 0.22rem;text-align: left;color: #9d9d9c;line-height: 0.4rem;
 }
 .searchSearchResult .search .bottomtitle{
-    font-size: 0.15rem;text-align: left;color: #9d9d9c;line-height: 0.3rem;
+   position: absolute;
+    top:0.35rem;
+    left:0.1rem;
+    width: 97%;
+    height:0.45rem;
+    outline: none;
+    border-left: none;
+    border-right:none;
+    border-top:none;
 }
 .searchSearchResult .search .bottomtitle span{
     font-weight: bold;
@@ -379,6 +387,12 @@ header .fen{
 .gxqchang .list .right .p1{
     font-size: 0.22rem;color: #000;text-align: left;font-weight: bold;
 }
+.gxqchang .list .right .p1 a{
+    display: block;color: #2d2c2c;
+    line-height: 0.22rem;
+    height:0.22rem;
+    text-decoration: none;
+}
 .gxqchang .list .right .p2{
     font-size: 0.28rem;
     text-align: left;
@@ -409,7 +423,7 @@ header .fen{
 }
 .searchSearchResult .tan{
     width:100%;
-    height:100%;
+    height:13.34rem;
     background: rgba(0,0,0,0.6);
     position: absolute;
     top:0;left:0;
@@ -656,7 +670,7 @@ body.order{
 .order .history{
     border-top:0.02rem solid #aaaaa9;
     width: 100%;height:3.81rem;
-    padding:0.18rem 0.23rem;
+    padding-top:0.18rem;
 }
 .order .history .title1{
     font-family: "San Francisco Display";

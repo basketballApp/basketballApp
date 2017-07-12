@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
     <link rel="stylesheet" href="{CSS_PATH}/xhylogin.css">
     <link rel="stylesheet" href="{CSS_PATH}/animate.css">
-    <script src="{JS_PATH}/jQuery.js"></script>
     <script src="{JS_PATH}/mui.min.js"></script>
     <script src="{JS_PATH}/rem.js"></script>
-
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/jquery.validate.js"></script>
+    <script src="{JS_PATH}/messages_zh.js"></script>
 </head>
 <body>
 <header>
-    <a href="#" onclick="location.href='index.php?m=index&f=login'" class="back iconfont icon-fanhui"></a>
+    <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
     <img src="{IMG_PATH}/xhylogin.png" alt="">
 </header>
 <div class="box">
-    <form action="index.php?m=index&f=login&a=willLogin" method="post">
+    <form action="index.php?m=index&f=login&a=willlogin" method="post" id="login-form">
         <div class="kuang">
             <div class="user">
                 <div class="icon icons iconfont icon-yonghuming1"></div>
@@ -43,7 +44,7 @@
                 <!--<input type="radio">记住密码-->
                 <!--<a href="#">忘记密码</a>-->
             <!--</div>-->
-            <div class="login" style="margin-top: 0.2rem">
+            <div class="login">
                 <div class="login-btn">
                     <input type="submit" value="登录">
                 </div>
@@ -51,6 +52,8 @@
         </div>
     </form>
     <div class="photo">
+        <div class="circle yuan1"></div>
+        <div class="circle yuan2"></div>
         <div class="ph-rect">
             <img src="{IMG_PATH}/xhyphoto.png" alt="">
         </div>
