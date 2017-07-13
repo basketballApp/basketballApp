@@ -1,12 +1,5 @@
 <?php
 class code{
-    /*
-     * 验证码的内容
-     * 验证码的长度
-     * 验证码的大小
-     * 验证码的颜色
-     * 验证码的位置
-     * */
     public $width=150;
     public $height=40;
     public $type="png";
@@ -19,7 +12,6 @@ class code{
     public $angle=array("min"=>-15,"max"=>15);
     public $lineNum=10;
     public $pixNum=100;
-
     //1.创建画布
     function createCanvas(){
         $this->image=imagecreatetruecolor($this->width,$this->height);
@@ -86,7 +78,7 @@ class code{
         imagedestroy($this->image);
     }
 }
-/*$obj=new code();
-$obj->codeUrl="../demo.ttf";
-$obj->output();*/
+//$obj=new code();
+//$obj->codeUrl="../static/index/fonts/mui.ttf";
+//$obj->output();
 

@@ -1,0 +1,24 @@
+$("#login-form").validate({
+    rules:{
+        uname:{
+            required:true,
+            minlength:5,
+            maxlength:8
+        },
+        upass:{
+            required:true,
+            minlength:5,
+        }
+    },
+    messages:{
+        uname:{
+            required:"*必填",
+            minlength:"*不能少于5位",
+        },
+        upass:{
+            required:"*必填",
+            minlength:"*不能少于5位",
+            maxlength:"*不能超过8位",
+        }
+    }
+})

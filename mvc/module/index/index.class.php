@@ -82,12 +82,4 @@ class index extends indexMain {
         $db->insert("courtId={$courtId},courtName='{$courtName}',price={$price}");
         echo $db->insert_id;
     }
-//    function code(){
-//        $obj=new code();
-//        $obj->codeUrl="demo.ttf";
-//        $obj->width=120;
-//        $obj->height=30;
-//        $obj->output();
-//        $this->session->set("code",$obj->current);
-//    }
 }

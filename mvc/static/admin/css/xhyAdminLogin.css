@@ -1,0 +1,135 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: '苹方 粗体';
+}
+.box{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.box .img{
+    width: 100%;
+    height:100%;
+}
+.box form{
+    width: 372px;
+    height:360px;
+    position: absolute;
+    top:160px;
+    right:130px;
+    border:1px solid #ddb285;
+    border-radius:5px;
+    background: #0a0e0d;
+}
+.box form .main{
+    width: 282px;
+    height:298px;
+    margin:0 auto;
+    margin-top: 22px;
+}
+.box form .main h3{
+    font-size: 20px;
+    color:#fff;
+    width: 100%;
+    height: 28px;
+    text-align:left;
+    line-height:28px;
+    float: left;
+}
+.box form .main .user{
+    width:100%;
+    /*height:50px;*/
+    overflow: hidden;
+    margin-top:20px;
+    float: left;
+    position: relative;
+}
+.box form .main .user label{
+    width: 100%;
+    height:17px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 17px;
+    color:#c1c1c0;
+    float: left;
+    margin-bottom: 8px;
+}
+input:focus{
+    outline: none;
+}
+.box form .main .user .name,.box form .main .user .pass{
+    width: 100%;
+    height: 33px;
+    border-radius: 8px;
+    color:#c1c1c0;
+    font-size: 12px;
+    padding-left:25px ;
+    background: none;
+    border:1px solid #838487!important;
+}
+.box form .main .user .login{
+    display: block;
+    width:116px;
+    height:33px;
+    background: #ffa241;
+    color:#fff;
+    text-align: center;
+    line-height:33px;
+    font-size: 18px;
+    margin:0 auto;
+    border:none;
+    border-radius: 5px;
+}
+.box form .logo{
+    width: 73px;
+    height:73px;
+    position: absolute;
+    right:20px;
+    top:-25px;
+}
+.icon,.icon1{
+    width:14px;
+    height:15px;
+    position: absolute;
+    left:5px;
+    bottom:10px;
+    font-size:14px;
+    color:#fff;
+}
+.nametrue,.passtrue{
+    width:14px;
+    height:14px;
+    position: absolute;
+    right:5px;
+    bottom:10px;
+    font-size:14px;
+    color:#7fdd40;
+    display: none;
+}
+.box form .main .user .test{
+    width: 45%;
+    height: 33px;
+    border-radius: 8px;
+    color:#c1c1c0;
+    font-size: 12px;
+    text-align: center;
+    background: none;
+    border:1px solid #838487!important;
+    float: left;
+}
+.box form .main .user .code{
+    width: 50%;
+    height: 30px;
+    float: right;
+}
+#uname-error,#upass-error{
+    position: absolute;
+    bottom:0;
+    right:5px;
+    width:auto;
+    height:20px;
+    font-size:12px;
+    color:#fff;
+}

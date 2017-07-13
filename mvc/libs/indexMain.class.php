@@ -9,7 +9,5 @@ class indexMain{
           $this->session=new session();
     }
 
-    function jump($message,$url){
-      echo "<script>alert('{$message}');location.href='{$url}';</script>";
-    }
+   
 }

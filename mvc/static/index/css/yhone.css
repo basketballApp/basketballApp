@@ -1,0 +1,277 @@
+body,html{
+    font-size: 0.36rem;
+    background: #f0f0f0;
+    height: 100%;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 0.88rem;
+    background: #ec362d;
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    color:#fff;
+    position:fixed;
+    top:0;left:0;
+    margin: auto;
+    z-index: 100;
+}
+.header-main{
+    width: 7.02rem;
+    height: 100%;
+    margin:0 auto;
+    position: relative;
+}
+.back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.back.iconfont{
+    font-size: 0.48rem;
+    color: #fff;
+}
+.header-p{
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    float: left;
+    margin-top: 0.16rem;
+}
+.header-p span{
+    display: block;
+    line-height: 0.33rem;
+}
+.header-p .he-span{
+    font-size: 0.18rem;
+}
+.banner{
+    width: 100%;
+    height: 4.44rem;
+    float: left;
+    margin-top: 0.88rem;
+    position: relative;
+}
+.banner .ba-yh{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner .ba-yh img{
+    width: 100%;
+}
+.banner .tou{
+    width: 1.57rem;
+    height: 1.59rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+.banner .tou .img{
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    border-radius: 50%;
+    margin-top: 6%;
+    /* margin: 0 auto; */
+    margin-left: 5%;
+}
+.bedeck{
+    width: 1.92rem;
+    height: 0.72rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -0.5rem;
+}
+.bedeck img{
+    width: 1.92rem;
+    height: 0.72rem;
+    float: left;
+}
+.own{
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.own .detail{
+    width: 100%;
+    height: 1.8rem;
+    float: left;
+    color: #676666;
+    font-family: "San Francisco Display";
+}
+.own .detail .top{
+    text-align: center;
+    line-height: 0.5rem;
+    white-space: normal;
+}
+.own .detail .name,.top{
+    font-size: 0.3rem;
+    font-family: "苹方";
+    font-weight: 600;
+}
+.own .detail .referral{
+    font-size: 0.26rem;
+}
+.medal{
+    width: 1.4rem;
+    height: 0.3rem;
+    margin: 0 auto;
+}
+.medal img{
+    width: 0.16rem;
+    height: 0.25rem;
+    float: left;
+    margin: 0.02rem;
+}
+section {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin-top: 0.5rem;
+}
+section .section-main{
+    width: 7.02rem;
+    margin: 0 auto;
+}
+.section-main .main-one{
+    width: 100%;
+    float: left;
+}
+.section-main .main-one a{
+    display: inline-block;
+    float: left;
+    width: 3.26rem;
+    height: 1.33rem;
+}
+.section-main .main-one a:nth-child(2){
+    float: right;
+}
+.section-main .main-one a img{
+    float: left;
+    width: 3.26rem;
+    height: 1.33rem;
+}
+section ul{
+    width: 7.02rem;
+    float: left;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+section ul li{
+    width: 7.02rem;
+    height: 1.18rem;
+    float: left;
+    background: #fff;
+    border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
+    border-top-right-radius:0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+section ul li .self{
+    width: 0.95rem;
+    height: 100%;
+    float: left;
+    box-shadow: 0rem 0.1rem 2rem 0.1rem rgba(0,0,0,0.1);
+}
+section ul li .self-tou{
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.1rem;
+    margin-top: 0.25rem;
+    line-height: 0.7rem;
+    text-align: center;
+}
+section ul li .self-tou.iconfont{
+    color: #f01414;
+    font-size: 0.46rem;
+}
+section ul li .seri{
+    width: 6rem;
+    height: 100%;
+    float: right;
+    font-size: 0.26rem;
+    padding-left: 0.3rem;
+    color: #7c7c7d;
+    position: relative;
+    padding-top: 0.1rem;
+}
+footer{
+    width: 100%;
+    overflow: hidden;
+   float: left;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+
+}
+section ul li .seri-tou{
+    width: 4.5rem;
+    height: 100%;
+    float: left;
+}
+section ul li .mintitle{
+    width: 100%;
+    float: left;
+    line-height: 0.7rem;
+    font-size: 0.22rem;
+}
+section ul li .seri .title{
+    font-weight: 600;
+    color: #464647;
+    float: left;
+}
+section ul li .seri .detail{
+    font-weight: 600;
+    float: left;
+}
+footer .loginout{
+    width: 6.42rem;
+    height: 1rem;
+    background: #ec362d;
+    margin: 0 auto;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    text-align: center;
+    color: #fff;
+}
+footer .loginout .iconfont{
+    line-height: 1.1rem;
+    font-size: 0.52rem;
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+footer .loginout .details{
+    display: block;
+}
+footer .loginout a{
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+    width: 60%;
+    height: 80%;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    margin-top: 0.15rem;
+    padding-left: 0.1rem;
+}
+footer .loginout span{
+    display: inline-block;
+    height: 100%;
+
+}

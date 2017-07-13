@@ -16,12 +16,17 @@ define("TPL_PATH",APP_PATH."/template");
 $prot=substr($server["SERVER_PROTOCOL"],0,strrpos($server["SERVER_PROTOCOL"],"/"));
 $path=substr($server["SCRIPT_NAME"],0,strrpos($server["SCRIPT_NAME"],"/"));//服务器路径
 define("URL_PATH",$prot."://".$server["HTTP_HOST"].$path);
-define("CSS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/css");
-define("IMG_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/image");
-define("JS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/js");
-define("FONTS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/fonts");
-define("ICONFONT_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/iconfont");
+define("CSS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/index/css");
+define("IMG_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/index/image");
+define("JS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/index/js");
+define("FONTS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/index/fonts");
+define("ICONFONT_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/index/iconfont");
 define("SELF_PATH",$prot."://".$server["HTTP_HOST"].$server["SCRIPT_NAME"]);
+define("ADMINCSS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/admin/css");
+define("ADMINIMG_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/admin/image");
+define("ADMINJS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/admin/js");
+define("ADMINFONTS_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/admin/fonts");
+define("ADMINICONFONT_PATH",$prot."://".$server["HTTP_HOST"].$path."/static/admin/iconfont");
 require_once LIBS_PATH."/functions.php";
 require_once LIBS_PATH."/route.class.php";
 require_once LIBS_PATH."/db.class.php";
@@ -31,8 +36,8 @@ require_once LIBS_PATH."/main.class.php";
 require_once LIBS_PATH."/code.class.php";
 require_once LIBS_PATH."/session.class.php";
 include LIBS_PATH."/indexMain.class.php";
-
 $obj=new route();
 $obj->getInfo();
+
 
 

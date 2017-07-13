@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 12:54:23
+/* Smarty version 3.1.30, created on 2017-07-13 12:55:19
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\qzzloading.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964ae5f9c84f5_59457544',
+  'unifunc' => 'content_59675197264f10_81915467',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eddaf59c13f0611a750b0f06b4d246ce3284139e' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\qzzloading.html',
-      1 => 1499770462,
+      1 => 1499824961,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-function content_5964ae5f9c84f5_59457544 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59675197264f10_81915467 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -67,7 +67,7 @@ function content_5964ae5f9c84f5_59457544 (Smarty_Internal_Template $_smarty_tpl)
             <div class="eng">SOUSU JIEGUOSOUSU</div>
         </div>
             <div class="r">
-            <!--<img src="../../static/image/qzzh-search.png" alt="" style="width: 100%;height: 100%;float: left">-->
+            <!--<image src="../../static/image/qzzh-search.png" alt="" style="width: 100%;height: 100%;float: left">-->
         </div>
         </div>
     </header>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 11:53:57
+/* Smarty version 3.1.30, created on 2017-07-12 03:02:14
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyreg2.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964a03532d688_80033329',
+  'unifunc' => 'content_59657516ce7596_96238655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b1c470eec06bf3783e2260dbd2ffa9b3ae004f31' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyreg2.html',
-      1 => 1499766484,
+      1 => 1499770462,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5964a03532d688_80033329 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59657516ce7596_96238655 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -81,13 +81,13 @@ function content_5964a03532d688_80033329 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="height" placeholder="请填写您的身高">
+                <input type="text" name="height" placeholder="请填写您的身高">
                 <div class="icon1 passfalse iconfont icon-cuowu4" id="icon2"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2" id="icon2"></div>
             </div>
             <div class="user">
                 <div class="icon icons1 iconfont icon-mima"></div>
-                <input type="password" name="weight" placeholder="请填写您的体重">
+                <input type="text" name="weight" placeholder="请填写您的体重">
                 <div class="icon1 passfalse iconfont icon-cuowu4"></div>
                 <div class="icon1 icon2 passtrue iconfont icon-duihao2"></div>
             </div>

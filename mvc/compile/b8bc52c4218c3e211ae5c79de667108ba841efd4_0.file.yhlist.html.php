@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 06:10:30
+/* Smarty version 3.1.30, created on 2017-07-13 13:10:37
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhlist.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962fe36d02c32_78274793',
+  'unifunc' => 'content_5967552d19eb38_90908097',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8bc52c4218c3e211ae5c79de667108ba841efd4' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhlist.html',
-      1 => 1499657055,
+      1 => 1499824554,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962fe36d02c32_78274793 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5967552d19eb38_90908097 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
@@ -269,7 +269,7 @@ function content_5962fe36d02c32_78274793 (Smarty_Internal_Template $_smarty_tpl)
         <div class="smale">
             <div class="lists">
                 <div class="img">
-                    <img src="../../static/image/yhsmail.png" alt="">
+                    <img src="../../static/index/image/yhsmail.png" alt="">
                 </div>
                 <div class="title">
                     <p>关注</p>

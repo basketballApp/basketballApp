@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/base.css">
+    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
+    <link rel="stylesheet" href="{ADMINCSS_PATH}/xhyAdminLogin.css">
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/jquery.validate.js"></script>
+    <script src="{JS_PATH}/messages_zh.js"></script>
+</head>
+<body>
+<div class="box">
+    <img src="{ADMINIMG_PATH}/xhyad-loginbg.png" alt="" class="img">
+    <form action="index.php?m=admin&f=login&a=check" id="login-form" method="post" >
+        <img src="{ADMINIMG_PATH}/xhylogo.png" alt="" class="logo">
+        <div class="main">
+            <h3>篮球伙管理系统</h3>
+            <div class="user">
+                <label for="">用户名 NAME</label>
+                <input type="text" placeholder="请输入您的用户名" class="name" name="uname" autocomplete="off">
+                <div class="icon iconfont icon-user"></div>
+                <div class="nametrue iconfont icon-duihao1-copy-copy"></div>
+            </div>
+            <div class="user">
+                <label for="">密码 PASSWORD</label>
+                <input type="password" placeholder="请输入您的密码" class="pass" name="upass">
+                <div class="icon1 iconfont icon-mima1"></div>
+                <div class="passtrue iconfont icon-duihao1-copy-copy"></div>
+            </div>
+            <div class="user">
+                <label for="">验证码 AUTHCODE</label>
+                <input type="text" class="test" value="验证码" name="code">
+                <img src="index.php?m=admin&f=login&a=code" alt="" onclick="this.src=this.src+'&code='+Math.random()" style="cursor: pointer;" class="code">
+            </div>
+            <div class="user">
+                <input type="submit" value="立即登录" class="login">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script src="{ADMINJS_PATH}/xhyAdminLogin.js"></script>
+</html>
