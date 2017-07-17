@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+            box-sizing: border-box;
+        }
+        body,html{
+            width:100%;height:100%;
+        }
+        form{
+            width: 80%;
+            height:80%;
+            margin: 0 auto;
+            padding-top: 50px;
+            color:#3598DC;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        .box{
+            width:100%;
+            height: 40px;
+            margin-bottom:20px;
+            position: relative;
+            line-height: 40px;
+            color:#333;
+        }
+        .box>span{
+            font-weight: 600;
+        }
+        .form-control{
+            width: 90%;
+            height:40px;
+            float: right;
+        }
+        .btn{
+            background: #ffd305;
+            width: 80px;
+            border: none;
+        }
+        .btn:hover{
+            background: #313131;
+        }
+        .uname{
+            width:20px;
+            height:20px;
+            position: absolute;
+            right:10px;
+            top:0;
+            color:#3598DC;
+        }
+        .namefalse,.nametrue{
+            display: none;
+        }
+        .passfalse,.passtrue{
+            display: none;
+        }
+        .upass{
+            width:20px;
+            height:20px;
+            position: absolute;
+            right:10px;
+            top:0;
+            color:#3598DC;
+        }
+    </style>
+</head>
+<body>
+<form action="index.php?m=admin&f=user&a=addCon" method="post">
+
+    <div class="box">
+        <span>用户名：</span><input type="text" name="uname" class="form-control" placeholder="请输入用户名">
+        <div class="iconfont uname nametrue icon-biaodanyanzheng_zhengque"></div>
+        <div class="iconfont uname namefalse icon-biaodanyanzheng_cuowu"></div>
+    </div>
+    <div class="box">
+          <span>密码：</span>  <input type="password" name="upass" class="form-control" placeholder="请输入密码">
+        <div class="iconfont upass passtrue icon-biaodanyanzheng_zhengque"></div>
+        <div class="iconfont upass passfalse icon-biaodanyanzheng_cuowu"></div>
+    </div>
+    <div class="box">
+        <span>管理员：&nbsp;</span><input type="radio" name="value" value="1" checked>
+        <span>&nbsp;&nbsp;用户：&nbsp;</span><input type="radio" name="value" value="0" >
+    </div>
+    <div class="box">
+        <input type="submit" value="提交" class="btn btn-info">
+    </div>
+</form>
+</body>
+<script src="{JS_PATH}/jQuery.js"></script>
+</html>

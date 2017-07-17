@@ -2,7 +2,7 @@
 class login extends main{
     function init(){
         if($this->session->get("logined")){
-            echo  " <script> location.href ='index.php？m = admin＆f = login＆a = main'</ script>" ;
+            echo  " <script> location.href ='index.php?m=admin&f=login&a=main'</script>" ;
         }
         $num=mt_rand(50,100);
         $this->session->set("position",$num);
@@ -31,6 +31,7 @@ class login extends main{
                 if($upass=$v["upass"]){
                     $this->session->set("login","yes");
                     $this->session->set("uname",$uname);
+                    $this->session->set("logined","yes");
                     echo "<script>alert('登陆成功');location.href='index.php?m=admin&f=login&a=main'</script>";
                     exit;
                 }
@@ -39,7 +40,12 @@ class login extends main{
         echo "<script>alert('登陆失败');location.href='xhyAdminLogin.html'</script>";
     }
     function main(){
-        $this->smarty->display("main.html");
+        if($this->session->get("logined")){
+            $this->smarty->display("xhyAdminMain.html");
+        }else{
+            $this->smarty->display("xhyAdminLogin.html");
+        }
+
     }
     function selectAdd(){
         $value=$_POST["value"];
@@ -62,5 +68,9 @@ class login extends main{
         }else{
             echo "<script>alert('删除失败');location.href='index.php?m=admin&f=index&a='</script>";
         }
+    }
+    function loginout(){
+       $this->session->clear();
+       echo "<script>alert('退出成功');location.href='index.php?m=admin&f=login'</script>";
     }
 }

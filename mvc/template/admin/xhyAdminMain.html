@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/base.css">
+    <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
+    <link rel="stylesheet" href="{ADMINCSS_PATH}/xhyAdminMain.css">
+    <script src="{JS_PATH}/jQuery.js"></script>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <img src="{ADMINIMG_PATH}/xhyadminlogo.png" alt="">
+        <h3>篮球伙工作室</h3>
+    </div>
+    <div class="navcon">
+        <ul class="first">
+            <span class="active">
+                <div class="iconfont"></div>
+                用户管理
+            </span>
+            <ul class="second">
+                <li>
+                    <a href="index.php?m=admin&f=welcome&a=users" target="iframe">
+                        添加用户
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php?m=admin&f=welcome&a=Showuser" target="iframe">
+                        查看用户
+                    </a>
+                </li>
+            </ul>
+        </ul>
+        <ul class="first">
+            <span>
+                <div class="iconfont"></div>
+                订单管理
+            </span>
+        </ul>
+        <ul class="first">
+            <span>
+                <div class="iconfont"></div>
+                球场管理
+            </span>
+            <ul class="second">
+                <li>
+                    <a href="">
+                        查看球场
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        添加球场
+                    </a>
+                </li>
+            </ul>
+        </ul>
+        <ul class="first">
+            <span>
+                <div class="iconfont"></div>
+                位置管理
+            </span>
+            <ul class="second">
+                <li>
+                    <a href="index.php?m=admin&f=position&a=add" target="iframe">
+                        添加位置
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php?m=admin&f=position&a=show" target="iframe">
+                        查看位置
+                    </a>
+                </li>
+            </ul>
+        </ul>
+        <ul class="first">
+            <span>
+                <div class="iconfont"></div>
+                附近球友
+            </span>
+        </ul>
+
+    </div>
+</nav>
+<header>
+    <a class="loginout" href="index.php?m=admin&f=login&a=loginout">
+        <div class="iconfont exit"></div>
+        <span>安全退出</span>
+    </a>
+    <span>WELCOME <a href=""></a> 篮球伙伴欢迎您!</span>
+</header>
+<div class="mainbox">
+
+    <div class="main">
+        <iframe src="index.php?m=admin&f=welcome" frameborder="0" name="iframe" class="content"></iframe>
+    </div>
+</div>
+</body>
+<script src="{ADMINJS_PATH}/xhyAdminMain.js"></script>
+</html>

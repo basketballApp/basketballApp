@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.css">
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 70%;
+            height: 100%;
+            padding-top: 50px;
+            margin: 0 auto;
+            font-family: "微软雅黑";
+        }
+
+        .box {
+            width: 100%;
+            float: left;
+            line-height: 30px;
+            color: #3598DC;
+            margin-bottom: 15px;
+            font-size:16px;
+        }
+
+        .form {
+            width: 80%;
+            float: right;
+        }
+
+        .tijiao {
+            width: 20%;
+            margin: 0 auto;
+            margin-left: 200px;
+        }
+        .btn{
+            background: #ffd305;
+            border: none;
+        }
+        .btn:hover{
+            background: #313131;
+        }
+    </style>
+</head>
+<body>
+<form action="index.php?m=admin&f=position&a=addCon" method="post">
+    <div class="box">
+        添加位置:<input type="text" name="posname" class="form form-control">
+    </div>
+    <div class="box">
+        <input type="submit" value="提交" class="btn btn-info tijiao">
+    </div>
+</form>
+</body>
+</html>

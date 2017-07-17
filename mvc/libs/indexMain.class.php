@@ -1,5 +1,4 @@
 <?php
-
 class indexMain{
     function __construct(){
           $smarty=new Smarty();
