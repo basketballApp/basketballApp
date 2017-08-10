@@ -137,7 +137,8 @@ class login extends indexMain{
         $result=$db->select();
         foreach ($result as $v){
             if($v["uname"]==$uname){
-                if($v["upass"]==md5($upass)){$this->session->set("indexLogin","yes");
+                if($v["upass"]==md5($upass)){
+                    $this->session->set("indexLogin","yes");
                     $this->session->set("uname",$v["uname"]);
                     $this->session->set("uid",$v["uid"]);
                     $message="登录成功";

@@ -312,13 +312,14 @@ section .state .state-right .stari-top .time{
 }
 section .state .state-right .stari-modile{
     width:4.9rem;
-    height: 2.16rem;
+    height: 2.7rem;
     margin-top: 0.05rem;
+    position: relative;
 }
-section .state .state-right .stari-modile img{
+section .state .state-right .stari-modile video{
     float: left;
     width: 100%;
-    height: 3.16rem;
+
 }
 section .state .state-right .stari-bottom{
     width: 100%;

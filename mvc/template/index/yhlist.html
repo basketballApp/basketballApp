@@ -14,6 +14,10 @@
             $(".back").click(function () {
                 history.go(-1);
             })
+            $(".frili").delegate(".li","click",function () {
+                var mfid=$(this).attr("mfid");
+                location.href="index.php?m=index&f=member&a=geren&mfid="+mfid;
+            })
         })
     </script>
 </head>
@@ -26,7 +30,7 @@
             <span>··好友列表··</span>
             <span class="he-span">SOUSU JIEGUOSOUSU</span>
         </div>
-        <div class="add">+</div>
+
     </div>
 </header>
 <!--header end-->
@@ -99,100 +103,31 @@
                 <input type="submit" value="SOU">
             </div>
         </div>
-        <h5>A 36</h5>
         <ul class="frili">
-            <li class="li">
-                <div class="li-left">
-                    <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
+            {foreach $result as $v}
+                <li class="li" mfid="{{$v['mfid']}}">
+                        <div class="li-left">
+                            <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
 
-                    </div>
-                </div>
-                <div class="li-right">
-                    <p class="title">KESN<span class="min-title">JUHTGY</span></p>
-                    <div class="iconfont xing">
-                        &nbsp&#xe6ab; &#xe6ab; &#xe6ab;  &#xe6ab;
-                    </div>
-                    <p class="ll"></p>
-                    <p class="con">每天坚持锻炼身体</p>
-                    <div class="video">
-                        <a class="vi">
-                            <img src="{IMG_PATH}/yhvid.png" alt="">
-                        </a>
-                        <span class="ipone iconfont icon-shouji">
+                            </div>
+                        </div>
+                        <div class="li-right">
+                            <p class="title">{{substr($v["declaration"],0,2)}}<span class="min-title">{{substr($v["declaration"],2)}}</span></p>
+                            <p class="ll"></p>
+                            <p class="con">{{$v["declaration"]}}</p>
+                            <div class="video">
+                                <a class="vi" >
+                                    <img src="{IMG_PATH}/yhvid.png" alt="">
+                                </a>
+                                <span class="ipone iconfont icon-shouji">
+                                </span>
+                            </div>
+                        </div>
+                </li>
 
-                        </span>
-                    </div>
-                </div>
-            </li>
-            <li class="li">
-                <div class="li-left">
-                    <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
-
-                    </div>
-                </div>
-                <div class="li-right">
-                    <p class="title">KESN<span class="min-title">JUHTGY</span></p>
-                    <div class="iconfont xing">
-                        &nbsp&#xe6ab; &#xe6ab; &#xe6ab;  &#xe6ab;
-                    </div>
-                    <p class="ll"></p>
-                    <p class="con">每天坚持锻炼身体</p>
-                    <div class="video">
-                        <a class="vi">
-                            <img src="{IMG_PATH}/yhvid.png" alt="">
-                        </a>
-                        <span class="ipone iconfont icon-shouji">
-
-                        </span>
-                    </div>
-                </div>
-            </li>
-            <li class="li">
-                <div class="li-left">
-                    <div class="li-tou" style="background: url('{IMG_PATH}/yhgeren1.png') no-repeat;background-size:contain ">
-
-                    </div>
-                </div>
-                <div class="li-right">
-                    <p class="title">KESN<span class="min-title">JUHTGY</span></p>
-                    <div class="iconfont xing">
-                        &nbsp&#xe6ab; &#xe6ab; &#xe6ab;  &#xe6ab;
-                    </div>
-                    <p class="ll"></p>
-                    <p class="con">每天坚持锻炼身体</p>
-                    <div class="video">
-                        <a class="vi">
-                            <img src="{IMG_PATH}/yhvid.png" alt="">
-                        </a>
-                        <span class="ipone iconfont icon-shouji">
-                        </span>
-                    </div>
-                </div>
-            </li>
+            {/foreach}
         </ul>
-        <div class="letter">
-           <span class="le active">
-            A
-           </span>
-            <span class="le">
-            B
-           </span>
-            <span class="le">
-            C
-           </span>
-            <span class="le">
-            D
-           </span>
-            <span class="le">
-            E
-           </span>
-            <span class="le">
-            F
-           </span>
-            <span class="le">
-            G
-           </span>
-        </div>
+
     </div>
 </div>
 <!--all friends end-->

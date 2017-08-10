@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-13 13:11:05
+/* Smarty version 3.1.30, created on 2017-07-30 11:51:54
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhsetting.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59675549197f00_42724218',
+  'unifunc' => 'content_597dac3a6b5ab5_34951727',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '319d36e524a0b3993adb3fc8a1abcd2a6c9137cb' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhsetting.html',
-      1 => 1499770462,
+      1 => 1501408312,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59675549197f00_42724218 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597dac3a6b5ab5_34951727 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -122,7 +122,7 @@ function content_59675549197f00_42724218 (Smarty_Internal_Template $_smarty_tpl)
 <footer>
     <div class="loginout">
         <span class="iconfont icon-delete"></span>
-        <a href="">
+        <a href="index.php?m=index&f=friends&a=del">
             删除联系人
             <span class="details">TUICHUDENGLU</span>
         </a>

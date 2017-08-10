@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 12:32:08
+/* Smarty version 3.1.30, created on 2017-07-30 13:52:54
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhown.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5964a928b7fee1_98440241',
+  'unifunc' => 'content_597dc8964f2257_46949720',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6064bd7b760df16ab64de6aa824d0183155cd112' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhown.html',
-      1 => 1499769127,
+      1 => 1501415572,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5964a928b7fee1_98440241 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597dc8964f2257_46949720 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -41,6 +41,10 @@ function content_5964a928b7fee1_98440241 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /jQuery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/qzzmain.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
 >
@@ -70,7 +74,7 @@ function content_5964a928b7fee1_98440241 (Smarty_Internal_Template $_smarty_tpl)
         <img src="<?php echo IMG_PATH;?>
 /yhbanner.png" alt="">
     </a>
-    <a href="index.php?m=index&f=own" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
+    <a href="javascript:;" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
 /yhtou.png');background-position: center;background-size: contain;">
        <div class="img" style="background-image: url('<?php echo IMG_PATH;?>
 /yhgeren2.png');background-position: center;background-size: contain; "></div>
@@ -148,6 +152,11 @@ function content_5964a928b7fee1_98440241 (Smarty_Internal_Template $_smarty_tpl)
         <p><span>全部</span>动态</p>
     </div>
     <ul class="state">
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
         <li>
             <div class="state-left">
                 <div class="state-tou" style="background-image: url('<?php echo IMG_PATH;?>
@@ -161,97 +170,113 @@ function content_5964a928b7fee1_98440241 (Smarty_Internal_Template $_smarty_tpl)
                 <img src="<?php echo IMG_PATH;?>
 /yhbask.png" alt="">
             </div>
-            <div class="state-right">
+            <div class="state-right par-main" >
                 <div class="stari-top">
-                    <h5>篮球大神周杰伦</h5>
-                    <span class="metail">LANQIUDS</span>
+                    <h5><?php echo $_smarty_tpl->tpl_vars['v']->value["uname"];?>
+</h5>
+                    <span class="metail"><?php echo $_smarty_tpl->tpl_vars['v']->value["yname"];?>
+</span>
                     <span class="time">32MIN</span>
                 </div>
                 <div class="stari-modile">
-                    <img src="<?php echo IMG_PATH;?>
-/yhmove1.png" alt="">
+                    <video class="video">
+                        <source src="<?php echo $_smarty_tpl->tpl_vars['v']->value['dvideo'];?>
+" >
+                    </video>
+                    <div class="img" style="position: absolute;left: 0;right: 0;bottom: 0;top:0;margin:auto;width: 0.8rem">
+                        <img src="<?php echo IMG_PATH;?>
+/start.png" alt="" style="float: left;width: 0.8rem;margin-top: 0.9rem" class="start">
+                    </div>
                 </div>
-                <div class="stari-bottom">
+                <div class="stari-bottom comment">
                     <span>科比 VS 韦德对战</span>
                     <p><span class="la">LASIW</span>EIJIASI</p>
                     <div class="item">
-                        <div class="iconfont items ffans">
-                            &#xe638;
-                            <span>2235</span>
+                        <div class=" items fzan" did=<?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['did'];
+$_prefixVariable1=ob_get_clean();
+echo $_prefixVariable1;?>
+>
+                             <i class="iconfont zimg" style="color: #ec362d">&#xe64a;</i>
+                            <span  belove=<?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['belove'];
+$_prefixVariable2=ob_get_clean();
+echo $_prefixVariable2;?>
+><?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['belove'];
+$_prefixVariable3=ob_get_clean();
+echo $_prefixVariable3;?>
+</span>
                         </div>
-                        <div class="iconfont items aattention">
-                            &#xe64a;
-                            <span>2334</span>
-                        </div>
-                        <div class="iconfont items ffavour">
-                            &#xe6ab;
-                            <span>4673</span>
+                        <div class=" items aattention scan" did=<?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['did'];
+$_prefixVariable4=ob_get_clean();
+echo $_prefixVariable4;?>
+>
+                           <i class="iconfont wimg" style="color: #f0fe0f">&#xe6ab;</i>
+                            <span collect=<?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['collect'];
+$_prefixVariable5=ob_get_clean();
+echo $_prefixVariable5;?>
+><?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['collect'];
+$_prefixVariable6=ob_get_clean();
+echo $_prefixVariable6;?>
+</span>
                         </div>
                     </div>
                 </div>
             </div>
         </li>
-        <li>
-            <div class="state-left">
-                <div class="state-tou" style="background-image: url('<?php echo IMG_PATH;?>
-/yhgeren2.png');background-position: center;background-size: contain; ">
-                </div>
-                <div class="iconfont xing">
-                    &nbsp&#xe6ab; &#xe6ab; &#xe6ab;
-                </div>
-            </div>
-            <div class="ball">
-                <img src="<?php echo IMG_PATH;?>
-/yhbask.png" alt="">
-            </div>
-            <div class="state-right">
-                <div class="stari-top">
-                    <h5>篮球大神周杰伦</h5>
-                    <span class="metail">LANQIUDS</span>
-                    <span class="time">32MIN</span>
-                </div>
-                <div class="stari-modile">
-                    <img src="<?php echo IMG_PATH;?>
-/yhmove1.png" alt="">
-                </div>
-                <div class="stari-bottom">
-                    <span>科比 VS 韦德对战</span>
-                    <p><span class="la">LASIW</span>EIJIASI</p>
-                    <div class="item">
-                        <div class="iconfont items ffans">
-                            &#xe638;
-                            <span>2235</span>
-                        </div>
-                        <div class="iconfont items aattention">
-                            &#xe64a;
-                            <span>2334</span>
-                        </div>
-                        <div class="iconfont items ffavour">
-                            &#xe6ab;
-                            <span>4673</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
+        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
         <div class="bask">
 
         </div>
     </ul>
     </div>
 </section>
-<!--section end-->
-<!--&lt;!&ndash;loginout start&ndash;&gt;-->
-<!--<footer>-->
-    <!--<div class="loginout">-->
-        <!--<span class="iconfont icon-shouji"></span>-->
-        <!--<a href="">-->
-            <!--退出登录-->
-            <!--<span class="details">TUICHUDENGLU</span>-->
-        <!--</a>-->
-    <!--</div>-->
-<!--</footer>-->
-<!--&lt;!&ndash;loginout end&ndash;&gt;-->
 </body>
+<?php echo '<script'; ?>
+>
+
+        $(function () {
+            var startflag=true;
+            $(".state").delegate(".start","click",function () {
+                var that=$(this)
+                var now=0;
+                var video = $(this).parent().siblings("video");
+                   console.log(video)
+                video[0].ontimeupdate=function () {
+                    now=video[0].currentTime;//当前时长
+                    console.log(now,video[0].duration)
+                    if(now==video[0].duration){
+                        console.log($(this).siblings())
+                        $(this).siblings().html(" <img src='<?php echo IMG_PATH;?>
+/start.png' alt='' style='float: left;width: 0.8rem;margin-top:0.9rem' class='start'>");
+                    }
+
+                }
+                   if (startflag) {
+                       video[0].play();
+                       $(this).parent(".img").html(" <img src='<?php echo IMG_PATH;?>
+/pause.png' alt='' style='float: left;width: 0.8rem;margin-top:0.9rem' class='start'>");
+
+                   } else {
+                       video[0].pause();
+                       $(this).parent(".img").html(" <img src='<?php echo IMG_PATH;?>
+/start.png' alt='' style='float: left;width: 0.8rem;margin-top:0.9rem' class='start'>");
+                   }
+                   startflag = !startflag;
+
+            })
+
+})
+<?php echo '</script'; ?>
+>
 </html><?php }
 }

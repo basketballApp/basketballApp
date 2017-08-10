@@ -109,8 +109,6 @@ class db{
         $sql="select ".$this->opts["field"]." from ".$tables." ".$this->opts["where"]." ".$this->opts["order"]." ".$this->opts["limit"];
         $result=$this->db->query($sql);
         $arr=array();
-//        var_dump($arr);
-//        exit;
         while($row=$result->fetch_assoc()){
             $arr[]=$row;
         }

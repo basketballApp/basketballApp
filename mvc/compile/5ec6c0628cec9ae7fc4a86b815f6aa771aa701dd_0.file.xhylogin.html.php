@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 02:46:36
+/* Smarty version 3.1.30, created on 2017-08-10 09:25:01
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhylogin.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5965716c1d5ba7_14369197',
+  'unifunc' => 'content_598c0a4d3c6750_60944269',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5ec6c0628cec9ae7fc4a86b815f6aa771aa701dd' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhylogin.html',
-      1 => 1499770462,
+      1 => 1502349897,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5965716c1d5ba7_14369197 (Smarty_Internal_Template $_smarty_tpl) {
+function content_598c0a4d3c6750_60944269 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -61,7 +61,7 @@ function content_5965716c1d5ba7_14369197 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 <body>
 <header>
-    <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
+    <a href="index.php?m=index&f=login" class="back iconfont icon-fanhui"></a>
     <img src="<?php echo IMG_PATH;?>
 /xhylogin.png" alt="">
 </header>

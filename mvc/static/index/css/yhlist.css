@@ -12,6 +12,9 @@ header{
     font-size: 0.3rem;
     line-height: 0.88rem;
     color:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .header-main{
     width: 7.02rem;
@@ -67,7 +70,7 @@ header{
 section{
     width: 100%;
     float: left;
-    margin-top: 0.5rem;
+    margin-top: 1.2rem;
 }
 section ul{
     width: 7.02rem;
@@ -266,6 +269,7 @@ section li .seri .num{
     font-size: 0.22rem;
     position: relative;
     padding-top: 0.1rem;
+    padding-left: 0.2rem;
 }
 .main .frili .li .li-right .title{
     font-size: 0.24rem;

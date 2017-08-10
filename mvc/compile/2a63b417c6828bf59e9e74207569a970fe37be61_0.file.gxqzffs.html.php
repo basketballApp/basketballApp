@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 02:47:50
+/* Smarty version 3.1.30, created on 2017-07-30 12:43:16
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\gxqzffs.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596571b6952603_68247091',
+  'unifunc' => 'content_597db8441899f8_85098443',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2a63b417c6828bf59e9e74207569a970fe37be61' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\gxqzffs.html',
-      1 => 1499770462,
+      1 => 1501411394,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596571b6952603_68247091 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597db8441899f8_85098443 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -45,7 +45,7 @@ function content_596571b6952603_68247091 (Smarty_Internal_Template $_smarty_tpl)
                 $(".mask").css("display","block")
             })
             $(".mask").click(function(){
-                $(".mask").css("display","none")
+//                $(".mask").css("display","none")
                 $(".kuang").css("display","block")
             })
             $(".select .back").click(function(){
@@ -56,6 +56,14 @@ function content_596571b6952603_68247091 (Smarty_Internal_Template $_smarty_tpl)
             })
             $(".ma").click(function(){
                 history.go(-1)
+            })
+            $(".xiayibu").click(function(){
+                $(".mask").css("display","block")
+                $(".lijibox").css("display","block")
+            })
+            $(".lijiBtn").click(function(){
+                $(".mask").css("display","block")
+                $(".lijibox").css("display","none")
             })
         })
     <?php echo '</script'; ?>

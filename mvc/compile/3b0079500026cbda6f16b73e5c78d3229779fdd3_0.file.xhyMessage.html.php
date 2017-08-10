@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 02:47:37
+/* Smarty version 3.1.30, created on 2017-07-22 15:06:24
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\xhyMessage.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596571a9b7b120_42946400',
+  'unifunc' => 'content_59734dd0e77877_99414075',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3b0079500026cbda6f16b73e5c78d3229779fdd3' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\xhyMessage.html',
-      1 => 1499770462,
+      1 => 1500728762,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596571a9b7b120_42946400 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59734dd0e77877_99414075 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -55,7 +55,6 @@ function content_596571a9b7b120_42946400 (Smarty_Internal_Template $_smarty_tpl)
 " a="<?php echo $_smarty_tpl->tpl_vars['a']->value;?>
 " uname="<?php echo $_smarty_tpl->tpl_vars['uname']->value;?>
 ">
-<body>
 <header>
     <a href="#" onclick="history.back()" class="back iconfont icon-fanhui"></a>
     <img src="<?php echo IMG_PATH;?>
@@ -80,9 +79,9 @@ function content_596571a9b7b120_42946400 (Smarty_Internal_Template $_smarty_tpl)
     </form>
 </div>
 </body>
+</html>
 <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /xhymessage.js"><?php echo '</script'; ?>
->
-</html><?php }
+><?php }
 }

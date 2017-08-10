@@ -7,7 +7,9 @@ define("ROOT_PATH",$server["DOCUMENT_ROOT"]);
 define("APP_PATH",ROOT_PATH."basketball/basketballApp/mvc");
 define("LIBS_PATH",APP_PATH."/libs");
 define("MODULE_PATH",APP_PATH."/module");
+
 define("TPL_PATH",APP_PATH."/template");
+define("VIDEO_PATH",APP_PATH."/uploadVideo");
 //define("URL_ROOT",$server["SERVER_PROTOCOL"]);
 //截取路径
 //substr() 函数返回/截取字符串的一部分   substr(string,start,length)
@@ -36,6 +38,7 @@ require_once LIBS_PATH."/main.class.php";
 require_once LIBS_PATH."/code.class.php";
 require_once LIBS_PATH."/session.class.php";
 include LIBS_PATH."/indexMain.class.php";
+include LIBS_PATH."/uploadV.class.php";
 $obj=new route();
 $obj->getInfo();
 

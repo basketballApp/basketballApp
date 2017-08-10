@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{CSS_PATH}/qzzdetails.css">
     <script src="{JS_PATH}/rem.js"></script>
     <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/upload.js"></script>
     <script>
         $(function() {
             $(".left").click(function () {
@@ -34,7 +35,6 @@
             <img src="{IMG_PATH}/xhyroll.png" alt="" class="passroll">
             <div class="s-line"></div>
             <img src="{IMG_PATH}/xhyroll.png" alt="" class="passroll">
-
         </div>
         <div class="ph-rect">
             <span class="ph-left">03</span>
@@ -55,15 +55,42 @@
             <img src="{IMG_PATH}/qzz/qzzpictures.png" alt="">
         </div>
         <div class="setting">
-            <input type="button" class="load button">
-            <input type="button" class="photos button">
-        </div>
+            <div  class="load button add"></div>
+            <div  class="photos button up"></div>
+        <input type="text" name="src">
     </div>
     <!--上传结束-->
 </body>
 <script>
-    $(".load").click(function () {
-        location.href="index.php?m=index&f=login&a=serphselect&uname={$uname}";
-    })
+    $(function() {
+            var url = "";
+            var parent = document.querySelector(".setting");
+//        var container=document.querySelector(".upload");
+            var obj = new upload();
+            obj.createView({
+                parent: parent,
+                selectBtn: $(".add"),
+                uploadBtn:$(".up")
+            });
+            obj.up("index.php?m=index&f=index&a=upload", function (data) {
+                document.querySelector("input[name=src]").value = data;
+                url=data;
+                $.ajax({
+                    url: 'index.php?m=index&f=index&a=upload',
+                    type: "post",
+                    data: {
+                        url: url
+                    },
+                    success: function (data) {
+                        if (data) {
+                            location.href="index.php?m=index&f=index&a=publishDynamic";
+                        }
+                    }
+                })
+            })
+        })
+//    $(".load").click(function () {
+//        location.href="index.php?m=index&f=login&a=serphselect&uname={$uname}";
+//    })
 </script>
 </html>

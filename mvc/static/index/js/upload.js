@@ -44,6 +44,7 @@ class upload {
         this.createContainer(params.container, params.parent, ()=> {
             //创建选择按钮
             this.createSelectBtn(params.selectBtn);
+console.log(params.selectBtn)
             //创建提交按钮
             this.createUpload(params.uploadBtn);
             //创建预览的区间
@@ -54,15 +55,15 @@ class upload {
             this.change();
         })
     }
-
     change() {
         var that = this;
-        this.selectBtn.onchange = function () {
-            that.data = Array.prototype.slice.call(this.files)
-            that.check()
+        console.log( this.selectBtn)
+        this.selectBtn.onmouseover= function(){
+               alert(1)
+                that.data = Array.prototype.slice.call(this.files)
+                that.check()
         }
     }
-
     check() {
         var that = this;
         var tmp = [];
@@ -101,11 +102,10 @@ class upload {
                 that.data.splice(index, 1);
             }
         }
-
     }
-
-    up(url, callback) {
+    up(url,callback) {
         var that = this;
+        console.log(this.uploadBtn)
         this.uploadBtn.onclick = function () {
             if (!url) {
                 console.error("必须输入错误");
@@ -154,6 +154,7 @@ class upload {
     createSelectBtn(btnEle) {
         if (btnEle) {
             this.selectBtn = btnEle;
+            console.log(btnEle)
             return;
         }
         var div = document.createElement("div");
@@ -196,8 +197,8 @@ class upload {
         }
         var con = document.createElement("div");
         con.style.cssText = "width:600px;height:auto;overflow:hidden;";
-        this.creatP = con;//
-        this.container.insertBefore(con, this.uploadBtn);
+        // this.creatP = con;//
+        // this.container.insertBefore(con, this.uploadBtn);
     }
 
     createList(list) {

@@ -1,23 +1,27 @@
-body,html{
+body, html {
     overflow-x: hidden;
 
 }
-header{
+
+header {
     width: 100%;
     height: 0.88rem;
     background: #ec362d;
     position: fixed;
-    top:0;left:0;
-    margin:auto;
+    top: 0;
+    left: 0;
+    margin: auto;
     z-index: 999;
 }
-header .header-main{
+
+header .header-main {
     width: 7.02rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
-.header-main .l{
+
+.header-main .l {
     width: 0.67rem;
     height: 0.6rem;
     text-align: center;
@@ -25,17 +29,20 @@ header .header-main{
     font-size: 0.48rem;
     color: #fff;
     position: absolute;
-    left:0;
-    top:0;bottom:0;
-    margin:auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
-.header-main .m{
-    width:100%;
-    height:100%;
-    margin:0 auto;
+
+.header-main .m {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
-.header-main .m .china{
-     width: 100%;
+
+.header-main .m .china {
+    width: 100%;
     font-size: 0.33rem;
     color: #fff;
     height: 0.33rem;
@@ -45,7 +52,8 @@ header .header-main{
     margin-top: 0.15rem;
 
 }
-.header-main .m .eng{
+
+.header-main .m .eng {
     width: 100%;
     height: 0.18rem;
     font-size: 0.18rem;
@@ -55,68 +63,80 @@ header .header-main{
     float: left;
     margin-top: 0.08rem;
 }
-.header-main .r{
+
+.header-main .r {
     width: 0.48rem;
     height: 0.48rem;
     position: absolute;
-    right:0;
-    top:0;bottom:0;
-    margin:auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
-.partener{
+
+.partener {
     width: 100%;
     overflow: hidden;
     float: left;
 }
-.par-main{
+
+.par-main {
     width: 7.02rem;
     overflow: hidden;
-    margin:0 auto;
+    margin: 0 auto;
     position: relative;
 }
-.par-main .head{
+
+.par-main .head {
     width: 2.27rem;
     height: 0.51rem;
     margin: 0 auto;
     margin: 0.3rem auto;
 }
-.par-main .head img{
+.par-main .head img {
     width: 100%;
     height: 100%;
 }
-.par-main .one{
+
+.par-main .one {
     padding: 0.2rem 0 0.19rem 0.1rem;
     width: 7.02rem;
     height: 3.6rem;
     float: left;
     margin-bottom: 0.2rem;
-    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0,0,0,0.1);
+    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0, 0, 0, 0.1);
 }
-.one:first-child{
+
+.one:first-child {
     margin-top: 1.22rem;
 }
-.par-main .one .title{
+
+.par-main .one .title {
     width: 100%;
     height: 0.6rem;
     float: left;
 }
-.par-main .one .title .pics{
+
+.par-main .one .title .pics {
     width: 0.6rem;
     height: 0.6rem;
     float: left;
     border-radius: 50%;
 }
-.par-main .one .title .pics img{
+
+.par-main .one .title .pics img {
     width: 100%;
     height: 100%;
 }
-.par-main .one .intro{
+
+.par-main .one .intro {
     width: 5.96rem;
     height: 100%;
     float: left;
     margin-left: 0.1rem;
 }
-.par-main .one .intro .user{
+
+.par-main .one .intro .user {
     width: 100%;
     height: 0.39rem;
     float: left;
@@ -125,7 +145,8 @@ header .header-main{
     font-size: 0.26rem;
     color: #6c4038;
 }
-.par-main .one .intro .eng{
+
+.par-main .one .intro .eng {
     width: 100%;
     height: 0.18rem;
     float: left;
@@ -134,67 +155,99 @@ header .header-main{
     font-size: 0.18rem;
     color: #2d2c2c;
 }
-.par-main .one .con{
+
+.par-main .one .con {
     width: 8rem;
-    height: 1.61rem;
-    padding: 0.16rem 0  0.16rem 0.23rem;
+    height: 1.31rem;
+    padding: 0.16rem 0 0.16rem 0.23rem;
     float: left;
 }
-.par-main .one .con a{
+
+.par-main .one .con a {
     display: block;
-    width: 1.51rem;
-    height: 1.28rem;
+    width: 2rem;
+    height: 1rem;
     float: left;
     margin-right: 0.2rem;
+    position: relative;
 }
-.par-main .one .con a img{
-    width: 100%;
-    height: 100%;
+
+.img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 0.4rem;
 }
-.par-main .one .say{
+
+.img img {
+    float: left;
+    width: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+.par-main .one .say {
     width: 100%;
     overflow: hidden;
     float: left;
+    margin-top: 0.2rem;
+    height: 0.5rem;
 }
-.par-main .one .say p{
+
+.par-main .one .say p {
     font-size: 0.18rem;
     color: #bebebe;
     float: left;
-    text-align:left;
+    text-align: left;
     line-height: 0.27rem;
-}
-.par-main .one .comment{
+    padding-left: 0.4rem;
+    height: 0.3rem;
     width: 100%;
-    height: 0.28rem;
+}
+
+.par-main .one .comment {
+    width: 100%;
+    height: 0.38rem;
     float: left;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-top: 0.2rem;
 }
-.par-main .one .comment .com{
+
+.par-main .one .comment .com {
+    height: 0.38rem;
+}
+
+.par-main .one .comment .com img {
+    width: 0.28rem;
     height: 0.28rem;
-}
-.par-main .one .comment .com img{
-    width: 0.24rem;
-    height: 0.24rem;
     float: left;
 }
-.par-main .one .comment .com span{
-    font-size: 0.18rem;
-    text-align: center;
-    line-height: 0.18rem;
-    float: left;
-    margin-left: 0.1rem;
-}
-.par-main .one .comment .button{
-    width: 0.85rem;
-    height: 0.28rem;
-    border-radius: 15px;
-    background: #f6af25;
+
+.par-main .one .comment .com span {
     font-size: 0.18rem;
     text-align: center;
     line-height: 0.28rem;
+    float: left;
+    margin-left: 0.1rem;
 }
-.hall{
+
+.par-main .one .comment .button {
+    width: 0.95rem;
+    height: 0.38rem;
+    border-radius: 15px;
+    background: #f6af25;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.28rem;
+    color: #fff;
+}
+
+.hall {
     width: 100%;
     /*height: 8rem;*/
     float: left;
@@ -202,62 +255,72 @@ header .header-main{
     margin-bottom: 1.2rem;
 }
 
-.hall .head{
-    width:2.27rem;
-    height:0.51rem;
+.hall .head {
+    width: 2.27rem;
+    height: 0.51rem;
     float: left;
     margin: 0 auto;
     position: absolute;
-    top:0.5rem;
-    left:0;right:0;
-    margin:auto;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-.hall .head img{
+
+.hall .head img {
     width: 100%;
     height: 100%;
 }
-.hall .content{
+
+.hall .content {
     width: 100%;
     float: left;
     margin-top: 1.05rem;
     overflow: hidden;
 }
-.content .cons{
-     width: 7.02rem;
-      margin: 0 auto;
-      display: flex;
-     justify-content: space-between;
+
+.content .cons {
+    width: 7.02rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
-.hall .cons .rect{
+
+.hall .cons .rect {
     width: 2.19rem;
     height: 3.68rem;
     border-radius: 0.1rem;
     padding: 0.09rem 0.06rem;
-    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0,0,0,0.1);
+    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0, 0, 0, 0.1);
     position: relative;
 }
-.hall .cons .rect .imgs{
+
+.hall .cons .rect .imgs {
     width: 2.07rem;
     height: 2.42rem;
     border-radius: 0.1rem;
     float: left;
     display: block;
 }
-.hall .cons .rect .imgs img{
+
+.hall .cons .rect .imgs img {
     width: 100%;
     height: 100%;
 }
-.hall .cons .rect .mask{
+
+.hall .cons .rect .mask {
     width: 100%;
     height: 0.85rem;
-    border-radius:0 0  0.1rem 0.1rem;
-    background: rgba(0,0,0,0.7);
+    border-radius: 0 0 0.1rem 0.1rem;
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    top:1.65rem;
-    left:0;right:0;
-    margin:auto;
+    top: 1.65rem;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-.hall .cons .rect .mask .title{
+
+.hall .cons .rect .mask .title {
     width: 100%;
     height: 0.24rem;
     float: left;
@@ -267,7 +330,8 @@ header .header-main{
     text-align: center;
     line-height: 0.24rem;
 }
-.hall .cons .rect .mask .comment{
+
+.hall .cons .rect .mask .comment {
     width: 100%;
     height: 0.18rem;
     float: left;
@@ -276,7 +340,8 @@ header .header-main{
     justify-content: space-between;
 
 }
-.comment .icons{
+
+.comment .icons {
     width: 0.18rem;
     height: 0.18rem;
     text-align: center;
@@ -284,11 +349,14 @@ header .header-main{
     color: #f6af25;
     font-size: 0.18rem;
 }
-.details{
+
+.details {
     width: 1.25rem;
     height: 0.38rem;
     position: absolute;
-    left:0;right:0;top:2.35rem;
+    left: 0;
+    right: 0;
+    top: 2.35rem;
     margin: auto;
     border-radius: 0.15rem;
     background: #ec362d;
@@ -298,27 +366,35 @@ header .header-main{
     text-align: center;
     line-height: 0.24rem;
 }
-.details a{
+
+.details a {
     color: #fff;
     display: block;
 }
-.address{
+
+a:link,a:visited,a:active{
+    color:#fff;
+}
+.address {
     width: 100%;
     height: 0.45rem;
     float: left;
     margin-top: 0.2rem;
 }
-.address .add{
+
+.address .add {
     width: 0.18rem;
     height: 0.24rem;
     float: left;
     margin-right: 0.1rem;
 }
-.address .add img{
+
+.address .add img {
     width: 100%;
     height: 100%;
 }
-.address .intros{
+
+.address .intros {
     width: 2rem;
     font-size: 0.18rem;
     color: #000;
@@ -326,62 +402,71 @@ header .header-main{
     margin-left: 0.22rem;
     margin-top: -0.18rem;
     text-align: left;
-    line-height:0.28rem;
+    line-height: 0.28rem;
 }
-.other{
+
+.other {
     width: 100%;
     height: 0.28rem;
     float: left;
     margin-top: 0.15rem;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.other div img{
+
+.other div img {
     width: 0.33rem;
     height: 0.33rem;
     float: left;
 }
-.other div span{
+
+.other div span {
     float: left;
     font-size: 0.18rem;
     color: #000;
     text-align: center;
     line-height: 0.33rem;
 }
-footer{
+
+footer {
     width: 100%;
     height: 0.98rem;
     background: #f2261c;
     position: fixed;
-    bottom:0;left:0;
-    marign:auto;
+    bottom: 0;
+    left: 0;
+    marign: auto;
     padding: 0.06rem 0;
 }
-.footer-main{
+
+.footer-main {
     width: 6.08rem;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.footer-main .setting{
+
+.footer-main .setting {
     width: 0.7rem;
     height: 100%;
 }
-.footer-main .setting .pics{
+
+.footer-main .setting .pics {
     width: 0.62rem;
     height: 0.62rem;
     border-radius: 50%;
     background: #fff;
-    font-size:0.4rem;
+    font-size: 0.4rem;
     color: #5d5c57;
     font-weight: 800;
     text-align: center;
     line-height: 0.62rem;
     float: left;
-    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0,0,0,0.1);
+    box-shadow: 0.005rem 0.005rem 0.04rem 0.04rem rgba(0, 0, 0, 0.1);
 }
-.footer-main .setting .intros{
+
+.footer-main .setting .intros {
     width: 0.62rem;
     float: left;
     margin-top: 0.04rem;

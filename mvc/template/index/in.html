@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';  /* project id 267135 */
+            src: url('//at.alicdn.com/t/font_shs0i5on3xiggb9.eot');
+            src: url('//at.alicdn.com/t/font_shs0i5on3xiggb9.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_shs0i5on3xiggb9.woff') format('woff'),
+            url('//at.alicdn.com/t/font_shs0i5on3xiggb9.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_shs0i5on3xiggb9.svg#iconfont') format('svg');
+        }
+        .container{
+            width: 600px;height: 400px;
+            margin:0 auto;
+        }
+        .container video{
+            width: 100%;background: #000;
+            height: 90%;
+        }
+        .container .controls{
+            width: 100%;background: #fff;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            cursor:pointer;
+        }
+        .start{
+            width: 40px;
+            height: 40px;
+            font-family: 'iconfont';
+            color: #4f99ff;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        .reload{
+            width: 40px;
+            height: 40px;
+            font-family: 'iconfont';
+            color: #4f99ff;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            font-family: 'iconfont';
+            color: #4f99ff;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .progress{
+            width:auto;
+            height: 10px;
+            background:lightskyblue ;
+            flex-grow:1;
+            margin-top: 15px;
+            border-radius:5% 5%;
+        }
+        .inner{
+            width: 0%;
+            height:10px;background: dodgerblue;
+        }
+        .time{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .time span{
+            width: 48%;
+            height: 40px;
+            font-size:14px;
+            color: deepskyblue;
+        }
+        .time i{
+            width: 2%;
+            font-size:14px;
+        }
+        .volume{
+            width: 40px;height: 40px;
+            position: relative;
+        }
+        .volume span{
+            display: inline-block;
+            width: 40px;height: 40px;
+            z-index: 1;;
+        }
+        .volume .bg{
+            width: 40px;
+            height: 150px;
+            position: absolute;
+            left: 0;bottom: 0;
+            margin:auto;
+            display: none;
+        }
+        .volume .bg .vol{
+            width: 10px;
+            height: 110px;
+            background:#fff;
+            margin:0 auto;
+        }
+        .volume .bg .vol .volinner{
+            width: 10px;
+            height: 10px;
+            background: greenyellow;
+            float: left;
+        }
+        .mask{
+            width: 40px;
+            height: 110px;
+            position: absolute;
+            top:0;left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <video>
+        <source src="a.mp4">
+    </video>
+    <div class="controls">
+        <div class="start icon">
+            &#xe663;
+        </div>
+        <div class="reload icon">
+            &#xe615;
+        </div>
+        <div class="progress">
+            <div class="inner"></div>
+        </div>
+        <div class="time">
+            <span class="now">00:00</span>
+            <i>/</i>
+            <span class="all">00:00</span>
+        </div>
+        <div class="volume">
+            <span class="icon vo">&#xe60a;</span>
+            <div class="bg">
+                <div class="vol">
+                    <div class="volinner"></div>
+                </div>
+                <div class="mask"></div>
+            </div>
+        </div>
+        <div class="fullscreen icon">
+            &#xe877;
+        </div>
+    </div>
+</div>
+</body>
+<script src="hover.js"></script>
+<script>
+    var video=document.querySelector("video");
+    var startbtn=document.querySelector(".start");
+    var reload=document.querySelector(".reload");
+    var progress=document.querySelector(".progress");
+    var inner=document.querySelector(".inner");
+    var nowt=document.querySelector(".now")
+    var allt=document.querySelector(".all");
+    var volume=document.querySelector(".volume");
+    var bg=document.querySelector(".bg");
+    var volinner=document.querySelector(".volinner");
+    var vol=document.querySelector(".vol");
+    var mask=document.querySelector(".mask");
+    var volicon=document.querySelector(".vo")
+    console.log(volinner,vol,mask,volicon,volume,bg)
+    var l=progress.offsetWidth;
+    var startflag=true;
+    startbtn.onclick=function () {//开始暂停
+        if(startflag){
+            video.play();
+            startbtn.innerHTML="&#xe64f;";
+        }else{
+            video.pause();
+            startbtn.innerHTML="&#xe663;";
+        }
+        startflag=!startflag;
+    }
+    reload.onclick=function () {//重播
+        video.load();
+        startbtn.innerHTML="&#xe663;";
+        startflag=true;
+    };
+    var duration=0;
+    var now=0;
+    video.oncanplay=function () {//能够播放时
+        duration=video.duration;//总时长
+        allt.innerHTML=time(duration)
+    }
+    video.ontimeupdate=function () {
+        now=video.currentTime;//当前时长
+        nowt.innerHTML=time(now);
+        var width=now/duration;//时长转换为长度
+        inner.style.width=width*100+"%";
+    }
+    function time(t) {
+        var min=Math.floor(t/60);
+        var sec=Math.floor(t%60);
+        return min+":"+(sec<10?"0"+sec:sec);
+    }
+    //滚动条
+    document.onmousedown=function (e) {
+        var ox=e.offsetX;
+        var bili=ox/l;
+        var pos=duration*bili;
+        video.currentTime=pos;
+        document.onmousemove=function (e) {
+            var ox=e.clientX-progress.offsetLeft;
+            var bili=ox/l;
+            var pos=duration*bili;
+            video.currentTime=pos;
+        }
+        document.onmouseup=function () {
+            document.onmousedown=null;
+            document.onmouseup=null;
+        }
+    }
+    hover(volume,function () {
+        bg.style.display="block";
+    },function () {
+        bg.style.display="none";
+        mask.onmousedown=null;
+        mask.onmouseup=null;
+    })
+    function fnvol(e) {
+        var oy=e.offsetY;
+        oy=oy>100?100:oy;
+        volinner.style.marginTop=oy+"px";
+        var v=1-oy/100;
+        video.volume=v;
+        if(v==0){
+            volicon.innerHTML="&#xe609;";
+        }else{
+            volicon.innerHTML="&#xe60a;";
+        }
+    }
+    mask.onmousedown=function (e) {
+        fnvol(e)
+        mask.onmousemove=function (e) {
+            fnvol(e)
+        }
+        mask.onmouseup=function () {
+            mask.onmousedown=null;
+            mask.onmouseup=null;
+        }
+    }
+    var volflag=true;
+    volicon.onclick=function () {
+        if(volflag){
+            volicon.innerHTML="&#xe609;"
+            video.muted=true;
+        }else{
+            volicon.innerHTML="&#xe60a;"
+            video.muted=false;
+        }
+        volflag=!volflag;
+    }
+    var container=document.querySelector(".container");
+    var fullscreen=document.querySelector(".fullscreen");
+    //全屏模式切换
+    var fullflag=true;
+    fullscreen.onclick=full;
+    video.ondblclick=full;
+    function full() {
+        if(fullflag){
+            fullscreen.innerHTML="&#xe816;";
+            container.style.width=100+"%";
+            container.style.height=100+"%";
+        }else{
+            fullscreen.innerHTML="&#xe877;";
+            container.style.width=600+"px";
+            container.style.height=400+"px";
+        }
+        fullflag=!fullflag;
+        l=progress.offsetWidth;
+    }
+
+
+</script>
+</html>

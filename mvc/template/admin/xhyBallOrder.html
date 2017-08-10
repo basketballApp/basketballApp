@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="{CSS_PATH}/bootstrap.css">-->
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <style>
+        th{
+            background: #313131;
+            color:#fff;
+        }
+        input[type=button]{
+            background: #ffd305;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+    <script>
+        $(function(){
+
+            $("body").delegate("td:not(.del)","click",function(){
+                var td=$(this);
+                var old=td.html();
+                td.html("")
+                var input=$("<input>");
+                input.appendTo(td);
+                input.val(old);
+
+                input.blur(function(){
+                    var news=input.val();
+
+                    if(old==news){
+                        td.html(news);
+                        $("input").remove();
+
+                    }else{
+                        var oid=td.parents("tr").attr("num");
+                        var attr=td.attr("name");
+                        var value=news;
+                        $.ajax({
+                            url:"index.php?m=admin&f=court&a=updateCourt",
+                            type:"post",
+                            data:{
+                                oid:oid,attr:attr,value:value
+                            },
+                            success:function(data){
+                                $("input").remove();
+                                td.html(news);
+
+                            }
+                        })
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <table style="width: 1000px;margin:0 auto">
+            <tr>
+                <th>订单编号</th>
+                <th>场馆名称</th>
+                <th>场馆英文名称</th>
+                <th>价格</th>
+                <th>数量</th>
+                <th>是否付款</th>
+                <th>操作</th>
+            </tr>
+            {foreach $allorder as $v}
+            <tr num="{$v['oid']}">
+                <input type="hidden" name="id" value="{$v['oid']}">
+                <td name="no">{$v['no']}</td>
+                <td name="courtName">{$v['courtName']}</td>
+                <td name="courtyname">{$v['courtyname']}</td>
+                <td name="price">{$v['price']}</td>
+                <td name="number">{$v['number']}</td>
+                <td name="isbuy">{$v['isbuy']}</td>
+                <td class="del">
+                    <a href="index.php?m=admin&f=order&a=delOneOrder&oid={$v['oid']}">
+                        <button class="btn btn-default">删除</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

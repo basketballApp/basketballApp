@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.css">
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/index.js"></script>
+    <style>
+        body,html{
+            width:100%;
+            height:100%;
+            font-family: '微软雅黑';
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        th{
+            background: #313131;
+            color:#fff;
+            text-align: center;
+            line-height: 50px;
+        }
+        th,td,input{
+            width: 100px;
+        }
+        td{
+            height:100px;overflow: hidden;
+        }
+        .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+             vertical-align: middle;
+        }
+    </style>
+    <script>
+        $(function(){
+
+            $("button.add").click(function(){
+               location.href="index.php?m=admin&f=court&a=addOneCourtYe";
+            })
+            $("body").delegate("td:not(.del,.img)","dblclick",function(){
+                var td=$(this);
+                var old=td.html();
+                td.html("")
+                var input=$("<input>");
+                input.appendTo(td);
+                input.val(old);
+
+                input.blur(function(){
+                    var news=input.val();
+
+                    if(old==news){
+                        td.html(news);
+                        $("input").remove();
+
+                    }else{
+                        var cid=td.parents("tr").attr("num");
+                        var attr=td.attr("name");
+                        var value=news;
+                        $.ajax({
+                            url:"index.php?m=admin&f=court&a=updateCourt",
+                            type:"post",
+                            data:{
+                                cid:cid,attr:attr,value:value
+                            },
+                            success:function(data){
+                                $("input").remove();
+                                td.html(news);
+
+                            }
+                        })
+                    }
+                })
+            })
+
+            //编辑图片
+            $("body").delegate(".img","click",function(){
+                var that=$(this);
+                var courtimg=$(this).attr("courtimg");
+                var cid=$(this).parent("tr").attr("num");
+                console.log(courtimg +"  "+cid)
+
+                $(this).html("");
+                var parent=document.querySelector(".uploadbox");
+                var obj=new upload();
+                obj.createView({
+                    parent:parent
+                });
+                obj.up("index.php?m=admin&f=index&a=upload",function (data) {
+                    document.querySelector("input[name=courtimg]").value=data;
+                    courtimg=data;
+                    $.ajax({
+                        url:"index.php?m=admin&f=court&a=editCourtImg&courtimg="+courtimg+"&cid="+cid,
+                        type:"post",
+                        data:{
+                            cid:cid,courtimg:courtimg
+                        },
+                        success:function(e){
+                            alert('编辑成功');
+                            that.children("img").attr("src",courtimg);
+                        }
+                    })
+                });
+
+            })
+        })
+    </script>
+</head>
+<body>
+
+    <table class="table table-striped">
+        <tr>
+            <th>球馆名称</th>
+            <th>英文名称</th>
+            <th>介绍</th>
+            <th>地址</th>
+            <th>营业时间</th>
+            <th>优惠</th>
+            <th>支持项目</th>
+            <th>价格</th>
+            <th>关注人数</th>
+            <th>喜欢人数</th>
+            <th>场馆图</th>
+            <th>操作</th>
+        </tr>
+        {foreach $allcourt as $v}
+        <tr num="{$v['cid']}">
+            <input type="hidden" name="id" value="{$v['cid']}">
+            <td name="cname">{$v['cname']}</td>
+            <td name="cyname">{$v['cyname']}</td>
+            <td name="cdesc">{$v['cdesc']}</td>
+            <td name="addr">{$v['addr']}</td>
+            <td name="yytime">{$v['yytime']}</td>
+            <td name="privilege">{$v['privilege']}</td>
+            <td name="provide">{$v['provide']}</td>
+            <td name="price">{$v['price']}</td>
+            <td name="cwatch">{$v['cwatch']}</td>
+            <td name="belove">{$v['belove']}</td>
+            <td class="img" courtimg="{$v['courtimg']}">
+                <img src="{$v['courtimg']}" alt="" style="width: 100px">
+                <input type="hidden" name="courtimg">
+            </td>
+            <td class="del">
+                <a href="index.php?m=admin&f=court&a=delcourt&cid={$v['cid']}">
+                    <button class="btn btn-default del">删除</button>
+                </a>
+            </td>
+        </tr>
+        {/foreach}
+        <tr>
+            <td colspan="12"><button class="btn btn-warning add">添加新场馆</button></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

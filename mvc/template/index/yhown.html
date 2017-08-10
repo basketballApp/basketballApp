@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{CSS_PATH}/yhown.css">
     <script src="{JS_PATH}/rem.js"></script>
     <script src="{JS_PATH}/jQuery.js"></script>
+    <script src="{JS_PATH}/qzzmain.js"></script>
     <script>
         $(function() {
             $(".back").click(function () {
@@ -34,7 +35,7 @@
     <a href="#" class="ba-yh">
         <img src="{IMG_PATH}/yhbanner.png" alt="">
     </a>
-    <a href="index.php?m=index&f=own" class="tou" style="background-image: url('{IMG_PATH}/yhtou.png');background-position: center;background-size: contain;">
+    <a href="javascript:;" class="tou" style="background-image: url('{IMG_PATH}/yhtou.png');background-position: center;background-size: contain;">
        <div class="img" style="background-image: url('{IMG_PATH}/yhgeren2.png');background-position: center;background-size: contain; "></div>
     </a>
    <div class="bedeck">
@@ -104,6 +105,7 @@
         <p><span>全部</span>动态</p>
     </div>
     <ul class="state">
+        {foreach   $result as $v}
         <li>
             <div class="state-left">
                 <div class="state-tou" style="background-image: url('{IMG_PATH}/yhgeren2.png');background-position: center;background-size: contain; ">
@@ -115,92 +117,74 @@
             <div class="ball">
                 <img src="{IMG_PATH}/yhbask.png" alt="">
             </div>
-            <div class="state-right">
+            <div class="state-right par-main" >
                 <div class="stari-top">
-                    <h5>篮球大神周杰伦</h5>
-                    <span class="metail">LANQIUDS</span>
+                    <h5>{$v["uname"]}</h5>
+                    <span class="metail">{$v["yname"]}</span>
                     <span class="time">32MIN</span>
                 </div>
                 <div class="stari-modile">
-                    <img src="{IMG_PATH}/yhmove1.png" alt="">
+                    <video class="video">
+                        <source src="{$v['dvideo']}" >
+                    </video>
+                    <div class="img" style="position: absolute;left: 0;right: 0;bottom: 0;top:0;margin:auto;width: 0.8rem">
+                        <img src="{IMG_PATH}/start.png" alt="" style="float: left;width: 0.8rem;margin-top: 0.9rem" class="start">
+                    </div>
                 </div>
-                <div class="stari-bottom">
+                <div class="stari-bottom comment">
                     <span>科比 VS 韦德对战</span>
                     <p><span class="la">LASIW</span>EIJIASI</p>
                     <div class="item">
-                        <div class="iconfont items ffans">
-                            &#xe638;
-                            <span>2235</span>
+                        <div class=" items fzan" did={{$v['did']}}>
+                             <i class="iconfont zimg" style="color: #ec362d">&#xe64a;</i>
+                            <span  belove={{$v['belove']}}>{{$v['belove']}}</span>
                         </div>
-                        <div class="iconfont items aattention">
-                            &#xe64a;
-                            <span>2334</span>
-                        </div>
-                        <div class="iconfont items ffavour">
-                            &#xe6ab;
-                            <span>4673</span>
+                        <div class=" items aattention scan" did={{$v['did']}}>
+                           <i class="iconfont wimg" style="color: #f0fe0f">&#xe6ab;</i>
+                            <span collect={{$v['collect']}}>{{$v['collect']}}</span>
                         </div>
                     </div>
                 </div>
             </div>
         </li>
-        <li>
-            <div class="state-left">
-                <div class="state-tou" style="background-image: url('{IMG_PATH}/yhgeren2.png');background-position: center;background-size: contain; ">
-                </div>
-                <div class="iconfont xing">
-                    &nbsp&#xe6ab; &#xe6ab; &#xe6ab;
-                </div>
-            </div>
-            <div class="ball">
-                <img src="{IMG_PATH}/yhbask.png" alt="">
-            </div>
-            <div class="state-right">
-                <div class="stari-top">
-                    <h5>篮球大神周杰伦</h5>
-                    <span class="metail">LANQIUDS</span>
-                    <span class="time">32MIN</span>
-                </div>
-                <div class="stari-modile">
-                    <img src="{IMG_PATH}/yhmove1.png" alt="">
-                </div>
-                <div class="stari-bottom">
-                    <span>科比 VS 韦德对战</span>
-                    <p><span class="la">LASIW</span>EIJIASI</p>
-                    <div class="item">
-                        <div class="iconfont items ffans">
-                            &#xe638;
-                            <span>2235</span>
-                        </div>
-                        <div class="iconfont items aattention">
-                            &#xe64a;
-                            <span>2334</span>
-                        </div>
-                        <div class="iconfont items ffavour">
-                            &#xe6ab;
-                            <span>4673</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
+        {/foreach}
         <div class="bask">
 
         </div>
     </ul>
     </div>
 </section>
-<!--section end-->
-<!--&lt;!&ndash;loginout start&ndash;&gt;-->
-<!--<footer>-->
-    <!--<div class="loginout">-->
-        <!--<span class="iconfont icon-shouji"></span>-->
-        <!--<a href="">-->
-            <!--退出登录-->
-            <!--<span class="details">TUICHUDENGLU</span>-->
-        <!--</a>-->
-    <!--</div>-->
-<!--</footer>-->
-<!--&lt;!&ndash;loginout end&ndash;&gt;-->
 </body>
+<script>
+
+        $(function () {
+            var startflag=true;
+            $(".state").delegate(".start","click",function () {
+                var that=$(this)
+                var now=0;
+                var video = $(this).parent().siblings("video");
+                   console.log(video)
+                video[0].ontimeupdate=function () {
+                    now=video[0].currentTime;//当前时长
+                    console.log(now,video[0].duration)
+                    if(now==video[0].duration){
+                        console.log($(this).siblings())
+                        $(this).siblings().html(" <img src='{IMG_PATH}/start.png' alt='' style='float: left;width: 0.8rem;margin-top:0.9rem' class='start'>");
+                    }
+
+                }
+                   if (startflag) {
+                       video[0].play();
+                       $(this).parent(".img").html(" <img src='{IMG_PATH}/pause.png' alt='' style='float: left;width: 0.8rem;margin-top:0.9rem' class='start'>");
+
+                   } else {
+                       video[0].pause();
+                       $(this).parent(".img").html(" <img src='{IMG_PATH}/start.png' alt='' style='float: left;width: 0.8rem;margin-top:0.9rem' class='start'>");
+                   }
+                   startflag = !startflag;
+
+            })
+
+})
+</script>
 </html>

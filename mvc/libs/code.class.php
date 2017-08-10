@@ -17,7 +17,6 @@ class code{
         $this->image=imagecreatetruecolor($this->width,$this->height);
         imagefill($this->image,0,0,$this->getColor("back"));
     }
-
     //2.创建内容
     function createCon(){
         $this->getText();
@@ -81,4 +80,3 @@ class code{
 //$obj=new code();
 //$obj->codeUrl="../static/index/fonts/mui.ttf";
 //$obj->output();
-

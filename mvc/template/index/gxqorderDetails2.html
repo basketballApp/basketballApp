@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{CSS_PATH}/gxqstadium.css">
+    <script src="{JS_PATH}/rem.js"></script>
+    <script src="{JS_PATH}/jQuery.js"></script>
+    <script>
+        $(function() {
+            $(".left").click(function () {
+                history.go(-1);
+            })
+            $(".zhifu").click(function(){
+                $(".heji").css("display","block");
+            })
+        })
+    </script>
+</head>
+<body class="order">
+<header style="height: 1.02rem">
+    <div class="top" style="height: 1.02rem;padding-top: 0.13rem">
+        <h2 style="font-weight: 300">··&nbsp;订单详情&nbsp;··</h2>
+        <h5 style="font-weight: 300">DINGDANXAINGQING</h5>
+        <div class="left" style="height: 1.02rem">
+            <img src="{IMG_PATH}/gxq/gxqleftjt_03.png" alt="" class="ma">
+        </div>
+    </div>
+</header>
+<div class="con">
+     <div class="history">
+        <p class="title1">LISHIDINGDAN</p>
+        <p class="title2"></p>
+        <div class="title3">
+            历史订单
+            <div class="dian1"></div>
+            <div class="dian2"></div>
+        </div>
+
+        {foreach  $result as $v}
+        <div class="list">
+            <div class="left">
+                <img src="{IMG_PATH}/gxq/gxqcg_44.png" alt="">
+            </div>
+            <p class="title1">{$v["courtName"]}</p>
+            <p class="title3">.....................................</p>
+            <p class="title4">营业时间＃08:０0－22:０0</p>
+            <p class="title5">价格：1小时/10￥<span>￥{$v["price"]}</span></p>
+            <img src="{IMG_PATH}/gxq/gxqzhang_11.png" alt="" class="zuire">
+            <img src="{IMG_PATH}/gxq/gxqzhang_14.png" alt="" class="xiaofei">
+        </div>
+        {/foreach}
+    </div>
+</div>
+</body>
+</html>

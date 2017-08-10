@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-12 02:48:08
+/* Smarty version 3.1.30, created on 2017-07-30 13:47:10
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhone.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596571c84893f8_21053708',
+  'unifunc' => 'content_597dc73ec87ea5_83401876',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56ef797b3b31ad43a3abc9d59d2d2ada1b04226c' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhone.html',
-      1 => 1499770462,
+      1 => 1501415134,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596571c84893f8_21053708 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -116,7 +116,7 @@ function content_596571c84893f8_21053708 (Smarty_Internal_Template $_smarty_tpl)
             </a>
         </div>
         <ul class="list">
-                <li>
+                <li >
                     <div class="self">
                         <div class="self-tou iconfont icon-naozhong">
                         </div>
@@ -134,7 +134,7 @@ function content_596571c84893f8_21053708 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                     </div>
                     <div class="seri">
-                        <a href="index.php?m=index&f=order" class="seri-tou">
+                        <a href="index.php?m=index&f=index&a=myhistoryOrder" class="seri-tou">
                             <span class="title">我的订单</span>
                             <span class="mintitle">LIDAPENGQIUYOU</span>
                         </a>
@@ -170,19 +170,7 @@ function content_596571c84893f8_21053708 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
                 </div>
                 <div class="seri">
-                    <a href="index.php?m=index&f=setting" class="seri-tou">
-                        <span class="title">更多设置</span>
-                        <span class="mintitle">LIDAPENGQIUYOU</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="self">
-                    <div class="self-tou">
-                    </div>
-                </div>
-                <div class="seri">
-                    <a href="index.php?m=index&f=send" class="seri-tou">
+                    <a href="index.php?m=index&f=index&a=publishDynamic" class="seri-tou">
                         <span class="title">发表动态</span>
                         <span class="mintitle">LIDAPENGQIUYOU</span>
                     </a>

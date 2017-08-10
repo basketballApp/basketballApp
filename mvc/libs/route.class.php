@@ -22,16 +22,16 @@ class route{
                         $method=self::$a;
                         $obj->$method();
                     }else{
-                        echo self::$a."不存在";
+                        echo self::$a."方法不存在";
                     }
                 }else{
                     echo self::$f."类不存在";
                 }
             }else{
-                echo $f."不存在";
+                echo $f."文件不存在";
             }
         }else{
-            echo $m."不存在";
+            echo $m."模块不存在";
         }
     }
 }

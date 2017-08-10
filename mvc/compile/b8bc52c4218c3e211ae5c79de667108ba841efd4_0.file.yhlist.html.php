@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-13 13:10:37
+/* Smarty version 3.1.30, created on 2017-07-30 13:47:12
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhlist.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5967552d19eb38_90908097',
+  'unifunc' => 'content_597dc740e80767_57792883',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8bc52c4218c3e211ae5c79de667108ba841efd4' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhlist.html',
-      1 => 1499824554,
+      1 => 1501414221,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5967552d19eb38_90908097 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597dc740e80767_57792883 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -48,6 +48,10 @@ function content_5967552d19eb38_90908097 (Smarty_Internal_Template $_smarty_tpl)
             $(".back").click(function () {
                 history.go(-1);
             })
+            $(".frili").delegate(".li","click",function () {
+                var mfid=$(this).attr("mfid");
+                location.href="index.php?m=index&f=member&a=geren&mfid="+mfid;
+            })
         })
     <?php echo '</script'; ?>
 >
@@ -61,7 +65,7 @@ function content_5967552d19eb38_90908097 (Smarty_Internal_Template $_smarty_tpl)
             <span>··好友列表··</span>
             <span class="he-span">SOUSU JIEGUOSOUSU</span>
         </div>
-        <div class="add">+</div>
+
     </div>
 </header>
 <!--header end-->
@@ -137,107 +141,58 @@ function content_5967552d19eb38_90908097 (Smarty_Internal_Template $_smarty_tpl)
                 <input type="submit" value="SOU">
             </div>
         </div>
-        <h5>A 36</h5>
         <ul class="frili">
-            <li class="li">
-                <div class="li-left">
-                    <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
+                <li class="li" mfid="<?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value['mfid'];
+$_prefixVariable1=ob_get_clean();
+echo $_prefixVariable1;?>
+">
+                        <div class="li-left">
+                            <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
 /yhgeren1.png') no-repeat;background-size:contain ">
 
-                    </div>
-                </div>
-                <div class="li-right">
-                    <p class="title">KESN<span class="min-title">JUHTGY</span></p>
-                    <div class="iconfont xing">
-                        &nbsp&#xe6ab; &#xe6ab; &#xe6ab;  &#xe6ab;
-                    </div>
-                    <p class="ll"></p>
-                    <p class="con">每天坚持锻炼身体</p>
-                    <div class="video">
-                        <a class="vi">
-                            <img src="<?php echo IMG_PATH;?>
+                            </div>
+                        </div>
+                        <div class="li-right">
+                            <p class="title"><?php ob_start();
+echo substr($_smarty_tpl->tpl_vars['v']->value["declaration"],0,2);
+$_prefixVariable2=ob_get_clean();
+echo $_prefixVariable2;?>
+<span class="min-title"><?php ob_start();
+echo substr($_smarty_tpl->tpl_vars['v']->value["declaration"],2);
+$_prefixVariable3=ob_get_clean();
+echo $_prefixVariable3;?>
+</span></p>
+                            <p class="ll"></p>
+                            <p class="con"><?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value["declaration"];
+$_prefixVariable4=ob_get_clean();
+echo $_prefixVariable4;?>
+</p>
+                            <div class="video">
+                                <a class="vi" >
+                                    <img src="<?php echo IMG_PATH;?>
 /yhvid.png" alt="">
-                        </a>
-                        <span class="ipone iconfont icon-shouji">
+                                </a>
+                                <span class="ipone iconfont icon-shouji">
+                                </span>
+                            </div>
+                        </div>
+                </li>
 
-                        </span>
-                    </div>
-                </div>
-            </li>
-            <li class="li">
-                <div class="li-left">
-                    <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
-/yhgeren1.png') no-repeat;background-size:contain ">
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
 
-                    </div>
-                </div>
-                <div class="li-right">
-                    <p class="title">KESN<span class="min-title">JUHTGY</span></p>
-                    <div class="iconfont xing">
-                        &nbsp&#xe6ab; &#xe6ab; &#xe6ab;  &#xe6ab;
-                    </div>
-                    <p class="ll"></p>
-                    <p class="con">每天坚持锻炼身体</p>
-                    <div class="video">
-                        <a class="vi">
-                            <img src="<?php echo IMG_PATH;?>
-/yhvid.png" alt="">
-                        </a>
-                        <span class="ipone iconfont icon-shouji">
-
-                        </span>
-                    </div>
-                </div>
-            </li>
-            <li class="li">
-                <div class="li-left">
-                    <div class="li-tou" style="background: url('<?php echo IMG_PATH;?>
-/yhgeren1.png') no-repeat;background-size:contain ">
-
-                    </div>
-                </div>
-                <div class="li-right">
-                    <p class="title">KESN<span class="min-title">JUHTGY</span></p>
-                    <div class="iconfont xing">
-                        &nbsp&#xe6ab; &#xe6ab; &#xe6ab;  &#xe6ab;
-                    </div>
-                    <p class="ll"></p>
-                    <p class="con">每天坚持锻炼身体</p>
-                    <div class="video">
-                        <a class="vi">
-                            <img src="<?php echo IMG_PATH;?>
-/yhvid.png" alt="">
-                        </a>
-                        <span class="ipone iconfont icon-shouji">
-
-                        </span>
-                    </div>
-                </div>
-            </li>
         </ul>
-        <div class="letter">
-           <span class="le active">
-            A
-           </span>
-            <span class="le">
-            B
-           </span>
-            <span class="le">
-            C
-           </span>
-            <span class="le">
-            D
-           </span>
-            <span class="le">
-            E
-           </span>
-            <span class="le">
-            F
-           </span>
-            <span class="le">
-            G
-           </span>
-        </div>
+
     </div>
 </div>
 <!--all friends end-->

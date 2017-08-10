@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-11 11:05:05
+/* Smarty version 3.1.30, created on 2017-08-10 09:48:19
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhnearby.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596494c124d893_40914050',
+  'unifunc' => 'content_598c0fc38658b6_48996591',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72078890a0a616d32e7cf5c129e914f6f58aad05' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhnearby.html',
-      1 => 1499763903,
+      1 => 1502351298,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-function content_596494c124d893_40914050 (Smarty_Internal_Template $_smarty_tpl) {
+function content_598c0fc38658b6_48996591 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -82,7 +82,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
         <li>
             <div class="self">
-                <div class="self-tou">
+                <div class="self-tou"  style=" background: url('<?php echo IMG_PATH;?>
+/img.jpg') center center;background-size: contain;">
                 </div>
             </div>
             <div class="seri">

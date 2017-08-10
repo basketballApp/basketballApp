@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-14 03:14:56
+/* Smarty version 3.1.30, created on 2017-07-18 16:59:58
   from "E:\wamp\www\basketball\basketballApp\mvc\template\admin\xhyAdminMain.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59681b103f6208_18111702',
+  'unifunc' => 'content_596e226e0b5f46_19590126',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '125c93be9b10b4985917f480da94c1de97dc226e' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\admin\\xhyAdminMain.html',
-      1 => 1499994894,
+      1 => 1500389997,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59681b103f6208_18111702 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596e226e0b5f46_19590126 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -67,22 +67,22 @@ function content_59681b103f6208_18111702 (Smarty_Internal_Template $_smarty_tpl)
         <ul class="first">
             <span>
                 <div class="iconfont"></div>
-                订单管理
+                <a href="index.php?m=admin&f=order&a=showorder"  target="iframe">订单管理</a>
             </span>
         </ul>
         <ul class="first">
             <span>
                 <div class="iconfont"></div>
-                球场管理
+               球场管理
             </span>
             <ul class="second">
                 <li>
-                    <a href="">
+                    <a href="index.php?m=admin&f=court&a=allCourt" target="iframe">
                         查看球场
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="index.php?m=admin&f=court&a=addOneCourtYe" target="iframe">
                         添加球场
                     </a>
                 </li>
