@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-30 17:59:40
+/* Smarty version 3.1.30, created on 2017-08-13 03:47:27
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\gxqSearchResult.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_597e026cd118b0_59036222',
+  'unifunc' => 'content_598fafafe298b2_84977384',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c155653ee971b9cd7d6efdb4e0c41655395079df' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\gxqSearchResult.html',
-      1 => 1501430377,
+      1 => 1502588846,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_597e026cd118b0_59036222 (Smarty_Internal_Template $_smarty_tpl) {
+function content_598fafafe298b2_84977384 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh" ng-app="myApp">
@@ -185,7 +185,32 @@ function content_597e026cd118b0_59036222 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 </div>
 <!--篮球场-->
-
+<div class="gxqchang">
+    <div class="list" >
+        <div class="left">
+            <img src="<?php echo IMG_PATH;?>
+/gxq/gxqcg_44.png" alt="">
+        </div>
+        <div class="right comment">
+            <p class="p1"><a href="index.php?m=index&f=index&a=addOrder&cid=<?php echo $_smarty_tpl->tpl_vars['v']->value['cid'];?>
+"></a></p>
+            <p class="p2"></p>
+            <p class="p3">....................</p>
+            <ul class="caozuo par-main">
+                <li class="fzan div">
+                    <img src="<?php echo IMG_PATH;?>
+/gxq/gxqcg_47.png" alt="" class="like zimg">
+                    <span class="shu"></span>
+                </li>
+                <li class="scan div" >
+                    <img src="<?php echo IMG_PATH;?>
+/gxq/gxqcg_53.png" alt="" class="like wimg">
+                    <span class="shu"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 <!--弹出框-->
 <div class="tan">
     <?php

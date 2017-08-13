@@ -7,8 +7,8 @@
             str=JSON.parse(data.substr(start));
 
             // str=str.split("=");
-            console.log(str);
-            console.log(typeof str);
+            //console.log(str);
+            //console.log(typeof str);
         }
     })
     var app=angular.module("myApp",[]);

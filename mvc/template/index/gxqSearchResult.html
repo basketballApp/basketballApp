@@ -131,13 +131,13 @@
     </div>
 </div>
 <!--篮球场-->
-<!--<div class="gxqchang">
-    <div class="list" ng-repeat="i  in  str | filter:search">
+<div class="gxqchang">
+    <div class="list" ng-repeat="i  in  con | filter:search">
         <div class="left">
             <img src="{IMG_PATH}/gxq/gxqcg_44.png" alt="">
         </div>
         <div class="right comment">
-            <p class="p1"><a href="index.php?m=index&f=index&a=addOrder&cid={$v['cid']}">{{i.cname}}</a></p>
+            <p class="p1"><a href="index.php?m=index&f=index&a=addOrder&cid={i.id}">{{i.cname}}</a></p>
             <p class="p2">{{i.cyname}}</p>
             <p class="p3">....................</p>
             <ul class="caozuo par-main">
@@ -152,7 +152,7 @@
             </ul>
         </div>
     </div>
-</div>-->
+</div>
 <!--弹出框-->
 <div class="tan">
     {foreach $xiangqing as $v}
