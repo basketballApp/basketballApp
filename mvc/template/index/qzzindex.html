@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{CSS_PATH}/iconfont.css">
     <link rel="stylesheet" href="{CSS_PATH}/mui.css">
     <script src="{JS_PATH}/qzzmain.js"></script>
+    <script src="{JS_PATH}/yhadd.js"></script>
 </head>
 <body style="background: #fff">
 <!--头部开始-->
@@ -81,7 +82,7 @@
                 <a href="javascript:;" >
                     <video src="{$video['dvideo']}" style="width: 100%;transform: scale(1)"></video>
                     <div class="img" style="position: absolute;left: 0;right: 0;bottom: 0;top:0;margin:auto;width: 0.4rem">
-                        <img src="{IMG_PATH}/start.png" alt="" style="float: left;width: 0.4rem;margin-top: 0.25rem" class="start">
+                        <span style=" float: left;width: 0.4rem;height:0.4rem;margin-top: 0.25rem" class="start"></span>
                     </div>
                 </a>
                 {/foreach}
@@ -99,7 +100,16 @@
                     <img src="{IMG_PATH}/qzzcollect.png" alt="" class="wimg">
                     <span collect={{$v['collect']}}>{$v["collect"]}</span>
                 </div>
-                <input type="button" class="button" value="已关注" style="padding: 0">
+                <div class="button attention"  mfid={$v["uid"]} uid={$uid} >
+                    未关注
+                    {if isset($arr)}
+                    {if in_array({$v["uid"]},$arr)}
+                    已关注
+                    {else if}未关注
+                    {/if}
+                    {/if}
+                </div>
+                <!--<input type="button" class="button" value="未关注" style="padding: 0">-->
             </div>
         </div>
         {/foreach}

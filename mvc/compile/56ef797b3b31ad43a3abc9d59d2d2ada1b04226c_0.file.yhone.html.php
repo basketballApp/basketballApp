@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-30 13:47:10
+/* Smarty version 3.1.30, created on 2017-08-15 07:03:02
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\yhone.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_597dc73ec87ea5_83401876',
+  'unifunc' => 'content_59928086c3f632_19352582',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '56ef797b3b31ad43a3abc9d59d2d2ada1b04226c' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\yhone.html',
-      1 => 1501415134,
+      1 => 1502773381,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59928086c3f632_19352582 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -71,7 +71,7 @@ function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl)
 /yhbanner.png" alt="">
     </a>
     <a href="#" class="tou" style="background-image: url('<?php echo IMG_PATH;?>
-/yhtou.png');background-position: center;background-size: contain;">
+/qzzuser1.png');background-position: center;background-size: contain;">
         <div class="img" style="background-image: url(<?php echo IMG_PATH;?>
 /yhgeren2.png');background-position: center;background-size: contain; "></div>
     </a>
@@ -119,6 +119,7 @@ function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl)
                 <li >
                     <div class="self">
                         <div class="self-tou iconfont icon-naozhong">
+
                         </div>
                     </div>
                     <div class="seri">
@@ -143,6 +144,8 @@ function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl)
                 <li>
                     <div class="self">
                         <div class="self-tou">
+                            <img src="<?php echo IMG_PATH;?>
+/friends.png" alt=""  style="width: 0.6rem">
                         </div>
                     </div>
                     <div class="seri">
@@ -155,6 +158,8 @@ function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl)
             <li>
                 <div class="self">
                     <div class="self-tou">
+                        <img src="<?php echo IMG_PATH;?>
+/upload.png" alt=""  style="width: 0.6rem">
                     </div>
                 </div>
                 <div class="seri">
@@ -167,6 +172,8 @@ function content_597dc73ec87ea5_83401876 (Smarty_Internal_Template $_smarty_tpl)
             <li>
                 <div class="self">
                     <div class="self-tou">
+                        <img src="<?php echo IMG_PATH;?>
+/send.png" alt="" style="width: 0.6rem">
                     </div>
                 </div>
                 <div class="seri">

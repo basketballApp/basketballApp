@@ -26,6 +26,17 @@ class index extends indexMain{
         $result2=$db1->limit("0,3")->select();
         $this->smarty->assign("result2",$result2);
         $this->smarty->display("qzzindex.html");
+        //myfriends
+        $db1=new db("myfriends");
+        $results=$db1->where("uid=$uid")->setField("mfid")->select();
+        $arr=array();
+        for ($i=0;$i<count($results);$i++){
+//           $this->smarty->assign("results",$results[$i]);
+            foreach ($results[$i] as $k=>$v){
+                $arr[]=$v;
+            }
+        }
+        $this->smarty->assign("arr",$arr);
     }
     //    朋友圈
     function pengyouquan(){

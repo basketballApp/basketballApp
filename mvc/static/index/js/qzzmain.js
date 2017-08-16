@@ -60,19 +60,16 @@ $(function () {
         video[0].ontimeupdate=function () {
             now=video[0].currentTime;//当前时长
             if(now==video[0].duration){
-                $(this).siblings().html(" <img src='{IMG_PATH}/start.png' alt='' style='float: left;width: 0.4rem;margin-top:0.2rem' class='start'>");
+                $(this).siblings().html(" <div  style='float: left;width: 0.8rem;height: 0.8rem;margin-top:0.2rem' class='start'>");
             }
-
         }
         if (startflag) {
             video[0].play();
-            $(this).parent(".img").html(" <img src='{IMG_PATH}/pause.png' alt='' style='float: left;width: 0.4rem;margin-top: 0.25rem' class='start'>'");
-
+            $(this).parent(".img").html(" <div  style='float: left;width: 0.8rem;height: 0.8rem;margin-top: 0.25rem' class='start'>");
         } else {
             video[0].pause();
-            $(this).parent(".img").html(" <img src='{IMG_PATH}/start.png' alt='' style='float: left;width: 0.4rem;margin-top: 0.25rem' class='start'>'");
+            $(this).parent(".img").html(" <div alt='' style='float: left;width: 0.8rem;width: 0.8rem;margin-top: 0.25rem' class='start'>");
         }
         startflag = !startflag;
-
     })
 })

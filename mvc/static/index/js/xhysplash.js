@@ -21,7 +21,7 @@ bannerbox.addEventListener("touchmove",function(e){
    var cx=e.changedTouches[0].clientX;
    mx=cx-sx;
    dir=mx<0?"left":"right";
-   bannerbox.style.transform=`translateX(${mx+moveX}px)`;
+   bannerbox.style.transform = "translateX(" + (mx + moveX) + "px)";
 })
 bannerbox.addEventListener("touchend",function(e){
    var now=e.timeStamp;
@@ -41,7 +41,7 @@ bannerbox.addEventListener("touchend",function(e){
    }
    moveX=-i*l;
    bannerbox.style.transition="all 1s";
-   bannerbox.style.transform=`translateX(${moveX}px)`;
+   bannerbox.style.transform = "translateX(" + moveX + "px)";
    if(i==btns.length-1){
       start.style.display="block";
       btnbox.style.display="none";
@@ -51,14 +51,4 @@ bannerbox.addEventListener("touchend",function(e){
    }
    $(".btnbox li").filter(".active").removeClass("active").end().eq(i).addClass("active");
 })
-
-
-// var obj=btns[0];
-// Array.from(bt).forEach(function (e,i) {
-//    bannerbox.addEventListener("touchend",function () {
-//       obj.style.background="#fff";
-//       btns[i].style.background="#666";
-//       obj=btns[i];
-//    })
-// })
 $(".start").addClass('animated tada');

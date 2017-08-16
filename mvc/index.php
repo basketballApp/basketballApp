@@ -4,10 +4,9 @@ define("COMING","yes");
 //include "libs/functions.php";   //include 只支持文件路径
 $server=$_SERVER;
 define("ROOT_PATH",$server["DOCUMENT_ROOT"]);
-define("APP_PATH",ROOT_PATH."basketball/basketballApp/mvc");
+define("APP_PATH",ROOT_PATH."mvc");
 define("LIBS_PATH",APP_PATH."/libs");
 define("MODULE_PATH",APP_PATH."/module");
-
 define("TPL_PATH",APP_PATH."/template");
 define("VIDEO_PATH",APP_PATH."/uploadVideo");
 //define("URL_ROOT",$server["SERVER_PROTOCOL"]);

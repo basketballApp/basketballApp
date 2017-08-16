@@ -243,7 +243,7 @@ header .header-main {
     background: #f6af25;
     font-size: 0.16rem;
     text-align: center;
-    line-height: 0.28rem;
+    /*line-height: 0.28rem;*/
     color: #fff;
 }
 

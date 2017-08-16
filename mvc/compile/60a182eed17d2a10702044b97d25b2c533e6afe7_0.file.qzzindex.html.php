@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-08-10 10:09:37
+/* Smarty version 3.1.30, created on 2017-08-15 07:38:27
   from "E:\wamp\www\basketball\basketballApp\mvc\template\index\qzzindex.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_598c14c1d7dee5_27278323',
+  'unifunc' => 'content_599288d38eff29_94254197',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60a182eed17d2a10702044b97d25b2c533e6afe7' => 
     array (
       0 => 'E:\\wamp\\www\\basketball\\basketballApp\\mvc\\template\\index\\qzzindex.html',
-      1 => 1502352266,
+      1 => 1502775505,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:bottom.html' => 1,
   ),
 ),false)) {
-function content_598c14c1d7dee5_27278323 (Smarty_Internal_Template $_smarty_tpl) {
+function content_599288d38eff29_94254197 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="zh">
@@ -53,6 +53,10 @@ function content_598c14c1d7dee5_27278323 (Smarty_Internal_Template $_smarty_tpl)
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /qzzmain.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/yhadd.js"><?php echo '</script'; ?>
 >
 </head>
 <body style="background: #fff">
@@ -147,8 +151,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['video']->value) {
                     <video src="<?php echo $_smarty_tpl->tpl_vars['video']->value['dvideo'];?>
 " style="width: 100%;transform: scale(1)"></video>
                     <div class="img" style="position: absolute;left: 0;right: 0;bottom: 0;top:0;margin:auto;width: 0.4rem">
-                        <img src="<?php echo IMG_PATH;?>
-/start.png" alt="" style="float: left;width: 0.4rem;margin-top: 0.25rem" class="start">
+                        <span style=" float: left;width: 0.4rem;height:0.4rem;margin-top: 0.25rem" class="start"></span>
                     </div>
                 </a>
                 <?php
@@ -192,7 +195,21 @@ echo $_prefixVariable6;?>
 ><?php echo $_smarty_tpl->tpl_vars['v']->value["collect"];?>
 </span>
                 </div>
-                <input type="button" class="button" value="已关注" style="padding: 0">
+                <div class="button attention"  mfid=<?php echo $_smarty_tpl->tpl_vars['v']->value["uid"];?>
+ uid=<?php echo $_smarty_tpl->tpl_vars['uid']->value;?>
+ >
+                    未关注
+                    <?php if (isset($_smarty_tpl->tpl_vars['arr']->value)) {?>
+                    <?php ob_start();
+echo $_smarty_tpl->tpl_vars['v']->value["uid"];
+$_prefixVariable7=ob_get_clean();
+if (in_array($_prefixVariable7,$_smarty_tpl->tpl_vars['arr']->value)) {?>
+                    已关注
+                    <?php } else { ?>未关注
+                    <?php }?>
+                    <?php }?>
+                </div>
+                <!--<input type="button" class="button" value="未关注" style="padding: 0">-->
             </div>
         </div>
         <?php

@@ -88,22 +88,22 @@ section ul li{
     margin-bottom: 0.3rem;
 }
 section ul li .self{
-    width: 0.95rem;
+    width: 1.2rem;
     height: 100%;
     float: left;
     box-shadow: 0rem 0.1rem 2rem 0.1rem rgba(0,0,0,0.1);
 }
 section ul li .self-tou{
-    width: 0.7rem;
-    height: 0.7rem;
-    border:2px solid #fff769;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #fff769;
     margin-left: 0.1rem;
-    margin-top: 0.25rem;
+    margin-top: 0.1rem;
     border-radius: 50%;
 
 }
 section ul li .seri{
-    width: 6rem;
+    width: 5.8rem;
     height: 100%;
     float: right;
     font-size: 0.24rem;
@@ -113,7 +113,7 @@ section ul li .seri{
     padding-top: 0.1rem;
 }
 section ul li .seri-tou{
-    width: 6rem;
+    width: 5.8rem;
     height: 100%;
     float: left;
 }
